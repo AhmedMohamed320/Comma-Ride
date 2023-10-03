@@ -54,6 +54,7 @@
 
 .welcome span {
     color: var(--color-red-1);
+    font-size: 5rem;
 }
 
 .welcome p:nth-of-type(2) {
