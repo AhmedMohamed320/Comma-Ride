@@ -4,7 +4,7 @@
     position: relative;
 }
 .main {
-    background-color: var(--color-dark-1);
+    background-color: var(--color-dark-4);
     border-radius: 1rem;
     height: 50vh;
 }
@@ -85,7 +85,7 @@
 }
 
 .section > div:nth-of-type(1) a {
-    background-color: var(--color-dark-1);
+    background-color: var(--color-dark-4);
     color: var(--color-light-1);
     border-radius: 1rem;
     padding: 3rem;
