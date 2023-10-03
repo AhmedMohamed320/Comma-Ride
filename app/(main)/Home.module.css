@@ -59,6 +59,7 @@
 .welcome p:nth-of-type(2) {
     font-size: 1.5rem;
     font-weight: 500;
+    padding: 3rem;
 }
 /* -------------------- */
 
