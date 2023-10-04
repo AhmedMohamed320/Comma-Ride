@@ -4,7 +4,7 @@ import Link from "next/link";
 const DeliveryCard = () => {
     return (
         <section className={classes.section}>
-            <Link href="" className={classes.img}>
+            <Link href="/Delivery_men/Profile" className={classes.img}>
                 <img src="/image/person.jfif" alt="Delivery img" />
             </Link>
             <div className={classes.details}>

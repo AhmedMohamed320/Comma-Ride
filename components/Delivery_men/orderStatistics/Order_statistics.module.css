@@ -1,0 +1,80 @@
+.section {
+    padding: 1rem;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.head select {
+    background-color: var(--color-dark-4);
+    outline: none;
+    border: none;
+    color: var(--color-light-2);
+    padding: 0.2rem 3rem;
+    border-radius: 0.5rem;
+}
+
+.weeks > .week, .month {
+    background-color: var(--color-dark-3);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+.weeks > .week .head,
+.month .head {
+    background-color: var(--color-dark-4);
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--color-light-2);
+    display: flex;
+    justify-content: center;
+}
+
+.month .head{
+    background-color: var(--color-red-1);
+    color: var(--color-dark-1);
+    font-size: 1.8rem ;
+}
+
+.weeks > .week .head span {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+
+.week > div, .month>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.week > div p ,.month > div p  {
+    text-align: center;
+    font-weight: 600;
+}
+
+.week > div p span,.month > div p span  {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+@media (max-width: 45rem) {
+    .week > div, .month > div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 30rem) {
+    .week > div,.month > div  {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,42 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.img {
+    width: 50%;
+    max-width: 30rem;
+}
+
+.img img {
+    border-radius: 1rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info p {
+    font-weight: 600;
+}
+
+.info p span {
+    font-weight: 500;
+    font-weight: 1.6rem;
+}
+
+@media (max-width:40rem) {
+    .section{
+        flex-direction: column-reverse;
+        align-items:center;
+    }
+
+    .info{
+        align-items: center;
+    }
+}
