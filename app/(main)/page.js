@@ -30,16 +30,16 @@ export default function Home() {
                             <p>احصائيات</p>
                         </Link>
                         <Link href="">
-                            <p>تقارير</p>
+                            <p>التقارير</p>
                         </Link>
                         <Link href="">
                             <p>رحله العميل</p>
                         </Link>
-                        <Link href="">
-                            <p>طيارين</p>
+                        <Link href="/Delivery_men">
+                            <p>الطيارين</p>
                         </Link>
                         <Link href="">
-                            <p>موردين</p>
+                            <p>الموردين</p>
                         </Link>
                         <Link href="">
                             <p>خدمه العملاء</p>

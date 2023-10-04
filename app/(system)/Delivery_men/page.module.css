@@ -1,0 +1,23 @@
+.section {
+    padding: 2rem;
+}
+.section > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 90rem) {
+    .section > div {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 50rem) {
+    .section {
+        padding: 2rem 1rem;
+    }
+    .section > div {
+        grid-template-columns: 1fr;
+    }
+}
