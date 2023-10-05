@@ -6,6 +6,7 @@ const Orders = () => {
             <div className={classes.head}>
                 <p>اوردرات يوم</p>
                 <input type="date" />
+                <p>العدد : 2</p>
             </div>
             <div className={classes.orders}>
                 <div className={classes.order}>
