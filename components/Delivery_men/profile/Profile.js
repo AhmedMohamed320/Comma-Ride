@@ -4,31 +4,77 @@ import classes from "./Profile.module.css";
 const Profile = () => {
     return (
         <section className={classes.section}>
-            
-            <div className={classes.info}>
-                <p>
-                    الاسم : <span>محمد على محمد</span> - 2 -
-                </p>
-                <p>
-                    رقم الهاتف : <span>01254987940</span>
-                </p>
-                <p>
-                    الرقم القومي : <span>1485275451654785</span>
-                </p>
-                <p>
-                    بدايه العمل : <span>1/10/2023</span>
-                </p>
-                <p>
-                    فتره العمل اليوميه <span>11:00 ص</span> :{" "}
-                    <span>07:00 م</span>
-                </p>
-                <p>
-                    متوسط التقيم الكلي : <span>4/5</span>
-                </p>
-                <p>عدد الاوردارت الكلي : <span>150</span></p>
+            <div className={classes.head}>
+                <div className={classes.info}>
+                    <div>
+                        <p>التقيم : </p>
+                        <ul className="flex gap-1">
+                            <li>
+                                <img src="/image/star.png" alt="star" />
+                            </li>
+                            <li>
+                                <img src="/image/star.png" alt="star" />
+                            </li>
+                            <li>
+                                <img src="/image/star.png" alt="star" />
+                            </li>
+                            <li>
+                                <img src="/image/star.png" alt="star" />
+                            </li>
+                            <li>
+                                <img src="/image/star.png" alt="star" />
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>
+                            عدد الاوردات : <span>150</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            يعمل بنسبه : <span>50%</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            يعمل بثابت : <span>1500 ج.م</span>
+                        </p>
+                    </div>
+                </div>
+                <div className={classes.img}>
+                    <img src="/image/person.jfif" alt="Delivery image" />
+                </div>
             </div>
-            <div className={classes.img}>
-                <img src="/image/person.jfif" alt="Delivery image" />
+            <div className={classes.info}>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>id</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>الاسم</td>
+                            <td>محمد على محمد</td>
+                        </tr>
+                        <tr>
+                            <td>رقم الهاتف </td>
+                            <td>01254987940</td>
+                        </tr>
+                        <tr>
+                            <td> الرقم القومي </td>
+                            <td>54126545555555</td>
+                        </tr>
+                        <tr>
+                            <td>بدايه العمل </td>
+                            <td>1/10/2023</td>
+                        </tr>
+                        <tr>
+                            <td>فتره العمل  </td>
+                            <td>11 ص : 7م</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     );

@@ -9,7 +9,7 @@ const Nav = (props) => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            setIsFixed(scrollY > 10);
+            setIsFixed(scrollY > 100);
         };
 
         window.addEventListener("scroll", handleScroll);

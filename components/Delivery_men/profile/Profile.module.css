@@ -1,42 +1,77 @@
 .section {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
     padding: 1rem;
     font-size: 1.8rem;
 }
 
+.head {
+    width: 100%;
+    background-color: var(--color-dark-4);
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: var(--box-shadow-1);
+}
+
 .img {
-    width: 50%;
-    max-width: 30rem;
+    position: absolute;
+    top: 30%;
+    left: 3rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 0.5rem solid var(--color-light-1);
 }
 
 .img img {
-    border-radius: 1rem;
+    border-radius: 50%;
 }
 
-.info {
+.head .info {
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.info p {
-    font-weight: 600;
+.head .info > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-light-1);
+    font-size: 1.6rem;
 }
 
-.info p span {
-    font-weight: 500;
-    font-weight: 1.6rem;
+.head .info > div ul li img {
+    width: 2rem;
+}
+/* ---------- */
+
+.info table {
+    background-color: var(--color-dark-3);
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
-@media (max-width:40rem) {
-    .section{
-        flex-direction: column-reverse;
-        align-items:center;
+.info table tr td{
+    padding: 1rem 2rem;
+}
+.info table tr > td:nth-of-type(1) {
+    background-color: var(--color-dark-4);
+    color: var(--color-light-1);
+}
+
+@media (max-width: 35rem) {
+    .img{
+        width: 18rem;
+        height: 18rem;
+        top: 15%;
+        left: 2rem;
     }
-
-    .info{
-        align-items: center;
+    .info table{
+        width: 100%;
+        margin-top: 5rem;
     }
 }
