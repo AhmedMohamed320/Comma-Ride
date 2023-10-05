@@ -18,6 +18,17 @@ const AttendanceAndDeparture = () => {
                     </p>
                     <div>
                         <ul>
+                            <li>1/10</li>
+                            <li>2/10</li>
+                            <li>3/10</li>
+                            <li>4/10</li>
+                            <li>5/10</li>
+                            <li>6/10</li>
+                            <li>7/10</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
                             <li>11:00</li>
                             <li>11:00</li>
                             <li>11:00</li>
@@ -59,6 +70,17 @@ const AttendanceAndDeparture = () => {
                     </p>
                     <div>
                         <ul>
+                            <li>1/10</li>
+                            <li>2/10</li>
+                            <li>3/10</li>
+                            <li>4/10</li>
+                            <li>5/10</li>
+                            <li>6/10</li>
+                            <li>7/10</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
                             <li>11:00</li>
                             <li>11:00</li>
                             <li>11:00</li>
@@ -100,6 +122,17 @@ const AttendanceAndDeparture = () => {
                     </p>
                     <div>
                         <ul>
+                            <li>1/10</li>
+                            <li>2/10</li>
+                            <li>3/10</li>
+                            <li>4/10</li>
+                            <li>5/10</li>
+                            <li>6/10</li>
+                            <li>7/10</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
                             <li>11:00</li>
                             <li>11:00</li>
                             <li>11:00</li>
@@ -139,6 +172,17 @@ const AttendanceAndDeparture = () => {
                     <p className={classes.head}>
                         الاسبوع الاول <span>1/10 : 7/10</span>
                     </p>
+                    <div>
+                        <ul>
+                            <li>1/10</li>
+                            <li>2/10</li>
+                            <li>3/10</li>
+                            <li>4/10</li>
+                            <li>5/10</li>
+                            <li>6/10</li>
+                            <li>7/10</li>
+                        </ul>
+                    </div>
                     <div>
                         <ul>
                             <li>11:00</li>
