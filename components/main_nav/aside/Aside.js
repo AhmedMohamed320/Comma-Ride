@@ -4,8 +4,7 @@ import classes from "./Aside.module.css";
 import { MdDeliveryDining, MdOutlineClose } from "react-icons/md";
 import { AiFillShopping, AiOutlineBarChart } from "react-icons/ai";
 import { BsPersonFill } from "react-icons/bs";
-import { BiSolidReport } from "react-icons/bi";
-import { GoSignIn } from "react-icons/go";
+import { BiLogOut, BiSolidReport } from "react-icons/bi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -87,7 +86,7 @@ const Aside = (props) => {
                 <span className={classes.hr}></span>
                 <div className="flex items-center  px-10  gap-4 cursor-pointer font-semibold">
                     <p>تسجيل الخروج</p>
-                    <GoSignIn className="text-4xl" />
+                    <BiLogOut className="text-4xl" />
                 </div>
             </aside>
         </section>
