@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import Profile from "@/components/Delivery_men/profile/Profile";
 import Order_statistics from "@/components/Delivery_men/orderStatistics/Order_statistics";
+import AttendanceAndDeparture from "@/components/Delivery_men/Attendance and Departure/AttendanceAndDeparture";
 
 const page = () => {
     const router = useSearchParams();
@@ -48,7 +49,7 @@ const page = () => {
                         <Link
                             href={{
                                 pathname: "/Delivery_men/Profile",
-                                query: { content: "info" },
+                                query: { content: "Attendance_Departure" },
                             }}
                         >
                             {" "}
@@ -59,6 +60,7 @@ const page = () => {
             </div>
             {content == "personal_information" && <Profile />}
             {content == "Order_statistics" && <Order_statistics />}
+            {content == "Attendance_Departure" && <AttendanceAndDeparture/>}
         </section>
     );
 };

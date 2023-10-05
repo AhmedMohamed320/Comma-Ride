@@ -31,16 +31,7 @@ const Profile = () => {
                             عدد الاوردات : <span>150</span>
                         </p>
                     </div>
-                    <div>
-                        <p>
-                            يعمل بنسبه : <span>50%</span>
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            يعمل بثابت : <span>1500 ج.م</span>
-                        </p>
-                    </div>
+                    
                 </div>
                 <div className={classes.img}>
                     <img src="/image/person.jfif" alt="Delivery image" />
