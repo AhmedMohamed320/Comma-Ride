@@ -39,13 +39,13 @@
 
 .head .pending,
 .head .complete {
-    background-color: rgb(216, 171, 24);
+    background-color: #1DB46F;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 }
 
 .head .complete {
-    background-color: rgb(255, 17, 17);
+    background-color: var(--color-red-1);
 }
 
 .head .pending p,
@@ -138,15 +138,15 @@
     background-color: var(--color-red-1);
 }
 .stateOrder > div.ready_for_pickup {
-    background-color: #5755ff;
+    background-color: #1DB46F;
 }
 
 .stateOrder > div.arrived {
-    background-color: #5755ff;
+    background-color: #1DB46F;
 }
 
 .stateOrder > div.completed {
-    background-color: #5755ff;
+    background-color: #1DB46F;
 }
 
 .stateOrder > div.back {
