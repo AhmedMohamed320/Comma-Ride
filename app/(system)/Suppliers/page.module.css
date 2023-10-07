@@ -1,16 +1,16 @@
-.head {
+.headPage {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 2rem;
 }
 
-.head >div:nth-of-type(1){
+.headPage > div:nth-of-type(1) {
     display: flex;
     justify-content: space-between;
 }
 
-.head >div:nth-of-type(1) button{
+.headPage > div:nth-of-type(1) button {
     padding: 0.5rem 2rem;
     outline: none;
     background-color: var(--color-red-1);
@@ -19,7 +19,7 @@
     border-radius: 0.5rem;
 }
 
-.head select {
+.headPage select {
     background-color: var(--color-dark-4);
     padding: 0.5rem 1rem;
     font-size: 1.4rem;
@@ -27,8 +27,10 @@
     border-radius: 0.5rem;
 }
 
-.head select:nth-of-type(1){
-    margin-left: 1rem;
+.headPage > div:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .Suppliers {
@@ -37,6 +39,31 @@
     gap: 2rem;
 }
 
+/* ---------------- */
+.table table {
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: var(--color-dark-4);
+    box-shadow: var(--box-shadow-1);
+}
+.table tr {
+    display: grid;
+    grid-template-columns: 1fr 2fr repeat(4, 1fr);
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-light-2);
+}
+.table .head {
+    background-color: var(--color-dark-1);
+    font-weight: 600;
+}
+
+.table tr td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media (max-width: 88rem) {
     .Suppliers {
         grid-template-columns: repeat(2, 1fr);
@@ -47,9 +74,8 @@
     .Suppliers {
         grid-template-columns: 1fr;
     }
-    .head >div:nth-of-type(2){
+    .headPage > div:nth-of-type(2) {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
 }

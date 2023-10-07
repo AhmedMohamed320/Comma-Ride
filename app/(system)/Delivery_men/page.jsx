@@ -6,7 +6,9 @@ const page = () => {
         <section className={classes.section}>
             <div className={classes.head}>
                 <div>
-                    <p className="text-4xl font-semibold">الطيارين</p>
+                    <p className="text-4xl font-semibold">
+                        الطيارين <span className="text-2xl">3</span>
+                    </p>
                     <button>اضافه طيار</button>
                 </div>
                 <div>
@@ -22,7 +24,6 @@ const page = () => {
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-
                     </select>
                 </div>
             </div>

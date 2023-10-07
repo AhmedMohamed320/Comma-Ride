@@ -3,10 +3,12 @@ import classes from "./page.module.css";
 import Supplier from "@/components/Suppliers/Supplier";
 const page = () => {
     return (
-        <section className="p-8">
-            <div className={classes.head}>
+        <section className="py-8 px-4">
+            <div className={classes.headPage}>
                 <div>
-                    <p className="text-4xl font-semibold">الموردين</p>
+                    <p className="text-4xl font-semibold">
+                        الموردين <span className="text-2xl">3</span>
+                    </p>
                     <button>اضافه مورد</button>
                 </div>
                 <div>
@@ -16,13 +18,49 @@ const page = () => {
                     <select name="" id="">
                         <option value="">فلتر حسب وضع التعاقد</option>
                     </select>
+                    <select name="" id="">
+                        <option value="">فلتر حسب عدد الاوردرات</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">فلتر حسب التقيم </option>
+                    </select>
                 </div>
             </div>
-            <div className={classes.Suppliers}>
-                <Supplier />
-                <Supplier />
-                <Supplier />
+            <div className={classes.table}>
+                <table>
+                    <tbody>
+                        <tr className={classes.head}>
+                            <td>الكود</td>
+                            <td>اسم المورد</td>
+                            <td>الفئه</td>
+                            <td>نوع التعاقد</td>
+                            <td>الاوردرات اليوم</td>
+                            <td>التقيم</td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8 cursor-pointer">الصعيدي</td>
+                            <td>خضار وفاكهة</td>
+                            <td>20 </td>
+                            <td>20</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8 cursor-pointer">الصعيدي</td>
+                            <td>خضار وفاكهة</td>
+                            <td>20 </td>
+                            <td>20</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            {/* <div className={classes.Suppliers}>
+                <Supplier />
+                <Supplier />
+                <Supplier />
+            </div> */}
         </section>
     );
 };
