@@ -64,7 +64,8 @@
 
 .statistics{
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
 }
 
 .data > div {
@@ -139,10 +140,10 @@
     background-color: #1db46f;
 }
 
-@media (max-width: 82rem) {
+/* @media (max-width: 82rem) {
     .statistics{
         display: grid;
         grid-template-columns: 1fr ;
     }
-}
+} */
 
