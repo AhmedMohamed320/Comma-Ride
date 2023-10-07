@@ -11,7 +11,7 @@ const page = () => {
                 </div>
                 <div>
                     <select name="" id="">
-                        <option value="">فلتر حسب نوع المكان</option>
+                        <option value="">فلتر حسب فئه المكان</option>
                     </select>
                     <select name="" id="">
                         <option value="">فلتر حسب وضع التعاقد</option>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Nav.module.css";
-import { TbLogin } from "react-icons/tb";
+import { IoPerson } from "react-icons/io5";
 import { BsListNested, BsPerson, BsSearch } from "react-icons/bs";
 import Link from "next/link";
 
@@ -66,7 +66,7 @@ const Nav = (props) => {
                         className="flex  items-center gap-3 text-2xl "
                     >
                         <p>احمد محمد</p>
-                        <BsPerson className="text-3xl" />
+                        <IoPerson className="text-3xl" />
                     </Link>
                     <Link
                         href="/"

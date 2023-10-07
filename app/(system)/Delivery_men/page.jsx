@@ -4,8 +4,21 @@ import DeliveryCard from "@/components/Delivery_men/DeliveryCard";
 const page = () => {
     return (
         <section className={classes.section}>
-            <p className="text-4xl pb-8 px-2 font-semibold ">جميع الطيارين العاملين معانا</p>
-            <div>
+            <div className={classes.head}>
+                <div>
+                    <p className="text-4xl font-semibold">الطيارين</p>
+                    <button>اضافه طيار</button>
+                </div>
+                <div>
+                    <select name="" id="">
+                        <option value="">فلتر حسب عدد الاوردرات </option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">فلتر حسب التقيم</option>
+                    </select>
+                </div>
+            </div>
+            <div className={classes.allDelivery}>
                 <DeliveryCard />
                 <DeliveryCard />
                 <DeliveryCard />
