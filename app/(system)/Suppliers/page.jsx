@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./page.module.css";
+import Supplier from "@/components/Suppliers/Supplier";
 const page = () => {
     return (
         <section className="p-8">
@@ -11,6 +12,11 @@ const page = () => {
                 <select name="" id="">
                     <option value="">فلتر حسب  وضع التعاقد</option>
                 </select>
+            </div>
+            <div className={classes.Suppliers}>
+                <Supplier/>
+                <Supplier/>
+                <Supplier/>
             </div>
         </section>
     );

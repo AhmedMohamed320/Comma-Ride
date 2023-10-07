@@ -8,7 +8,8 @@ export default function Home() {
                 <div className={classes.circle}></div>
                 <main className={classes.main}>
                     <div className={classes.upNav}>
-                        <div className={`mainContainer ${classes.nav}`}>
+                        <div className={`mainContainer px-4
+                         ${classes.nav}`}>
                             <div className={classes.logo}>
                                 <img src="/image/dots_logo.png" alt="" />
                             </div>

@@ -1,0 +1,148 @@
+.Supplier {
+    background-color: var(--color-dark-4);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow-1);
+    color: var(--color-light-2);
+    font-size: 1.6rem;
+    overflow: hidden;
+}
+
+.Supplier > div {
+    display: flex;
+}
+
+.Supplier .head {
+    background-color: var(--color-dark-1);
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+.Supplier .info .rate {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Supplier .info .rate ul li img {
+    width: 1.5rem;
+}
+
+.Supplier > div p {
+    font-weight: 600;
+}
+
+.Supplier > div p span {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.Supplier > .info {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.address,
+.contract,
+.statistics,
+.Notes,
+.phone {
+    display: flex;
+    position: relative;
+    border: 1px solid var(--color-dark-6);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contract {
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.statistics{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.data > div {
+    display: flex;
+    gap: 3rem;
+}
+
+.moreInfo {
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.address::after,
+.statistics::after,
+.Notes::after,
+.phone::after,
+.contract::after {
+    content: "العناوين";
+    position: absolute;
+    background-color: var(--color-dark-4);
+    top: -2.5rem;
+    right: 2rem;
+    transform: translateY(50%);
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.statistics::after {
+    content: "احصائيات";
+}
+
+.Notes::after {
+    content: "ملاحظات";
+}
+
+.phone::after {
+    content: "ارقام التواصل";
+}
+
+.contract::after {
+    content: "التعاقد";
+}
+
+.stateOrder,
+.stateOrderTime {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--color-dark-1);
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+.stateOrder > div {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stateOrder > div p {
+    font-weight: 500;
+}
+
+.stateOrder > div.completed {
+    background-color: var(--color-red-1);
+}
+.stateOrder > div.pending {
+    background-color: #1db46f;
+}
+
+@media (max-width: 82rem) {
+    .statistics{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}
+

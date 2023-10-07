@@ -1,13 +1,32 @@
-.head{
+.head {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
-.head select{
+.head select {
     background-color: var(--color-dark-4);
     padding: 0.5rem 1rem;
     font-size: 1.4rem;
     color: var(--color-light-2);
     border-radius: 0.5rem;
+}
+
+.Suppliers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 60rem) {
+    .Suppliers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 40rem) {
+    .Suppliers {
+        grid-template-columns: 1fr;
+    }
 }
