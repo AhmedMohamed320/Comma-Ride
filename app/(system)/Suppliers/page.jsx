@@ -5,18 +5,23 @@ const page = () => {
     return (
         <section className="p-8">
             <div className={classes.head}>
-                <p className="text-4xl px-2 font-semibold">الموردين</p>
-                <select name="" id="">
-                    <option value="">فلتر حسب نوع المكان</option>
-                </select>
-                <select name="" id="">
-                    <option value="">فلتر حسب  وضع التعاقد</option>
-                </select>
+                <div>
+                    <p className="text-4xl font-semibold">الموردين</p>
+                    <button>اضافه مورد</button>
+                </div>
+                <div>
+                    <select name="" id="">
+                        <option value="">فلتر حسب نوع المكان</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">فلتر حسب وضع التعاقد</option>
+                    </select>
+                </div>
             </div>
             <div className={classes.Suppliers}>
-                <Supplier/>
-                <Supplier/>
-                <Supplier/>
+                <Supplier />
+                <Supplier />
+                <Supplier />
             </div>
         </section>
     );
