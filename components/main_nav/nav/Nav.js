@@ -44,7 +44,7 @@ const Nav = (props) => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="">
+                            <Link href="/Suppliers">
                                 <p>الموردين</p>
                             </Link>
                         </li>

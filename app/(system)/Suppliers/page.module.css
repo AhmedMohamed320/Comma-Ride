@@ -1,0 +1,13 @@
+.head{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.head select{
+    background-color: var(--color-dark-4);
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    color: var(--color-light-2);
+    border-radius: 0.5rem;
+}

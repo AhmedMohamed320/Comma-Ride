@@ -50,7 +50,7 @@ const Aside = (props) => {
                         <span className={classes.border}></span>
                         <Link
                             href={{
-                                pathname: "/",
+                                pathname: "/Suppliers",
                             }}
                             onClick={props.onHideAside}
                         >

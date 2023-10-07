@@ -41,7 +41,7 @@ export default function Home() {
                         <Link href="/Delivery_men">
                             <p>الطيارين</p>
                         </Link>
-                        <Link href="">
+                        <Link href="/Suppliers">
                             <p>الموردين</p>
                         </Link>
                         <Link href="">

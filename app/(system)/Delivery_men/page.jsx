@@ -4,7 +4,7 @@ import DeliveryCard from "@/components/Delivery_men/DeliveryCard";
 const page = () => {
     return (
         <section className={classes.section}>
-            <p className="text-4xl pb-8 font-semibold text-center">جميع الطيارين العاملين معانا</p>
+            <p className="text-4xl pb-8 px-2 font-semibold ">جميع الطيارين العاملين معانا</p>
             <div>
                 <DeliveryCard />
                 <DeliveryCard />
