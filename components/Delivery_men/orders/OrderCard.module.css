@@ -135,6 +135,7 @@
 
 .stateOrder > div.completed {
     background-color: var(--color-red-1);
+    pointer-events: none;
 }
 .stateOrder > div.pending {
     background-color: #1db46f;
