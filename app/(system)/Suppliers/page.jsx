@@ -1,13 +1,13 @@
 import React from "react";
 import classes from "./page.module.css";
-import Supplier from "@/components/Suppliers/Supplier";
+import Link from "next/link";
 const page = () => {
     return (
         <section className="py-8 px-4">
             <div className={classes.headPage}>
                 <div>
                     <p className="text-4xl font-semibold">
-                        الموردين <span className="text-2xl">3</span>
+                        الموردين <span className="text-2xl">2</span>
                     </p>
                     <button>اضافه مورد</button>
                 </div>
@@ -39,7 +39,9 @@ const page = () => {
                         </tr>
                         <tr>
                             <td>124</td>
-                            <td className="underline underline-offset-8 cursor-pointer">الصعيدي</td>
+                            <td className="underline underline-offset-8 cursor-pointer">
+                                <Link href="/Suppliers/Profile">الصعيدي</Link>
+                            </td>
                             <td>خضار وفاكهة</td>
                             <td>20 </td>
                             <td>20</td>
