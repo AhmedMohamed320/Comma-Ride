@@ -13,6 +13,7 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 import faker from "faker";
+import Link from "next/link";
 
 ChartJS.register(
     CategoryScale,
@@ -62,6 +63,7 @@ const Profile = () => {
                     <img src="/image/person.jfif" alt="Delivery image" />
                 </div>
                 <div className={classes.details}>
+                    <Link href="/Delivery_men/Form_Delivery_men/edit" className={classes.edit}>تعديل</Link>
                     <p className="flex">
                         id : <span>1</span>
                     </p>

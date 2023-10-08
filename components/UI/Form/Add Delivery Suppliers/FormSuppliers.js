@@ -1,6 +1,6 @@
 import React from "react";
-import classes from "./FormAdd.module.css";
-const FormAddSuppliers = () => {
+import classes from "./FormAdd_Edit.module.css";
+const FormAddSuppliers = (props) => {
     return (
         <>
             <form action="" className={classes.form}>
@@ -49,7 +49,9 @@ const FormAddSuppliers = () => {
                     />
                 </div>
             </form>
-            <button className={classes.add}>اضافه المورد</button>
+            <button className={classes.add}>
+            {props.action === "add" ? "اضافه المورد" : "تاكيد البيانات"}
+            </button>
         </>
     );
 };

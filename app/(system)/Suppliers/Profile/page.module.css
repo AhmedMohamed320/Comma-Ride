@@ -17,6 +17,19 @@
     background-color: var(--color-dark-1);
     padding: 1rem;
     font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main .head a{
+    padding: 0.5rem 2rem;
+    outline: none;
+    background-color: var(--color-red-1);
+    font-size: 1.5rem;
+    color: var(--color-light-2);
+    border-radius: 0.5rem;
 }
 
 .main .info .rate {

@@ -9,7 +9,7 @@ const page = () => {
                     <p className="text-4xl font-semibold">
                         الموردين <span className="text-2xl">2</span>
                     </p>
-                    <Link href="/Suppliers/Add_Supplier">اضافه مورد</Link>
+                    <Link href="/Suppliers/Form_Supplier/add">اضافه مورد</Link>
                 </div>
                 <div>
                     <select name="" id="">

@@ -38,6 +38,17 @@
     border: 1px solid var(--color-dark-6);
     border-radius: 1rem;
     padding: 2rem 1rem;
+    position: relative;
+}
+
+.details .edit{
+    background-color: var(--color-red-1);
+    padding: 0.5rem 1rem;
+    color: var(--color-light-2);
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 }
 
 .charts{

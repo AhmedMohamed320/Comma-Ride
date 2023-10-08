@@ -14,6 +14,7 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 import faker from "faker";
+import Link from "next/link";
 
 ChartJS.register(
     CategoryScale,
@@ -65,6 +66,7 @@ const page = () => {
                         اسم المكان : <span>الصعيدي</span>{" "}
                         <span>(خضار و فاكهة)</span>
                     </p>
+                    <Link href="/Suppliers/Form_Supplier/edit">تعديل</Link>
                 </div>
                 <div className={classes.part1}>
                     <div className={classes.info}>

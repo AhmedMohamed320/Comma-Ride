@@ -1,6 +1,7 @@
 import React from "react";
-import classes from "./FormAdd.module.css";
-const FormAddDelivery = () => {
+import classes from "./FormAdd_Edit.module.css";
+
+const FormAddDelivery = (props) => {
     return (
         <>
             <form action="" className={classes.form}>
@@ -74,7 +75,9 @@ const FormAddDelivery = () => {
                     <textarea type="number" placeholder="اكتب  " id="n8" />
                 </div>
             </form>
-            <button className={classes.add}>اضافه الطيار</button>
+            <button className={classes.add}>
+                {props.action === "add" ? "اضافه طيار" : "تاكيد البيانات"}
+            </button>
         </>
     );
 };
