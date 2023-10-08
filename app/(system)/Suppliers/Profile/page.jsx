@@ -46,8 +46,9 @@ export const data = {
     datasets: [
         {
             fill: true,
-            label: "Dataset 2",
+            label: "عدد الاوردرات ",
             data: labels.map(() => faker.datatype.number({ min: 0, max: 30 })),
+            pointBackgroundColor: "#D63236",
             borderColor: "#D63236",
             backgroundColor: "#D6323660",
             lineTension: 0.3,
