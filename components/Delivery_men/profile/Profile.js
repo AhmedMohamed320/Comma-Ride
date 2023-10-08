@@ -1,12 +1,95 @@
 import React from "react";
 import classes from "./Profile.module.css";
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Filler,
+    Legend,
+} from "chart.js";
+import { Line } from "react-chartjs-2";
+import faker from "faker";
 
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Filler,
+    Legend
+);
+
+export const options = {
+    responsive: true,
+    plugins: {
+        legend: {
+            display: false,
+        },
+        title: {
+            display: false,
+            text: "Chart.js Line Chart",
+        },
+    },
+};
+
+const labels = ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10"];
+
+export const data = {
+    labels,
+    datasets: [
+        {
+            fill: true,
+            label: "عدد الاوردرات ",
+            data: labels.map(() => faker.datatype.number({ min: 0, max: 30 })),
+            pointBackgroundColor: "#D63236",
+            borderColor: "#D63236",
+            backgroundColor: "#D6323660",
+            lineTension: 0.3,
+        },
+    ],
+};
 const Profile = () => {
     return (
         <section className={classes.section}>
-            <div className={classes.head}>
-                <div className={classes.info}>
-                    <div>
+            <div className={classes.info}>
+                <div className={classes.img}>
+                    <img src="/image/person.jfif" alt="Delivery image" />
+                </div>
+                <div className={classes.details}>
+                    <p className="flex">
+                        id : <span>1</span>
+                    </p>
+                    <p>
+                        الاسم : <span>محمد على محمد</span>
+                    </p>
+                    <p>
+                        رقم الهاتف : <span>01245788956</span>
+                    </p>
+                    <p>
+                        الرقم القومي : <span>12457845784512 </span>
+                    </p>
+                    <p>
+                        بدايه العمل : <span> 1/10/2023</span>
+                    </p>
+                    <p>
+                        فتره العمل : <span> 11:00 - 07:00</span>
+                    </p>
+                    <p>
+                        عدد الاوردات : <span> 150</span>
+                    </p>
+                    <p>
+                        يعمل بثابت : <span>2500 ج.م</span>
+                    </p>
+                    <p>
+                        يعمل بنسبه : <span> 50%</span>
+                    </p>
+                    <div className="flex items-center">
                         <p>التقيم : </p>
                         <ul className="flex gap-1">
                             <li>
@@ -26,46 +109,18 @@ const Profile = () => {
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <p>
-                            عدد الاوردات : <span>150</span>
-                        </p>
-                    </div>
-                    
-                </div>
-                <div className={classes.img}>
-                    <img src="/image/person.jfif" alt="Delivery image" />
+                    <p>
+                        ملاحظات : <span>لا يوجد اي ملاحظات</span>
+                    </p>
                 </div>
             </div>
-            <div className={classes.info}>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>id</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>الاسم</td>
-                            <td>محمد على محمد</td>
-                        </tr>
-                        <tr>
-                            <td>رقم الهاتف </td>
-                            <td>01254987940</td>
-                        </tr>
-                        <tr>
-                            <td> الرقم القومي </td>
-                            <td>54126545555555</td>
-                        </tr>
-                        <tr>
-                            <td>بدايه العمل </td>
-                            <td>1/10/2023</td>
-                        </tr>
-                        <tr>
-                            <td>فتره العمل  </td>
-                            <td>11 ص : 7م</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div className={classes.charts}>
+                <div className={classes.chart}>
+                    <Line options={options} data={data} />
+                </div>
+                <div className={classes.chart}>
+                    <Line options={options} data={data} />
+                </div>
             </div>
         </section>
     );
