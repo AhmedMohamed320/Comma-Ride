@@ -144,7 +144,7 @@ const page = () => {
                                         <td>توقيت الاستلام</td>
                                     </tr>
                                     <tr>
-                                        <td className="underline underline-offset-8 cursor-pointer">
+                                        <td className="underline underline-offset-4 cursor-pointer">
                                             124
                                         </td>
                                         <td>2 كيلو تفاح و 2 كيلو منجا</td>
@@ -153,7 +153,7 @@ const page = () => {
                                         <td>01:20</td>
                                     </tr>
                                     <tr>
-                                        <td className="underline underline-offset-8 cursor-pointer">
+                                        <td className="underline underline-offset-4 cursor-pointer">
                                             124
                                         </td>
                                         <td>2 كيلو تفاح و 2 كيلو منجا</td>
@@ -162,7 +162,7 @@ const page = () => {
                                         <td>01:20</td>
                                     </tr>
                                     <tr>
-                                        <td className="underline underline-offset-8 cursor-pointer">
+                                        <td className="underline underline-offset-4 cursor-pointer">
                                             124
                                         </td>
                                         <td>2 كيلو تفاح و 2 كيلو منجا</td>
@@ -171,7 +171,7 @@ const page = () => {
                                         <td>01:20</td>
                                     </tr>
                                     <tr>
-                                        <td className="underline underline-offset-8 cursor-pointer">
+                                        <td className="underline underline-offset-4 cursor-pointer">
                                             124
                                         </td>
                                         <td>2 كيلو تفاح و 2 كيلو منجا</td>
