@@ -1,0 +1,47 @@
+.form {
+    background-color: var(--color-dark-4);
+    color: var(--color-light-2);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow-1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form > div label {
+    font-weight: 600;
+}
+
+.form > div input,
+.form > div select,
+.form > div textarea {
+    outline: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-dark-6);
+}
+
+button.add {
+    background-color: var(--color-red-1);
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-light-2);
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 30rem) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}

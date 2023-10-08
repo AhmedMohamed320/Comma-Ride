@@ -73,14 +73,7 @@ const page = () => {
                             </p>
                         </div>
                         <div className={classes.address}>
-                            <p>
-                                الفرع الاول :{" "}
-                                <span>شارع مستشفى حمد السيد </span>
-                            </p>
-                            <p>
-                                الفرع الثاني :{" "}
-                                <span>شارع مستشفى حمد السيد </span>
-                            </p>
+                            <span>شارع حمدي السيد</span>
                         </div>
 
                         <div className={classes.statistics}>

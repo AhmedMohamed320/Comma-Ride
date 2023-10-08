@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./page.module.css";
 import DeliveryCard from "@/components/Delivery_men/DeliveryCard";
+import Link from "next/link";
 const page = () => {
     return (
         <section className={classes.section}>
@@ -9,7 +10,7 @@ const page = () => {
                     <p className="text-4xl font-semibold">
                         الطيارين <span className="text-2xl">3</span>
                     </p>
-                    <button>اضافه طيار</button>
+                    <Link href="/Delivery_men/Add_Delivery_men">اضافه طيار</Link>
                 </div>
                 <div>
                     <select name="" id="">
