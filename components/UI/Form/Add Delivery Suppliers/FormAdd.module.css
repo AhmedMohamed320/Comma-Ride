@@ -24,9 +24,12 @@
 .form > div select,
 .form > div textarea {
     outline: none;
+    border: none;
+    width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: var(--color-dark-6);
+    
 }
 
 button.add {
