@@ -157,7 +157,7 @@
 @media (max-width: 45rem) {
     .call_statistics > div:nth-of-type(2) {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
     }
 }
 
