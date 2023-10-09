@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Nav.module.css";
 import { IoPerson } from "react-icons/io5";
-import { BsListNested, BsPerson, BsSearch } from "react-icons/bs";
+import { BsListNested  } from "react-icons/bs";
 import Link from "next/link";
 
 const Nav = (props) => {
@@ -46,6 +46,11 @@ const Nav = (props) => {
                         <li>
                             <Link href="/Suppliers">
                                 <p>الموردين</p>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/Customers_service">
+                                <p>خدمه العملاء</p>
                             </Link>
                         </li>
                         <li>

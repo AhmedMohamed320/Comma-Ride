@@ -1,0 +1,164 @@
+.action,
+.phoneType_1,
+.phoneType_2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.action > div,
+.phoneType_1 > div,
+.phoneType_1 > a,
+.phoneType_2 > div,
+.phoneType_2 > a {
+    padding: 1rem;
+    background-color: var(--color-red-1);
+    color: var(--color-light-2);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.action > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.phoneType_1,
+.phoneType_2 {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--color-dark-1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.phoneType_1 > div,
+.phoneType_1 > a,
+.phoneType_2 > div,
+.phoneType_2 > a {
+    background-color: var(--color-dark-4);
+}
+
+/* --------------------------- */
+
+.call_statistics {
+    font-size: 1.5rem;
+    box-shadow: var(--box-shadow-1);
+    background-color: var(--color-dark-4);
+    color: var(--color-light-2);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.call_statistics > div:nth-of-type(1) {
+    background-color: var(--color-dark-1);
+    padding: 1rem;
+}
+
+.call_statistics > div:nth-of-type(1) input {
+    background-color: var(--color-dark-4);
+    outline: none;
+    border: none;
+    color: var(--color-light-2);
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+.call_statistics > div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.table,
+.totalInformation > div:nth-of-type(1) {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-dark-6);
+}
+
+.table table {
+    width: 100%;
+}
+.table tbody {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-dark-4);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.table tbody tr {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 2fr);
+    text-align: center;
+}
+
+.totalInformation > div:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.totalInformation > div:nth-of-type(1) > div {
+    padding: 0.5rem;
+    background-color: var(--color-red-1);
+    border-radius: 0.5rem;
+    color: var(--color-light-2);
+    text-align: center;
+}
+/* --------------- */
+
+.charts {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.chart {
+    position: relative;
+    border: 1px solid var(--color-dark-6);
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+}
+
+.chart {
+    padding: 0.5rem;
+}
+
+.chart::after {
+    content: "احصائيات المكالمات";
+    position: absolute;
+    background-color: var(--color-dark-4);
+    top: -2.5rem;
+    right: 50%;
+    transform: translate(50%, 50%);
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* ---------- */
+
+@media (max-width: 45rem) {
+    .call_statistics > div:nth-of-type(2) {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .action > div {
+        flex-direction: column-reverse;
+    }
+}

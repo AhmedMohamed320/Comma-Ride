@@ -3,7 +3,7 @@ import classes from "./page.module.css";
 import Link from "next/link";
 const page = () => {
     return (
-        <section className="py-8 px-4">
+        <section className="py-8 px-4 mainContainer">
             <div className={classes.headPage}>
                 <div>
                     <p className="text-4xl font-semibold">
@@ -17,12 +17,19 @@ const page = () => {
                     </select>
                     <select name="" id="">
                         <option value="">فلتر حسب وضع التعاقد</option>
+                        <option value="">عدد الاوردرات اليومي</option>
+                        <option value="">اعلانات سوشيل</option>
+                        <option value="">شريك</option>
                     </select>
                     <select name="" id="">
-                        <option value="">فلتر حسب عدد الاوردرات</option>
+                        <option value="">فلتر حسب الاوردرات</option>
+                        <option value="">تصاعدي</option>
+                        <option value="">تنازلي</option>
                     </select>
                     <select name="" id="">
                         <option value="">فلتر حسب التقيم </option>
+                        <option value="">تصاعدي</option>
+                        <option value="">تنازلي</option>
                     </select>
                 </div>
             </div>
