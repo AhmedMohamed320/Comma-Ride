@@ -107,7 +107,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .totalInformation > div:nth-of-type(1) > div {
@@ -125,7 +125,7 @@
     gap: 3rem;
 }
 
-.chart {
+.chart,.table {
     position: relative;
     border: 1px solid var(--color-dark-6);
     border-radius: 1rem;
@@ -136,7 +136,7 @@
     padding: 0.5rem;
 }
 
-.chart::after {
+.chart::after,.table::after {
     content: "احصائيات المكالمات";
     position: absolute;
     background-color: var(--color-dark-4);
@@ -146,6 +146,10 @@
     padding: 0 1rem;
     font-size: 1.6rem;
     font-weight: 600;
+}
+
+.table::after{
+    content: "بيانات المكالمات";
 }
 
 /* ---------- */
