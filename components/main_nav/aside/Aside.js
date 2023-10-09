@@ -4,6 +4,7 @@ import classes from "./Aside.module.css";
 import { MdDeliveryDining, MdOutlineClose } from "react-icons/md";
 import { AiFillShopping, AiOutlineBarChart } from "react-icons/ai";
 import { BsPersonFill } from "react-icons/bs";
+import { RiCustomerService2Fill } from "react-icons/ri";
 import { BiLogOut, BiSolidReport } from "react-icons/bi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -46,7 +47,7 @@ const Aside = (props) => {
                             الطيارين
                         </Link>
                     </li>
-                    <li className={pathname == "/My_booking" && classes.active}>
+                    <li className={pathname == "/Suppliers" && classes.active}>
                         <span className={classes.border}></span>
                         <Link
                             href={{
@@ -56,6 +57,18 @@ const Aside = (props) => {
                         >
                             <AiFillShopping />
                             الموردين
+                        </Link>
+                    </li>
+                    <li className={pathname == "/Customers_service" && classes.active}>
+                        <span className={classes.border}></span>
+                        <Link
+                            href={{
+                                pathname: "/Customers_service",
+                            }}
+                            onClick={props.onHideAside}
+                        >
+                            <RiCustomerService2Fill />
+                            خدمه العملاء
                         </Link>
                     </li>
                     <li className={pathname == "/Doctory" && classes.active}>
