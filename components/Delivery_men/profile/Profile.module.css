@@ -86,7 +86,7 @@
 }
 
 .chart:nth-of-type(2):after{
-    content: "التحصيل";
+    content: "التحصيل و التكلفه";
 }
 
 .info > div ul li img {

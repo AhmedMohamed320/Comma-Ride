@@ -74,18 +74,18 @@ const Login = () => {
                         </Link>
                         <div>
                             <p>تسجيل الدخول</p>
-                            <p className="text-2xl">
-                                تسجيل الدخول برقم الهاتف
-                            </p>
+                            {/* <p className="text-2xl">
+                                تسجيل الدخول  عن طر الكود 
+                            </p> */}
                         </div>
                     </div>
                     <div>
-                        <label htmlFor="username">رقم الهاتف</label>
+                        <label htmlFor="username">الكود </label>
                         <input
                             type="text"
                             name="username"
                             id="username"
-                            placeholder="ادخل  رقم الهاتف"
+                            placeholder="ادخل كودك الخاص"
                             onChange={handleChangeForm}
                             autoComplete="off"
                         />

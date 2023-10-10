@@ -55,6 +55,21 @@ export const data = {
         },
     ],
 };
+
+export const data2 = {
+    labels,
+    datasets: [
+        {
+            fill: true,
+            label: " التكلفه ",
+            data: labels.map(() => faker.datatype.number({ min: -50, max: 100 })),
+            pointBackgroundColor: "#D63236",
+            borderColor: "#D63236",
+            backgroundColor: "#D6323660",
+            lineTension: 0.3,
+        }
+    ],
+};
 const Profile = () => {
     return (
         <section className={classes.section}>
@@ -91,6 +106,9 @@ const Profile = () => {
                     <p>
                         يعمل بنسبه : <span> 50%</span>
                     </p>
+                    <p>
+                        العهده : <span> 1000 ج.م</span>
+                    </p>
                     <div className="flex items-center">
                         <p>التقيم : </p>
                         <ul className="flex gap-1">
@@ -121,7 +139,7 @@ const Profile = () => {
                     <Line options={options} data={data} />
                 </div>
                 <div className={classes.chart}>
-                    <Line options={options} data={data} />
+                    <Line options={options} data={data2} />
                 </div>
             </div>
         </section>
