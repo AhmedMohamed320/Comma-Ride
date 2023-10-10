@@ -20,7 +20,7 @@ const Aside = (props) => {
                 </div>
                 <div className={classes.head}>
                     <Link href="/" className={classes.logo}>
-                        <img src="/image/dots_logo.png" alt="dots logo" />
+                        <img src="/image/dots_logo_2.png" alt="dots logo" />
                     </Link>
                 </div>
                 <ul className="flex gap-8 flex-col">
@@ -98,7 +98,7 @@ const Aside = (props) => {
                 </ul>
                 <span className={classes.hr}></span>
                 <div className="flex items-center  px-10  gap-4 cursor-pointer font-semibold">
-                    <p>تسجيل الخروج</p>
+                    <Link href="/sign_in">تسجيل الخروج</Link>
                     <BiLogOut className="text-4xl" />
                 </div>
             </aside>
