@@ -67,6 +67,14 @@ const FormAddDelivery = (props) => {
                     />
                 </div>
                 <div>
+                    <label htmlFor="n11">قيمه العهده</label>
+                    <input
+                        type="number"
+                        placeholder="ادخل قيمه العهده المسلمه للطيار"
+                        id="n11"
+                    />
+                </div>
+                <div>
                     <label htmlFor="n7">الصوره الشخصيه</label>
                     <input type="file" id="n7" />
                 </div>
