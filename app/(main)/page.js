@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <Fragment>
             <div className={classes.up}>
-                <div className={classes.circle}></div>
+                {/* <div className={classes.circle}></div> */}
                 <main className={classes.main}>
                     <div className={classes.upNav}>
                         <div className={`mainContainer px-4
@@ -15,7 +15,7 @@ export default function Home() {
                             </div>
                             <div className={classes.account}>
                                 <Link href="">اهلا احمد محمد</Link>
-                                <Link href="">تسجيل الخروج</Link>
+                                <Link href="/sign_in">تسجيل الخروج</Link>
                             </div>
                         </div>
                     </div>

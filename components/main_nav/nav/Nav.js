@@ -74,7 +74,7 @@ const Nav = (props) => {
                         <IoPerson className="text-3xl" />
                     </Link>
                     <Link
-                        href="/"
+                        href="/sign_in"
                         className="flex  items-center gap-3 text-2xl"
                     >
                         <p> تسجيل الخروج</p>

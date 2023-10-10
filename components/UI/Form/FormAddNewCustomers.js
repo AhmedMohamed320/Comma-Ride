@@ -49,7 +49,7 @@ const FormAddNewCustomers = (props) => {
                     />
                 </div>
                 <div>
-                    <label htmlFor="n7">يوم الميلاد</label>
+                    <label htmlFor="n7">تاريخ الميلاد</label>
                     <input type="date" id="n7" />
                 </div>
                 <div>
