@@ -18,7 +18,7 @@ export default function Home() {
                 <section className={classes.section}>
                     <p className="p-6 text-4xl">الاقسام المتاحه لك ك مالك</p>
                     <div>
-                        <Link href="">
+                        {/* <Link href="">
                             <p>احصائيات</p>
                         </Link>
                         <Link href="">
@@ -29,13 +29,13 @@ export default function Home() {
                         </Link>
                         <Link href="">
                             <p>الطلبات الجاريه</p>
-                        </Link>
+                        </Link> */}
                         <Link href="/Customers_service">
                             <p>خدمه العملاء</p>
                         </Link>
-                        <Link href="">
+                        {/* <Link href="">
                             <p>رحله العميل</p>
-                        </Link>
+                        </Link> */}
                         <Link href="/Delivery_men">
                             <p>الطيارين</p>
                         </Link>
