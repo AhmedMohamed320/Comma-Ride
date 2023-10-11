@@ -39,7 +39,6 @@ const page = () => {
                     </tbody>
                 </table>
             </div>
-            <div className={classes.statistics}></div>
         </section>
     );
 };
