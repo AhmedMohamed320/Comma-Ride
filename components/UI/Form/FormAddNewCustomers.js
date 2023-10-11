@@ -46,6 +46,16 @@ const FormAddNewCustomers = (props) => {
                         />
                     </div>
                     <div>
+                        <label htmlFor="n5"> المنطقه</label>
+                        <select id="n5">
+                            <option value="">حى اول</option>
+                            <option value="">حى اول</option>
+                            <option value="">حى اول</option>
+                            <option value="">حى اول</option>
+                            <option value="">حى اول</option>
+                        </select>
+                    </div>
+                    <div>
                         <label htmlFor="n6">محل الاقامه</label>
                         <input
                             type="text"

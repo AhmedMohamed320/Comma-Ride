@@ -46,7 +46,7 @@ button.add {
 }
 
 @media (max-width: 30rem) {
-    .form {
+    .form>div {
         grid-template-columns: 1fr;
     }
 }
