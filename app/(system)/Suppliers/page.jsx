@@ -65,11 +65,6 @@ const page = () => {
                     </tbody>
                 </table>
             </div>
-            {/* <div className={classes.Suppliers}>
-                <Supplier />
-                <Supplier />
-                <Supplier />
-            </div> */}
         </section>
     );
 };

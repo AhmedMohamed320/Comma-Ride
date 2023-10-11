@@ -42,10 +42,9 @@ export default function Home() {
                         <Link href="/Suppliers">
                             <p>الموردين</p>
                         </Link>
-                        <Link href="">
+                        <Link href="/Customers">
                             <p>العملاء</p>
                         </Link>
-                        
                     </div>
                 </section>
             </div>

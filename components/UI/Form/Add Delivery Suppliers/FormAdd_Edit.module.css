@@ -4,32 +4,34 @@
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: var(--box-shadow-1);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
     font-size: 1.5rem;
 }
 
 .form > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.form > div > div {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.form > div label {
+.form > div > div label {
     font-weight: 600;
 }
 
-.form > div input,
-.form > div select,
-.form > div textarea {
+.form > div > div input,
+.form > div > div select,
+.form > div > div textarea {
     outline: none;
     border: none;
     width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: var(--color-dark-6);
-    
 }
 
 button.add {

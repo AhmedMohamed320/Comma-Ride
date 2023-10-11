@@ -2,11 +2,9 @@
 import React, { useState } from "react";
 import classes from "./page.module.css";
 import Link from "next/link";
-import FormAddNewCustomers from "@/components/UI/Form/FormAddNewCustomers";
 import {
     PiPhoneIncomingFill,
-    PiPhoneOutgoingFill,
-    PiPhonePlusFill,
+    PiPhoneOutgoingFill
 } from "react-icons/pi";
 
 import {
@@ -92,13 +90,11 @@ export const data = {
 const page = () => {
     const [showPhoneType_1, setShowPhoneType_1] = useState(false);
     const [showPhoneType_2, setShowPhoneType_2] = useState(false);
-    const [showForm, setShowForm] = useState(false);
 
     function handle_phoneType(e) {
         console.log(e.target.id);
         setShowPhoneType_1(false);
         setShowPhoneType_2(false);
-        setShowForm(false);
     }
     return (
         <section className={`mainContainer ${classes.section}`}>
@@ -110,7 +106,6 @@ const page = () => {
                     onClick={() => {
                         setShowPhoneType_1(!showPhoneType_1);
                         setShowPhoneType_2(false);
-                        setShowForm(false);
                     }}
                 >
                     <p>مكالمه الصادره</p>
@@ -120,21 +115,10 @@ const page = () => {
                     onClick={() => {
                         setShowPhoneType_2(!showPhoneType_2);
                         setShowPhoneType_1(false);
-                        setShowForm(false);
                     }}
                 >
                     <p>مكالمه وارده</p>
                     <PiPhoneIncomingFill className="text-4xl" />
-                </div>
-                <div
-                    onClick={() => {
-                        setShowPhoneType_1(false);
-                        setShowPhoneType_2(false);
-                        setShowForm(!showForm);
-                    }}
-                >
-                    <p>اضافه عميل جديد</p>
-                    <PiPhonePlusFill className="text-4xl" />
                 </div>
             </div>
             {showPhoneType_1 && (
@@ -163,13 +147,6 @@ const page = () => {
                     </div>
                 </div>
             )}
-            {showForm && (
-                <FormAddNewCustomers
-                    hide={() => {
-                        setShowForm(false);
-                    }}
-                />
-            )}
             <div className={classes.call_statistics}>
                 <div className=" flex items-center gap-4">
                     <p className="text-3xl">احصائيات يوم </p>
@@ -181,9 +158,6 @@ const page = () => {
                             <div>
                                 <div>
                                     <p>50 مكالمه</p>
-                                </div>
-                                <div>
-                                    <p>12 عميل جديد</p>
                                 </div>
                             </div>
                         </div>
