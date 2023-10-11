@@ -19,7 +19,7 @@ const Aside = (props) => {
                     <MdOutlineClose />
                 </div>
                 <div className={classes.head}>
-                    <Link href="/" className={classes.logo}>
+                    <Link href="/" className={classes.logo} onClick={props.onHideAside}>
                         <img src="/image/dots_logo_2.png" alt="dots logo" />
                     </Link>
                 </div>

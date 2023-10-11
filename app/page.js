@@ -25,6 +25,15 @@ export default function Home() {
                             <p>التقارير</p>
                         </Link>
                         <Link href="">
+                            <p>الموارد البشريه</p>
+                        </Link>
+                        <Link href="">
+                            <p>الطلبات الجاريه</p>
+                        </Link>
+                        <Link href="/Customers_service">
+                            <p>خدمه العملاء</p>
+                        </Link>
+                        <Link href="">
                             <p>رحله العميل</p>
                         </Link>
                         <Link href="/Delivery_men">
@@ -33,9 +42,10 @@ export default function Home() {
                         <Link href="/Suppliers">
                             <p>الموردين</p>
                         </Link>
-                        <Link href="/Customers_service">
-                            <p>خدمه العملاء</p>
+                        <Link href="">
+                            <p>العملاء</p>
                         </Link>
+                        
                     </div>
                 </section>
             </div>
