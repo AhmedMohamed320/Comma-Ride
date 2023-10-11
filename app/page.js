@@ -7,18 +7,6 @@ export default function Home() {
             <div className={classes.up}>
                 {/* <div className={classes.circle}></div> */}
                 <main className={classes.main}>
-                    <div className={classes.upNav}>
-                        <div className={`mainContainer px-4
-                         ${classes.nav}`}>
-                            <div className={classes.logo}>
-                                <img src="/image/dots_logo.png" alt="" />
-                            </div>
-                            <div className={classes.account}>
-                                <Link href="">اهلا احمد محمد</Link>
-                                <Link href="/sign_in">تسجيل الخروج</Link>
-                            </div>
-                        </div>
-                    </div>
                     <div className={classes.welcome}>
                         <p>
                             انت الان على النظام الداخلي الخاص بشركه{" "}

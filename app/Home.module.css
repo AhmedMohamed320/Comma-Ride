@@ -19,37 +19,6 @@
     height: 50vh;
 }
 
-.upNav {
-    background-color: var(--color-dark-4);
-}
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-}
-.logo {
-    height: 80%;
-}
-.logo img {
-    height: 100%;
-}
-
-.account {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.5rem;
-    color: var(--color-light-1);
-}
-
-.account a:nth-of-type(2) {
-    background-color: var(--color-red-1);
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-}
-
 .welcome {
     padding: 2rem;
     height: 40vh;
@@ -94,10 +63,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     width: 100%;
-    max-width: 90rem;
+    max-width: 85rem;
 }
 
-.section > div:nth-of-type(1) > a{
+.section > div:nth-of-type(1) > a {
     background-color: var(--color-dark-4);
     box-shadow: var(--box-shadow-1);
     color: var(--color-light-1);
@@ -108,7 +77,6 @@
     align-items: center;
     justify-content: center;
 }
-
 
 /* ------------- */
 
