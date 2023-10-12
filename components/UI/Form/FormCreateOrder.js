@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Add Delivery Suppliers/FormAdd_Edit.module.css";
-const FormCreateOrder = () => {
+const FormCreateOrder = (props) => {
     return (
         <form action="" className={`${classes.form} ${classes.createOrder}`}>
             <div>
@@ -9,6 +9,8 @@ const FormCreateOrder = () => {
                     <input
                         type="number"
                         id="n1"
+                        defaultValue={props.customer_code}
+                        readOnly
                         placeholder="اكد كود العميل بعد البحث"
                     />
                 </div>
@@ -51,6 +53,7 @@ const FormCreateOrder = () => {
                     <input
                         type="text"
                         id="n5"
+                        defaultValue={props.customer_address}
                         placeholder="ادخل عنوان العميل الثاني اذا وجد"
                     />
                 </div>

@@ -1,9 +1,19 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import classes from "./page.module.css";
 import { BiSearchAlt } from "react-icons/bi";
 import FormAddNewCustomers from "@/components/UI/Form/FormAddNewCustomers";
 import FormCreateOrder from "@/components/UI/Form/FormCreateOrder";
 const page = () => {
+    const [customerCode, setCustomerCode] = useState("");
+    const [customerAddress, setCustomerAddress] = useState("");
+    function sendCustomerCode(){
+        setCustomerCode(45)
+    }
+
+    function sendCustomerAddress(){
+        setCustomerAddress("مستشفى حمدي السيد")
+    }
     return (
         <section className="mainContainer p-4">
             <p className="text-4xl py-4 font-semibold">انشاء طلب</p>
@@ -23,9 +33,9 @@ const page = () => {
                             </p>
                             <div>
                                 <p>
-                                    الكود : <span>457</span>
+                                    الكود : <span>45</span>
                                 </p>
-                                <button>تاكيد</button>
+                                <button onClick={sendCustomerCode}>تاكيد</button>
                             </div>
                             <div>
                                 <ul className="flex flex-col gap-4">
@@ -33,13 +43,11 @@ const page = () => {
                                         <p>العناوين : </p>
                                     </li>
                                     <li>
-                                        -
-                                        <p>شارع حمدي السيد</p>
-                                        <button>اختار</button>
+                                        -<p>مستشفى حمدي السيد</p>
+                                        <button onClick={sendCustomerAddress}>اختار</button>
                                     </li>
                                     <li>
-                                        -
-                                        <p>شارع حمدي السيد</p>
+                                        -<p>مستشفى حمدي السيد</p>
                                         <button>اختار</button>
                                     </li>
                                 </ul>
@@ -54,7 +62,7 @@ const page = () => {
                     </div>
                 </div>
                 <div className={classes.part2}>
-                    <FormCreateOrder/>
+                    <FormCreateOrder customer_code={customerCode} customer_address={customerAddress}/>
                 </div>
             </main>
         </section>
