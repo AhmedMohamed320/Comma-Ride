@@ -4,10 +4,12 @@ import classes from "./Aside.module.css";
 import { MdDeliveryDining, MdOutlineClose } from "react-icons/md";
 import { AiFillShopping, AiOutlineBarChart } from "react-icons/ai";
 import { BsPersonFill } from "react-icons/bs";
+import { FaPeopleGroup } from "react-icons/fa6";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { BiLogOut, BiSolidReport } from "react-icons/bi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { LuBoxes } from "react-icons/lu";
 
 const Aside = (props) => {
     const pathname = usePathname();
@@ -59,6 +61,18 @@ const Aside = (props) => {
                             الموردين
                         </Link>
                     </li>
+                    <li className={pathname == "/Customers" && classes.active}>
+                        <span className={classes.border}></span>
+                        <Link
+                            href={{
+                                pathname: "/Customers",
+                            }}
+                            onClick={props.onHideAside}
+                        >
+                            <FaPeopleGroup />
+                            العملاء
+                        </Link>
+                    </li>
                     <li className={pathname == "/Customers_service" && classes.active}>
                         <span className={classes.border}></span>
                         <Link
@@ -69,6 +83,18 @@ const Aside = (props) => {
                         >
                             <RiCustomerService2Fill />
                             خدمه العملاء
+                        </Link>
+                    </li>
+                    <li className={pathname == "/Orders" && classes.active}>
+                        <span className={classes.border}></span>
+                        <Link
+                            href={{
+                                pathname: "/Orders",
+                            }}
+                            onClick={props.onHideAside}
+                        >
+                            <LuBoxes />
+                            الطلبات
                         </Link>
                     </li>
                     <li className={pathname == "/Doctory" && classes.active}>

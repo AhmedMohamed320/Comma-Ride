@@ -26,10 +26,10 @@ export default function Home() {
                         </Link>
                         <Link href="">
                             <p>الموارد البشريه</p>
-                        </Link>
-                        <Link href="">
-                            <p>الطلبات الجاريه</p>
                         </Link> */}
+                        <Link href="/Orders">
+                            <p>الطلبات </p>
+                        </Link>
                         <Link href="/Customers_service">
                             <p>خدمه العملاء</p>
                         </Link>

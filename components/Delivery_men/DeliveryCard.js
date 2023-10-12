@@ -29,7 +29,7 @@ const DeliveryCard = () => {
                 </div>
                 <div>
                     <p>
-                         الاوردارت المنجزه : <span>9</span>
+                        الاوردارت المنجزه : <span>9</span>
                     </p>
                     <p>
                         التحصيل : <span>100 ج.م</span>

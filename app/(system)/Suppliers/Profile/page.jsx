@@ -140,7 +140,7 @@ const page = () => {
                             <table>
                                 <tbody>
                                     <tr className={classes.head}>
-                                        <td> كود الطلب</td>
+                                        <td>رقم</td>
                                         <td>الطلبيه</td>
                                         <td>القيمه</td>
                                         <td>توقيت الطلب</td>

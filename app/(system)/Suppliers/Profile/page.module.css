@@ -13,7 +13,7 @@
     gap: 2rem;
 }
 
-.main .head {
+.main>.head {
     background-color: var(--color-dark-1);
     padding: 1rem;
     font-size: 1.7rem;
