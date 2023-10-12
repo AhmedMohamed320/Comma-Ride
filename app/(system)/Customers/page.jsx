@@ -46,10 +46,11 @@ export const data = {
     labels,
     datasets: [
         {
+            fill:true,
             label: "بيع",
             data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
             borderColor: "#D63236",
-            backgroundColor: "#D63236",
+            backgroundColor: "#D6323660",
             lineTension: 0.2,
         },
     ],
