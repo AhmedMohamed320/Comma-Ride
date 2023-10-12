@@ -87,7 +87,7 @@ const page = () => {
                             </tr>
                             <tr>
                                 <td>124</td>
-                                <td className="underline underline-offset-8 cursor-pointer">
+                                <td>
                                     <Link href="/Customers/Profile">
                                         خالد السيد
                                     </Link>
@@ -97,7 +97,7 @@ const page = () => {
                             </tr>
                             <tr>
                                 <td>124</td>
-                                <td className="underline underline-offset-8 cursor-pointer">
+                                <td>
                                     <Link href="/Customers/Profile">
                                         خالد السيد
                                     </Link>
@@ -107,7 +107,7 @@ const page = () => {
                             </tr>
                             <tr>
                                 <td>124</td>
-                                <td className="underline underline-offset-8 cursor-pointer">
+                                <td>
                                     <Link href="/Customers/Profile">
                                         خالد السيد
                                     </Link>
@@ -117,7 +117,7 @@ const page = () => {
                             </tr>
                             <tr>
                                 <td>124</td>
-                                <td className="underline underline-offset-8 cursor-pointer">
+                                <td>
                                     <Link href="/Customers/Profile">
                                         خالد السيد
                                     </Link>
@@ -127,7 +127,7 @@ const page = () => {
                             </tr>
                             <tr>
                                 <td>124</td>
-                                <td className="underline underline-offset-8 cursor-pointer">
+                                <td>
                                     <Link href="/Customers/Profile">
                                         خالد السيد
                                     </Link>
