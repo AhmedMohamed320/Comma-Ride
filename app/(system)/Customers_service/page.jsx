@@ -2,10 +2,7 @@
 import React, { useState } from "react";
 import classes from "./page.module.css";
 import Link from "next/link";
-import {
-    PiPhoneIncomingFill,
-    PiPhoneOutgoingFill
-} from "react-icons/pi";
+import { PiPhoneIncomingFill, PiPhoneOutgoingFill } from "react-icons/pi";
 
 import {
     Chart as ChartJS,
@@ -97,7 +94,7 @@ const page = () => {
         setShowPhoneType_2(false);
     }
     return (
-        <section className={`mainContainer ${classes.section}`}>
+        <section className={`mainContainer p-4 ${classes.section}`}>
             <div>
                 <p className="text-4xl py-4 font-semibold">خدمه العملاء</p>
             </div>
@@ -136,9 +133,9 @@ const page = () => {
             )}
             {showPhoneType_2 && (
                 <div className={classes.phoneType_2}>
-                    <div id="a5" onClick={handle_phoneType}>
+                    <Link href="/Create_an_order" id="a5">
                         طلب
-                    </div>
+                    </Link>
                     <div id="a4" onClick={handle_phoneType}>
                         استشاره
                     </div>

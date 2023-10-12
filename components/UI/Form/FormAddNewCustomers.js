@@ -77,7 +77,9 @@ const FormAddNewCustomers = (props) => {
                     </div>
                 </div>
                 <button className={classes.add} onClick={props.hide}>
-                    {props.action === "add" ? "اضافه العميل" : "تاكيد البيانات"}
+                    {props.action === "edit"
+                        ? "تاكيد البيانات"
+                        : "اضافه العميل"}
                 </button>
             </form>
         </>

@@ -4,7 +4,7 @@ import FormAddDelivery from "@/components/UI/Form/Add Delivery Suppliers/FormDel
 const page = (props) => {
     return (
         <section className="mainContainer p-4 ">
-            <p className="text-4xl pb-4 font-semibold ">
+            <p className="text-4xl pb-4 font-semibold text-center">
                 {props.params.action == "add"
                     ? "اضافه طيار"
                     : "تعديل بيانات طيار"}

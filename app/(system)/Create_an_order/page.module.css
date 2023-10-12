@@ -1,0 +1,80 @@
+.main {
+    background-color: var(--color-dark-4);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow-1);
+    display: grid;
+    grid-template-columns: minmax(35rem,1fr) 2fr;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.part1,.customer  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.search,
+.newCustomer,.part2 {
+    height: fit-content;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-dark-6);
+}
+
+.search{
+    padding: 1rem;
+
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-dark-6);
+    border-radius: 2.5rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.input input {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: transparent;
+    color: var(--color-light-2);
+    border: none;
+    outline: none;
+}
+
+.customer {
+    color: var(--color-light-2);
+}
+
+.customer p {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.customer span {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.customer button {
+    padding: 0.5rem;
+    background-color: var(--color-red-1);
+    border-radius: 0.5rem;
+    width: 7rem;
+}
+
+.customer > div,
+.customer > div ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width:40rem) {
+    .main{
+        grid-template-columns: 1fr;
+    }
+}

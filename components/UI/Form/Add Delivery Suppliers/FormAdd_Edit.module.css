@@ -2,15 +2,17 @@
     background-color: var(--color-dark-4);
     color: var(--color-light-2);
     padding: 1rem;
+    margin: auto;
     border-radius: 1rem;
     box-shadow: var(--box-shadow-1);
     font-size: 1.5rem;
+    width: 100%;
+    max-width: 80rem;
 }
 
 .form > div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .form > div > div {
@@ -45,8 +47,7 @@ button.add {
     margin-top: 1rem;
 }
 
-@media (max-width: 30rem) {
-    .form>div {
-        grid-template-columns: 1fr;
-    }
+
+.createOrder{
+    max-width: none;
 }

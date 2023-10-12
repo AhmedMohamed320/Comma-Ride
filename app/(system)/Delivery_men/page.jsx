@@ -7,7 +7,7 @@ const page = () => {
         <section className={classes.section}>
             <div className={classes.head}>
                 <div>
-                    <p className="text-4xl font-semibold">
+                    <p className="text-4xl font-semibold ">
                         الطيارين <span className="text-2xl">3</span>
                     </p>
                     <Link href="/Delivery_men/Form_Delivery_men/add">اضافه طيار</Link>
