@@ -14,7 +14,7 @@ const page = () => {
                     <input type="date" />
                     <p className="text-2xl">الاجمالي : 1</p>
                 </div>
-                <div>
+                <div className="sm:flex hidden ">
                     <Search placeholder="ادخل رقم الطلب" />
                 </div>
             </div>
