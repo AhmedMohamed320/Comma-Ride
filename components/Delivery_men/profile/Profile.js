@@ -14,6 +14,7 @@ import {
 import { Line } from "react-chartjs-2";
 import faker from "faker";
 import Link from "next/link";
+import LineCart from "@/components/UI/chart/LineCart";
 
 ChartJS.register(
     CategoryScale,
@@ -62,12 +63,14 @@ export const data2 = {
         {
             fill: true,
             label: " التكلفه ",
-            data: labels.map(() => faker.datatype.number({ min: -50, max: 100 })),
+            data: labels.map(() =>
+                faker.datatype.number({ min: -50, max: 100 })
+            ),
             pointBackgroundColor: "#D63236",
             borderColor: "#D63236",
             backgroundColor: "#D6323660",
             lineTension: 0.3,
-        }
+        },
     ],
 };
 const Profile = () => {
@@ -78,7 +81,12 @@ const Profile = () => {
                     <img src="/image/person.jfif" alt="Delivery image" />
                 </div>
                 <div className={classes.details}>
-                    <Link href="/Delivery_men/Form_Delivery_men/edit" className={classes.edit}>تعديل</Link>
+                    <Link
+                        href="/Delivery_men/Form_Delivery_men/edit"
+                        className={classes.edit}
+                    >
+                        تعديل
+                    </Link>
                     <p className="flex">
                         id : <span>1</span>
                     </p>
@@ -136,10 +144,10 @@ const Profile = () => {
             </div>
             <div className={classes.charts}>
                 <div className={classes.chart}>
-                    <Line options={options} data={data} />
+                    <LineCart title="الاوردات المنجزه"/>
                 </div>
                 <div className={classes.chart}>
-                    <Line options={options} data={data2} />
+                    <LineCart title="التحصيل و التكلفه"/>
                 </div>
             </div>
         </section>

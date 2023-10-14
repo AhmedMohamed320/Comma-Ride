@@ -1,4 +1,4 @@
-.section{
+.section {
     padding: 1rem 0;
 }
 .main {
@@ -13,7 +13,7 @@
     gap: 2rem;
 }
 
-.main>.head {
+.main > .head {
     background-color: var(--color-dark-1);
     padding: 1rem;
     font-size: 1.7rem;
@@ -23,7 +23,7 @@
     width: 100%;
 }
 
-.main .head a{
+.main .head a {
     padding: 0.5rem 2rem;
     outline: none;
     background-color: var(--color-red-1);
@@ -77,7 +77,7 @@
     gap: 2rem;
 }
 
-.statistics{
+.statistics {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 1rem;
@@ -125,14 +125,14 @@
     content: "التعاقد";
 }
 /* ------------------- */
-.part1{
+.part1 {
     padding: 0 1rem 1rem 1rem;
     display: grid;
-    grid-template-columns: minmax(40rem , 1fr) 2fr;
-    gap:1rem
+    grid-template-columns: minmax(40rem, 1fr) 2fr;
+    gap: 1rem;
 }
 
-.orderData{
+.orderData {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -140,13 +140,13 @@
 }
 /* ------------------- */
 
-.table,.chart{
+.table {
     position: relative;
     border: 1px solid var(--color-dark-6);
     border-radius: 1rem;
 }
 
-.table::after,.chart::after {
+.table::after {
     content: "اخر العمليات";
     color: var(--color-red-1);
     position: absolute;
@@ -159,11 +159,8 @@
     font-weight: 600;
 }
 
-.chart::after{
-    content:"عدد الاوردرات";
-}
-
-.table,.table table{
+.table,
+.table table {
     width: 100%;
 }
 
@@ -177,7 +174,7 @@
     background-color: var(--color-dark-4);
     font-weight: 600;
     font-size: 1.5rem;
-    margin-top: 1rem ;
+    margin-top: 1rem;
 }
 
 .table tr td {
@@ -188,9 +185,8 @@
 }
 
 @media (max-width: 55rem) {
-    .part1{
-        grid-template-columns: 1fr ;
+    .part1 {
+        grid-template-columns: 1fr;
         gap: 3rem;
     }
 }
-

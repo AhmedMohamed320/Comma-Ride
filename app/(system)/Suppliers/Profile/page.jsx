@@ -1,61 +1,8 @@
 "use client";
 import React from "react";
 import classes from "./page.module.css";
-import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Filler,
-    Legend,
-} from "chart.js";
-import { Line } from "react-chartjs-2";
-import faker from "faker";
+import LineCart from "@/components/UI/chart/LineCart";
 import Link from "next/link";
-
-ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Filler,
-    Legend
-);
-
-export const options = {
-    responsive: true,
-    plugins: {
-        legend: {
-            display: false,
-        },
-        title: {
-            display: false,
-            text: "Chart.js Line Chart",
-        },
-    },
-};
-
-const labels = ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10"];
-
-export const data = {
-    labels,
-    datasets: [
-        {
-            fill: true,
-            label: "عدد الاوردرات ",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 30 })),
-            pointBackgroundColor: "#D63236",
-            borderColor: "#D63236",
-            backgroundColor: "#D6323660",
-            lineTension: 0.3,
-        },
-    ],
-};
 
 const page = () => {
     return (
@@ -134,7 +81,7 @@ const page = () => {
                     </div>
                     <div className={classes.orderData}>
                         <div className={classes.chart}>
-                            <Line options={options} data={data} />
+                            <LineCart title="عدد الاوردرات"/>
                         </div>
                         <div className={classes.table}>
                             <table>
