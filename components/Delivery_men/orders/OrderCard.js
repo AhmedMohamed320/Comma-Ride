@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import classes from "./OrderCard.module.css";
 import { usePathname } from "next/navigation";
 
@@ -11,6 +12,25 @@ const OrderCard = (props) => {
             props.showAlertDiv(true);
         }
     }
+
+    const [location, setLocation] = useState(null);
+
+    useEffect(() => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    setLocation([latitude, longitude]);
+                },
+                (error) => {
+                    console.error("Error getting user location:", error);
+                }
+            );
+        } else {
+            console.error("Geolocation is not supported by this browser.");
+        }
+    }, []);
     return (
         <div className={classes.order}>
             <div className={classes.head}>
@@ -91,7 +111,7 @@ const OrderCard = (props) => {
                 <div
                     onClick={() => {
                         handle_alert(
-                            "انت الان جاهز للتحرك لمكان استلام الاوردر"
+                            `انت الان جاهز للتحرك لمكان استلام الاوردر`
                         );
                     }}
                     className={classes.completed}
@@ -100,7 +120,7 @@ const OrderCard = (props) => {
                 </div>
                 <div
                     onClick={() => {
-                        handle_alert("لقد استلمت الاوردر الان من المورد");
+                        handle_alert(`${location} لقد استلمت الاوردر الان من المورد`);
                     }}
                     className={classes.pending}
                 >
