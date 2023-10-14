@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import classes from "./page.module.css";
 import FormAddNewCustomers from "@/components/UI/Form/FormAddNewCustomers";
@@ -7,12 +7,12 @@ import Search from "@/components/UI/input/Search";
 const page = () => {
     const [customerCode, setCustomerCode] = useState("");
     const [customerAddress, setCustomerAddress] = useState("");
-    function sendCustomerCode(){
-        setCustomerCode(45)
+    function sendCustomerCode() {
+        setCustomerCode(45);
     }
 
-    function sendCustomerAddress(){
-        setCustomerAddress("مستشفى حمدي السيد")
+    function sendCustomerAddress() {
+        setCustomerAddress("مستشفى حمدي السيد");
     }
     return (
         <section className="mainContainer p-4">
@@ -29,7 +29,9 @@ const page = () => {
                                 <p>
                                     الكود : <span>45</span>
                                 </p>
-                                <button onClick={sendCustomerCode}>تاكيد</button>
+                                <button onClick={sendCustomerCode}>
+                                    تاكيد
+                                </button>
                             </div>
                             <div>
                                 <ul className="flex flex-col gap-4">
@@ -38,7 +40,9 @@ const page = () => {
                                     </li>
                                     <li>
                                         -<p>مستشفى حمدي السيد</p>
-                                        <button onClick={sendCustomerAddress}>اختار</button>
+                                        <button onClick={sendCustomerAddress}>
+                                            اختار
+                                        </button>
                                     </li>
                                     <li>
                                         -<p>مستشفى حمدي السيد</p>
@@ -49,6 +53,12 @@ const page = () => {
                             <p>
                                 عدد الاوردرات : <span>45</span>
                             </p>
+                            <p>
+                                ملاحظات : <br />{" "}
+                                <span>-داخل الزقازيق : 15ج.م</span>
+                                <br />
+                                <span>-خارج الزقازيق : 25.م</span>
+                            </p>
                         </div>
                     </div>
                     <div className={classes.newCustomer}>
@@ -56,7 +66,10 @@ const page = () => {
                     </div>
                 </div>
                 <div className={classes.part2}>
-                    <FormCreateOrder customer_code={customerCode} customer_address={customerAddress}/>
+                    <FormCreateOrder
+                        customer_code={customerCode}
+                        customer_address={customerAddress}
+                    />
                 </div>
             </main>
         </section>
