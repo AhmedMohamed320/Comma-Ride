@@ -1,9 +1,9 @@
 .section {
-    padding: 2rem;
+    padding: 1rem;
 }
 .section > div.allDelivery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     gap: 2rem;
 }
 
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .head > div:nth-of-type(1) {

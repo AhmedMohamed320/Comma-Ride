@@ -45,7 +45,7 @@
 .phoneType_1 > a,
 .phoneType_2 > div,
 .phoneType_2 > a {
-    background-color: var(--color-dark-4);
+    background-color: var(--color-dark-1);
 }
 
 /* --------------------------- */
@@ -167,8 +167,4 @@
     }
 }
 
-@media (max-width: 30rem) {
-    .action > div {
-        flex-direction: column-reverse;
-    }
-}
+

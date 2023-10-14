@@ -8,6 +8,7 @@
 .headPage > div:nth-of-type(1) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .headPage > div:nth-of-type(1) a {
@@ -17,6 +18,9 @@
     font-size: 1.5rem;
     color: var(--color-light-2);
     border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .headPage select {

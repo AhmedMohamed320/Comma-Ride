@@ -2,15 +2,19 @@
 import LineCart from "@/components/UI/chart/LineCart";
 import classes from "./page.module.css";
 import Link from "next/link";
+import Search from "@/components/UI/input/Search";
 
 const page = () => {
     return (
-        <section className="py-8 px-4 mainContainer">
+        <section className="p-4 mainContainer">
             <div className={classes.headPage}>
                 <div>
                     <p className="text-4xl font-semibold">
                         الموردين <span className="text-2xl">2</span>
                     </p>
+                    <div className="sm:flex hidden ">
+                        <Search placeholder="ادخل رقم او كود المورد" />
+                    </div>
                     <Link href="/Suppliers/Form_Supplier/add">اضافه مورد</Link>
                 </div>
                 <div>
@@ -71,10 +75,10 @@ const page = () => {
             </div>
             <div className={classes.charts}>
                 <div className={classes.chart}>
-                    <LineCart title="نمو الموردين"/>
+                    <LineCart title="نمو الموردين" />
                 </div>
                 <div className={classes.chart}>
-                    <LineCart title="نشاط الموردين"/>
+                    <LineCart title="نشاط الموردين" />
                 </div>
             </div>
         </section>

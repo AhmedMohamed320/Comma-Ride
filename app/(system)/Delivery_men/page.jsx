@@ -2,14 +2,18 @@ import React from "react";
 import classes from "./page.module.css";
 import DeliveryCard from "@/components/Delivery_men/DeliveryCard";
 import Link from "next/link";
+import Search from "@/components/UI/input/Search";
 const page = () => {
     return (
-        <section className={classes.section}>
+        <section className={`mainContainer ${classes.section}`}>
             <div className={classes.head}>
                 <div>
                     <p className="text-4xl font-semibold ">
                         الطيارين <span className="text-2xl">3</span>
                     </p>
+                    <div className="sm:flex hidden ">
+                        <Search placeholder="ادخل رقم او كود الطيار" />
+                    </div>
                     <Link href="/Delivery_men/Form_Delivery_men/add">اضافه طيار</Link>
                 </div>
                 <div>

@@ -2,10 +2,11 @@
 import LineCart from "@/components/UI/chart/LineCart";
 import classes from "./page.module.css";
 import Link from "next/link";
+import Search from "@/components/UI/input/Search";
 
 const page = () => {
     return (
-        <section className="py-8 px-4 mainContainer">
+        <section className=" p-4 mainContainer">
             <div className={classes.headPage}>
                 <div>
                     <p className="text-4xl font-semibold">
@@ -26,6 +27,7 @@ const page = () => {
             </div>
             <div className={classes.part2}>
                 <div className={classes.table}>
+                    <Search placeholder="ادخل رقم او كود العميل" />
                     <table>
                         <tbody>
                             <tr className={classes.head}>

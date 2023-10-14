@@ -1,9 +1,9 @@
 "use client"
 import React, { useState } from "react";
 import classes from "./page.module.css";
-import { BiSearchAlt } from "react-icons/bi";
 import FormAddNewCustomers from "@/components/UI/Form/FormAddNewCustomers";
 import FormCreateOrder from "@/components/UI/Form/FormCreateOrder";
+import Search from "@/components/UI/input/Search";
 const page = () => {
     const [customerCode, setCustomerCode] = useState("");
     const [customerAddress, setCustomerAddress] = useState("");
@@ -16,17 +16,11 @@ const page = () => {
     }
     return (
         <section className="mainContainer p-4">
-            <p className="text-4xl py-4 font-semibold">انشاء طلب</p>
+            <p className="text-4xl mb-4 font-semibold">انشاء طلب</p>
             <main className={classes.main}>
                 <div className={classes.part1}>
                     <div className={classes.search}>
-                        <div className={classes.input}>
-                            <input
-                                type="search"
-                                placeholder="ادخل رقم العميل"
-                            />
-                            <BiSearchAlt className="text-4xl text-gray-400" />
-                        </div>
+                        <Search placeholder="ادخل رقم او كود العميل" />
                         <div className={classes.customer}>
                             <p>
                                 الاسم : <span>عمر محمد محمد</span>
