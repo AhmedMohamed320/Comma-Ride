@@ -1,9 +1,15 @@
-import React from "react";
+"use client";
 import classes from "./OrderCard.module.css";
+import { usePathname } from "next/navigation";
+
 const OrderCard = (props) => {
+    const pathname = usePathname();
+
     function handle_alert(Text) {
-        props.alertText(Text);
-        props.showAlertDiv(true);
+        if (pathname != "/Orders") {
+            props.alertText(Text);
+            props.showAlertDiv(true);
+        }
     }
     return (
         <div className={classes.order}>
@@ -72,6 +78,9 @@ const OrderCard = (props) => {
                     </p>
                     <p>
                         يتم تحصيل : <span>30 ج.م</span>
+                    </p>
+                    <p>
+                        الطيار : <span>محمد على</span>
                     </p>
                 </div>
                 <div className={classes.Notes}>

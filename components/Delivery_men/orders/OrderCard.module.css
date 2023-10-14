@@ -90,7 +90,8 @@
 
 .address::after,
 .data::after,
-.Notes::after {
+.Notes::after,
+.moreInfo::after {
     content: "العناوين";
     position: absolute;
     background-color: var(--color-dark-4);
@@ -100,6 +101,10 @@
     padding: 0 1rem;
     font-size: 1.6rem;
     font-weight: 600;
+}
+
+.moreInfo::after{
+    content: "معلومات الطلب";
 }
 
 .data::after {
