@@ -5,7 +5,7 @@
 }
 
 .chart{
-    padding: 0.5rem;
+    padding:0.7rem 0.5rem 0.5rem;
 }
 
 .title{
@@ -20,7 +20,10 @@
     color: var(--color-light-2);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
+    width: 70%; 
+    max-width: 30rem;
 }
 
 .title select{
