@@ -46,8 +46,8 @@ const FormAddNewCustomers = (props) => {
                         />
                     </div>
                     <div>
-                        <label htmlFor="n5"> المنطقه</label>
-                        <select id="n5">
+                        <label htmlFor="n10"> المنطقه</label>
+                        <select id="n10">
                             <option value="">حى اول</option>
                             <option value="">حى اول</option>
                             <option value="">حى اول</option>
@@ -74,6 +74,10 @@ const FormAddNewCustomers = (props) => {
                             id="n8"
                             placeholder="ادخل وظيفه العميل"
                         />
+                    </div>
+                    <div>
+                        <label htmlFor="n9">ملاحظات</label>
+                        <textarea name="" id="n9" ></textarea>
                     </div>
                 </div>
                 <button className={classes.add} onClick={props.hide}>

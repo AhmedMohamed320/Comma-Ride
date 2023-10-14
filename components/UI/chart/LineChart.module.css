@@ -1,19 +1,20 @@
-.chart{
+.chart {
     position: relative;
     border: 1px solid var(--color-dark-6);
     border-radius: 1rem;
+    height: 100%;
+    padding: 0.7rem 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.chart{
-    padding:0.7rem 0.5rem 0.5rem;
-}
-
-.title{
+.title {
     position: absolute;
     background-color: var(--color-dark-4);
     top: -2.5rem;
     right: 50%;
-    transform: translate(50%,50%);
+    transform: translate(50%, 50%);
     padding: 0 1rem;
     font-size: 1.6rem;
     font-weight: 600;
@@ -22,15 +23,23 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    width: 70%; 
+    width: 70%;
     max-width: 26rem;
 }
 
-.title select{
+.title select {
     background-color: var(--color-dark-6);
     border-radius: 0.5rem;
     border: none;
     outline: none;
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+.pieChart {
+    height: 20rem;
+}
+
+.chart.pie{
+    padding: 2rem;
 }

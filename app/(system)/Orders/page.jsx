@@ -1,7 +1,9 @@
-import React from "react";
+"use client";
 import classes from "./page.module.css";
 import OrderCard from "@/components/Delivery_men/orders/OrderCard";
-import { BiSearchAlt } from "react-icons/bi";
+import Search from "@/components/UI/input/Search";
+import { PieChart } from "@/components/UI/chart/PieChart";
+import LineChart from "@/components/UI/chart/LineChart";
 
 const page = () => {
     return (
@@ -12,9 +14,8 @@ const page = () => {
                     <input type="date" />
                     <p className="text-2xl">الاجمالي : 1</p>
                 </div>
-                <div className={classes.input}>
-                    <input type="search" placeholder="ادخل رقم الطلب" />
-                    <BiSearchAlt className="text-4xl text-gray-400" />
+                <div>
+                    <Search placeholder="ادخل رقم الطلب" />
                 </div>
             </div>
             <div className={classes.filter}>
@@ -34,6 +35,12 @@ const page = () => {
                     <option value="">تم التوصيل</option>
                     <option value="">جاري التوصيل</option>
                 </select>
+            </div>
+            <div className={classes.statistics}>
+                <div>
+                    <PieChart title="انواع الطلبات" />
+                </div>
+                <LineChart title="اعداد الطلبات" />
             </div>
             <div className={classes.orders}>
                 <OrderCard />

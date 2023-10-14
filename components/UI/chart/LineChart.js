@@ -25,7 +25,7 @@ ChartJS.register(
     Legend
 );
 
-export const LineCart = (props) => {
+export const LineChart = (props) => {
     const options = {
         responsive: true,
         plugins: {
@@ -70,4 +70,4 @@ export const LineCart = (props) => {
     );
 };
 
-export default LineCart;
+export default LineChart;

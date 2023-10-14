@@ -1,5 +1,5 @@
 "use client";
-import LineCart from "@/components/UI/chart/LineCart";
+import LineCart from "@/components/UI/chart/LineChart";
 import classes from "./page.module.css";
 import Link from "next/link";
 import Search from "@/components/UI/input/Search";

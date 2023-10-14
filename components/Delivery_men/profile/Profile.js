@@ -14,7 +14,7 @@ import {
 import { Line } from "react-chartjs-2";
 import faker from "faker";
 import Link from "next/link";
-import LineCart from "@/components/UI/chart/LineCart";
+import LineCart from "@/components/UI/chart/LineChart";
 
 ChartJS.register(
     CategoryScale,

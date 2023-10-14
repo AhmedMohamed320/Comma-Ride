@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import classes from "./page.module.css";
-import LineCart from "@/components/UI/chart/LineCart";
+import LineCart from "@/components/UI/chart/LineChart";
 import Link from "next/link";
 
 const page = () => {
