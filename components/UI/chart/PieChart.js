@@ -44,6 +44,7 @@ export function PieChart(props) {
             <div className={classes.title}>
                 <p>{props.title}</p>
                 <select name="" id="">
+                    <option value="">اليوم</option>
                     <option value="">اخر 7 ايام</option>
                     <option value="">اخر 12 اسبوع</option>
                 </select>
