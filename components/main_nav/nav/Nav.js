@@ -24,6 +24,28 @@ const Nav = (props) => {
         isFixed ? `${classes.onScroll}` : ""
     }`;
 
+    // -----------------
+
+    const [location, setLocation] = useState(null);
+
+    useEffect(() => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    setLocation([latitude, longitude]);
+                },
+                (error) => {
+                    console.error("Error getting user location:", error);
+                }
+                );
+            } else {
+                console.error("Geolocation is not supported by this browser.");
+            }
+        }, []);
+        alert(location);
+
     return (
         <section className={navClass}>
             <div className="mainContainer">

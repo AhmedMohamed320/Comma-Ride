@@ -81,7 +81,7 @@ const page = () => {
                     </div>
                     <div className={classes.orderData}>
                         <div className={classes.chart}>
-                            <LineCart title="عدد الاوردرات"/>
+                            <LineCart title="عدد الاوردرات" />
                         </div>
                         <div className={classes.table}>
                             <table>
@@ -134,6 +134,7 @@ const page = () => {
                         </div>
                     </div>
                 </div>
+                <div className={classes.part2}>{/* map */}</div>
             </main>
         </section>
     );
