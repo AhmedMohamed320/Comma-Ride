@@ -13,7 +13,6 @@
 
 .action > div,
 .phoneType_1 > div,
-.phoneType_1 select,
 .phoneType_2 > div,
 .phoneType_2 > a {
     padding: 1rem;
@@ -27,7 +26,9 @@
 }
 
 .action > div,
-.phoneType_1 > div {
+.phoneType_1 > div,
+.phoneType_2 > div,
+.phoneType_2 > a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,18 +43,39 @@
     border-radius: 0.5rem;
 }
 
-.phoneType_1 > div {
+.phoneType_1 > div,
+.phoneType_2 > a,
+.phoneType_2 > div {
     background-color: var(--color-dark-1);
 }
 
-.phoneType_1  select {
+.phoneType_1 > div button ,.phoneType_2 > div button {
+    background-color: var(--color-red-1);
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem 1rem;
+    outline: none;
+}
+
+.phoneType_1 select,
+.phoneType_2 select {
     background-color: var(--color-dark-4);
     outline: none;
     border-radius: 0.5rem;
-    padding: 0 3rem;
+    padding: 0 1rem;
+    font-weight: 500;
 }
 
+.groupSelect{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
+.groupSelect select{
+    width: 100%;
+}
 
 /* --------------------------- */
 
@@ -171,5 +193,9 @@
     .call_statistics > div:nth-of-type(2) {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .phoneType_1 > div ,.phoneType_2 > div {
+        flex-direction: column;
     }
 }

@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import classes from "./page.module.css";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 import { PiPhoneIncomingFill, PiPhoneOutgoingFill } from "react-icons/pi";
 
 import {
@@ -85,13 +87,57 @@ export const data = {
     ],
 };
 const page = () => {
+    const router = useRouter();
+
     const [showPhoneType_1, setShowPhoneType_1] = useState(false);
     const [showPhoneType_2, setShowPhoneType_2] = useState(false);
+    // --------------------
 
     function handle_phoneType(e) {
         console.log(e.target.id);
         setShowPhoneType_1(false);
         setShowPhoneType_2(false);
+    }
+
+    // ----------------------
+    const [Sales_call_status, setSales_call_status] = useState("");
+    const [Followup_call_status, setFollowup_call_status] = useState("");
+    const [Followup_call_status_Incoming, setFollowup_call_status_Incoming] =
+        useState("");
+
+    function handleSelectChange_Sales(event) {
+        const selectedValue = event.target.value;
+        setSales_call_status(selectedValue);
+    }
+
+    function handleSelectChange_FollowUp(event) {
+        const selectedValue = event.target.value;
+        setFollowup_call_status(selectedValue);
+    }
+
+    function handleSelectChange_FollowUp_Incoming(event) {
+        const selectedValue = event.target.value;
+        setFollowup_call_status_Incoming(selectedValue);
+    }
+
+    function goToOrdersPage() {
+        router.push("/Orders");
+    }
+    // --------------------
+    const [consultation_1, setConsultation_1] = useState("");
+    const [consultation_2, setConsultation_2] = useState("");
+    const [consultation_3, setConsultation_3] = useState("");
+
+    function handleSelectChange_consultation(e, type) {
+        if (type === 1) {
+            setConsultation_1(e.target.value);
+        }
+        if (type === 2) {
+            setConsultation_2(e.target.value);
+        }
+        if (type === 3) {
+            setConsultation_3(e.target.value);
+        }
     }
     return (
         <section className={`mainContainer p-4 ${classes.section}`}>
@@ -121,35 +167,119 @@ const page = () => {
             {showPhoneType_1 && (
                 <div className={classes.phoneType_1}>
                     <div>
-                        <p>بيع : </p>
-                        <select name="" id="">
-                            <option value=""> مهتم</option>
-                            <optgroup label="غير مهتم">
-                                <option value="">مغلق</option>
-                                <option value="">لم نصل</option>
-                                <option value="">رافض</option>
-                            </optgroup>
+                        <p>بيع </p>
+                        <select
+                            name=""
+                            id=""
+                            value={Sales_call_status}
+                            onChange={handleSelectChange_Sales}
+                        >
+                            <option value="" disabled>
+                                اختار الحاله
+                            </option>
+                            <option value="makeOrder"> مهتم</option>
+                            <option value="مغلق">مغلق</option>
+                            <option value="لم نصل">لم نصل</option>
+                            <option value="رافض">رافض</option>
                         </select>
+                        <button onClick={handle_phoneType}>تاكيد</button>
                     </div>
 
-                    <div id="a2" onClick={handle_phoneType}>
-                        تقيم
-                    </div>
-                    <div id="a2" onClick={handle_phoneType}>
-                        متابعه
+                    <div id="a2">صفحه التقيمات</div>
+                    <div>
+                        <p>متابعه </p>
+                        <select
+                            name=""
+                            id=""
+                            value={Followup_call_status}
+                            onChange={handleSelectChange_FollowUp}
+                        >
+                            <option value="" disabled>
+                                اختار الحاله
+                            </option>
+                            <option value="اعتذار"> اعتذار</option>
+                            <option value="متابعه مورد">متابعه مورد</option>
+                        </select>
+                        <button onClick={handle_phoneType}>تاكيد</button>
                     </div>
                 </div>
             )}
             {showPhoneType_2 && (
                 <div className={classes.phoneType_2}>
                     <Link href="/Create_an_order" id="a5">
-                        طلب
+                        عمل طلب
                     </Link>
-                    <div id="a4" onClick={handle_phoneType}>
-                        استشاره
+                    <div>
+                        <p>استشاره</p>
+                        <div className={classes.groupSelect}>
+                            <select
+                                name=""
+                                id=""
+                                value={consultation_1}
+                                onChange={(event) => {
+                                    handleSelectChange_consultation(event, 1);
+                                }}
+                            >
+                                <option value="" disabled>
+                                    حدد النوع
+                                </option>
+                                <option value="عميل">عميل</option>
+                                <option value="مورد">مورد</option>
+                            </select>
+                            <select
+                                name=""
+                                id=""
+                                value={consultation_2}
+                                onChange={(event) => {
+                                    handleSelectChange_consultation(event, 2);
+                                }}
+                            >
+                                <option value="" disabled>
+                                    الاستشاره المطلوبه
+                                </option>
+                                <option value="1">تفير بيانات طلب</option>
+                                <option value="2">تعديل الطلب</option>
+                                <option value="Service_and_cost">
+                                    خدمه وتكلفه
+                                </option>
+                            </select>
+                            {consultation_2 === "Service_and_cost" && (
+                                <select
+                                    name=""
+                                    id=""
+                                    value={consultation_3}
+                                    onChange={(event) => {
+                                        handleSelectChange_consultation(
+                                            event,
+                                            3
+                                        );
+                                    }}
+                                >
+                                    <option value="" disabled>
+                                        حدد الحاله
+                                    </option>
+                                    <option value="1">مهتم</option>
+                                    <option value="2">غير مهتم</option>
+                                </select>
+                            )}
+                        </div>
+                        <button onClick={handle_phoneType}>تاكيد</button>
                     </div>
-                    <div id="a3" onClick={handle_phoneType}>
-                        متابعه
+                    <div>
+                        <p>متابعه </p>
+                        <select
+                            name=""
+                            id=""
+                            value={Followup_call_status_Incoming}
+                            onChange={handleSelectChange_FollowUp_Incoming}
+                        >
+                            <option value="" disabled>
+                                نوع الشخص
+                            </option>
+                            <option value="عميل"> عميل </option>
+                            <option value="مورد">مورد</option>
+                        </select>
+                        <button onClick={goToOrdersPage}>تاكيد</button>
                     </div>
                 </div>
             )}
