@@ -13,7 +13,7 @@
 
 .action > div,
 .phoneType_1 > div,
-.phoneType_1 > a,
+.phoneType_1 select,
 .phoneType_2 > div,
 .phoneType_2 > a {
     padding: 1rem;
@@ -26,7 +26,8 @@
     cursor: pointer;
 }
 
-.action > div {
+.action > div,
+.phoneType_1 > div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,17 +37,23 @@
 .phoneType_1,
 .phoneType_2 {
     grid-template-columns: repeat(3, 1fr);
-    background-color: var(--color-dark-1);
+    background-color: var(--color-dark-4);
     padding: 1rem;
     border-radius: 0.5rem;
 }
 
-.phoneType_1 > div,
-.phoneType_1 > a,
-.phoneType_2 > div,
-.phoneType_2 > a {
+.phoneType_1 > div {
     background-color: var(--color-dark-1);
 }
+
+.phoneType_1  select {
+    background-color: var(--color-dark-4);
+    outline: none;
+    border-radius: 0.5rem;
+    padding: 0 3rem;
+}
+
+
 
 /* --------------------------- */
 
@@ -166,5 +173,3 @@
         gap: 2rem;
     }
 }
-
-

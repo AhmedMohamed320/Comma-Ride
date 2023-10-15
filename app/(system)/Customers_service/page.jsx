@@ -120,9 +120,18 @@ const page = () => {
             </div>
             {showPhoneType_1 && (
                 <div className={classes.phoneType_1}>
-                    <Link href="" id="a" onClick={handle_phoneType}>
-                        بيع
-                    </Link>
+                    <div>
+                        <p>بيع : </p>
+                        <select name="" id="">
+                            <option value=""> مهتم</option>
+                            <optgroup label="غير مهتم">
+                                <option value="">مغلق</option>
+                                <option value="">لم نصل</option>
+                                <option value="">رافض</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
                     <div id="a2" onClick={handle_phoneType}>
                         تقيم
                     </div>
