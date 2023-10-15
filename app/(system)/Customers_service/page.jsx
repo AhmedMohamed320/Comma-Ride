@@ -52,36 +52,36 @@ export const data = {
         {
             label: "بيع",
             data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            borderColor: "#D63236",
-            backgroundColor: "#D63236",
+            borderColor: "#F31D47",
+            backgroundColor: "#F31D47",
             lineTension: 0.2,
         },
         {
             label: "طلب",
             data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            borderColor: "rgb(53, 162, 235)",
-            backgroundColor: "rgba(53, 162, 235)",
+            borderColor: "#1DB46F",
+            backgroundColor: "#1DB46F",
             lineTension: 0.1,
         },
         {
             label: "استشاره",
             data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            borderColor: "rgb(152, 76, 252)",
-            backgroundColor: "rgb(152, 76, 252)",
+            borderColor: "#F1EBDE",
+            backgroundColor: "#F1EBDE",
             lineTension: 0.1,
         },
         {
             label: "متابعه",
             data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            borderColor: "rgb(255, 217, 0)",
-            backgroundColor: "rgb(255, 217, 0)",
+            borderColor: "#F0B60C",
+            backgroundColor: "#F0B60C",
             lineTension: 0.1,
         },
         {
             label: "تقيم",
             data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            borderColor: "rgb(136, 255, 0)",
-            backgroundColor: "rgb(136, 255, 0)",
+            borderColor: "#5A42EF",
+            backgroundColor: "#5A42EF",
             lineTension: 0.1,
         },
     ],
@@ -120,9 +120,6 @@ const page = () => {
         setFollowup_call_status_Incoming(selectedValue);
     }
 
-    function goToOrdersPage() {
-        router.push("/Orders");
-    }
     // --------------------
     const [consultation_1, setConsultation_1] = useState("");
     const [consultation_2, setConsultation_2] = useState("");
@@ -138,6 +135,40 @@ const page = () => {
         if (type === 3) {
             setConsultation_3(e.target.value);
         }
+    }
+    // ----------------------
+    function handle_all_action(e, type) {
+        if (type === 1) {
+            if (Sales_call_status === "makeOrder") {
+                router.push("/Customers/Form_Customer/add");
+            }
+            setSales_call_status("");
+        }
+        if (type === 4) {
+            router.push("/Create_an_order");
+        }
+
+        if (type === 5) {
+            if (
+                consultation_2 === "edit_data" ||
+                consultation_2 === "edit_order"
+            ) {
+                router.push("/Orders");
+            }
+            if (consultation_3 === "add") {
+                router.push("/Customers/Form_Customer/add");
+            }
+            setConsultation_1("");
+            setConsultation_2("");
+            setConsultation_3("");
+        }
+
+        if (type === 6) {
+            router.push("/Orders");
+        }
+
+        setShowPhoneType_1(false);
+        setShowPhoneType_2(false);
     }
     return (
         <section className={`mainContainer p-4 ${classes.section}`}>
@@ -182,7 +213,13 @@ const page = () => {
                             <option value="لم نصل">لم نصل</option>
                             <option value="رافض">رافض</option>
                         </select>
-                        <button onClick={handle_phoneType}>تاكيد</button>
+                        <button
+                            onClick={(e) => {
+                                handle_all_action(e, 1);
+                            }}
+                        >
+                            تاكيد
+                        </button>
                     </div>
 
                     <div id="a2">صفحه التقيمات</div>
@@ -206,9 +243,14 @@ const page = () => {
             )}
             {showPhoneType_2 && (
                 <div className={classes.phoneType_2}>
-                    <Link href="/Create_an_order" id="a5">
-                        عمل طلب
-                    </Link>
+                    <div
+                        onClick={(e) => {
+                            handle_all_action(e, 4);
+                        }}
+                    >
+                        <p> عمل طلب</p>
+                    </div>
+
                     <div>
                         <p>استشاره</p>
                         <div className={classes.groupSelect}>
@@ -237,8 +279,10 @@ const page = () => {
                                 <option value="" disabled>
                                     الاستشاره المطلوبه
                                 </option>
-                                <option value="1">تفير بيانات طلب</option>
-                                <option value="2">تعديل الطلب</option>
+                                <option value="edit_data">
+                                    تفير بيانات طلب
+                                </option>
+                                <option value="edit_order">تعديل الطلب</option>
                                 <option value="Service_and_cost">
                                     خدمه وتكلفه
                                 </option>
@@ -258,12 +302,18 @@ const page = () => {
                                     <option value="" disabled>
                                         حدد الحاله
                                     </option>
-                                    <option value="1">مهتم</option>
+                                    <option value="add">مهتم</option>
                                     <option value="2">غير مهتم</option>
                                 </select>
                             )}
                         </div>
-                        <button onClick={handle_phoneType}>تاكيد</button>
+                        <button
+                            onClick={(e) => {
+                                handle_all_action(e, 5);
+                            }}
+                        >
+                            تاكيد
+                        </button>
                     </div>
                     <div>
                         <p>متابعه </p>
@@ -279,7 +329,11 @@ const page = () => {
                             <option value="عميل"> عميل </option>
                             <option value="مورد">مورد</option>
                         </select>
-                        <button onClick={goToOrdersPage}>تاكيد</button>
+                        <button
+                            onClick={(event)=>{handle_all_action(event, 6)}}
+                        >
+                            تاكيد
+                        </button>
                     </div>
                 </div>
             )}
