@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Add Delivery Suppliers/FormAdd_Edit.module.css";
 const FormCreateOrder = (props) => {
     return (
-        <form action="" className={`${classes.form} ${classes.createOrder}`}>
+        <form action="" className={`${classes.form} ${classes.createOrder} ${props.action === "edit" ?`${classes.edit}`:""}`}>
             <div>
                 <div>
                     <label htmlFor="n1">كود العميل</label>

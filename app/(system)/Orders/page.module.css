@@ -42,12 +42,12 @@
 
 /* -------------------- */
 .pop {
-    position: absolute;
+    position: fixed;
     background-color: #2e2323c2;
+    height: 100vh;
     width: 100%;
     top: 0;
     right: 0;
-    padding: 3rem;
     align-items: center;
     justify-content: center;
     z-index: 10002;
@@ -65,7 +65,7 @@
     font-size: 2rem;
     position: relative;
     width: 90%;
-    max-width: 50rem;
+    max-width: 55rem;
 }
 
 .pop > div .close {
