@@ -47,22 +47,22 @@ const page = () => {
                             <td>124</td>
                             <td className="underline underline-offset-8 cursor-pointer">
                                 <Link href="/Delivery_men/Profile">
-                                    محمد على
+                                    محمد على محمد
                                 </Link>
                             </td>
                             <td>20</td>
-                            <td>200</td>
+                            <td>200 ج.م</td>
                             <td>متاح</td>
                         </tr>
                         <tr>
                             <td>124</td>
                             <td className="underline underline-offset-8 cursor-pointer">
                                 <Link href="/Delivery_men/Profile">
-                                    محمد على
+                                    محمد على محمد
                                 </Link>
                             </td>
                             <td>20</td>
-                            <td>200</td>
+                            <td>200 ج.م</td>
                             <td>متاح</td>
                         </tr>
                     </tbody>
