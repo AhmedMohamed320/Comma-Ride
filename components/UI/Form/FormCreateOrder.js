@@ -101,13 +101,16 @@ const FormCreateOrder = (props) => {
                 </div>
                 <div>
                     <label htmlFor="n10"> ملاحظات </label>
-                    <textarea
-                        id="n10"
-                        placeholder="ادخل نسبه الخصم"
-                    ></textarea>
+                    <textarea id="n10" placeholder="ادخل نسبه الخصم"></textarea>
                 </div>
             </div>
-            <button className={classes.add}>ارسال الطلب للطيار </button>
+            <button className={classes.add}>
+                {props.action === "edit" ? (
+                    <p>تاكيد تعديل البيانات</p>
+                ) : (
+                    <p>ارسال الطلب للطيار</p>
+                )}
+            </button>
         </form>
     );
 };

@@ -13,26 +13,27 @@ const OrderCard = (props) => {
         }
     }
 
-    const [location, setLocation] = useState(null);
+    // const [location, setLocation] = useState(null);
 
-    useEffect(() => {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                (position) => {
-                    const latitude = position.coords.latitude;
-                    const longitude = position.coords.longitude;
-                    setLocation([latitude, longitude]);
-                },
-                (error) => {
-                    console.error("Error getting user location:", error);
-                }
-            );
-        } else {
-            console.error("Geolocation is not supported by this browser.");
-        }
-    }, []);
+    // useEffect(() => {
+    //     if (navigator.geolocation) {
+    //         navigator.geolocation.getCurrentPosition(
+    //             (position) => {
+    //                 const latitude = position.coords.latitude;
+    //                 const longitude = position.coords.longitude;
+    //                 setLocation([latitude, longitude]);
+    //             },
+    //             (error) => {
+    //                 console.error("Error getting user location:", error);
+    //             }
+    //         );
+    //     } else {
+    //         console.error("Geolocation is not supported by this browser.");
+    //     }
+    // }, []);
     return (
         <div className={classes.order}>
+
             <div className={classes.head}>
                 <p>
                     طلب رقم : <span>1542</span>
@@ -58,7 +59,7 @@ const OrderCard = (props) => {
                     </ul>
                 </div>
                 <div className={classes.pending}>
-                    <p>جاري التوصيل</p>
+                    {props.edit ? <p className="cursor-pointer" onClick={props.fromEdit}>تعديل</p> : <p>جاري التوصيل</p>}
                 </div>
             </div>
             <div className={classes.info}>
@@ -120,7 +121,9 @@ const OrderCard = (props) => {
                 </div>
                 <div
                     onClick={() => {
-                        handle_alert(`${location} لقد استلمت الاوردر الان من المورد`);
+                        handle_alert(
+                            `${location} لقد استلمت الاوردر الان من المورد`
+                        );
                     }}
                     className={classes.pending}
                 >

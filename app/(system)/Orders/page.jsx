@@ -4,10 +4,34 @@ import OrderCard from "@/components/Delivery_men/orders/OrderCard";
 import Search from "@/components/UI/input/Search";
 import { PieChart } from "@/components/UI/chart/PieChart";
 import LineChart from "@/components/UI/chart/LineChart";
+import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
+import FormCreateOrder from "@/components/UI/Form/FormCreateOrder";
+
 
 const page = () => {
+    const [formEdit, setShowFormEdit] = useState(false);
+    const alertClass2 = `${classes.pop}  ${formEdit ? `${classes.show}` : ""}`;
+
     return (
         <section className="mainContainer p-4">
+            {formEdit && (
+                <div className={alertClass2}>
+                    <div>
+                        <div className={classes.close}>
+                            <p className="text-3xl">تعديل اوردر 1420</p>
+                            <IoMdClose
+                                onClick={() => {
+                                    setShowFormEdit(false);
+                                }}
+                            />
+                        </div>
+                        <div>
+                            <FormCreateOrder action="edit" />
+                        </div>
+                    </div>
+                </div>
+            )}
             <div className="flex items-center justify-between">
                 <div className={classes.head}>
                     <p className="text-4xl py-4 font-semibold">طلبات يوم</p>
@@ -41,7 +65,7 @@ const page = () => {
                 <LineChart title="اعداد الطلبات" />
             </div>
             <div className={classes.orders}>
-                <OrderCard />
+                <OrderCard edit={true} fromEdit={setShowFormEdit} />
             </div>
         </section>
     );
