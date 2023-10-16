@@ -151,14 +151,6 @@
     text-align: center;
 }
 /* --------------- */
-
-.charts {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.chart,
 .table {
     position: relative;
     border: 1px solid var(--color-dark-6);
@@ -166,11 +158,6 @@
     padding: 2rem 1rem;
 }
 
-.chart {
-    padding: 0.5rem;
-}
-
-.chart::after,
 .table::after {
     content: "احصائيات المكالمات";
     position: absolute;

@@ -1,6 +1,19 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import classes from "./FormAdd_Edit.module.css";
 const FormAddSuppliers = (props) => {
+    const [address, setAddress] = useState([]);
+
+    const handleAddItem = () => {
+        setAddress([...address, " "]);
+    };
+
+    const handleChange = (e, index) => {
+        const updatedItems = [...address];
+        updatedItems[index] = e.target.value;
+        setAddress(updatedItems);
+    };
+
     return (
         <>
             <form action="" className={classes.form}>
@@ -59,19 +72,28 @@ const FormAddSuppliers = (props) => {
                             <option value="">شريك</option>
                         </select>
                     </div>
-
                     <div>
-                        <label htmlFor="n8">العنوان 1</label>
-                        <input type="text" placeholder="الفرع الاول" id="n8" />
+                        <label id="n11">
+                            العنوان الاساسي
+                            <button type="button" onClick={handleAddItem}>
+                                اضف فرع
+                            </button>
+                        </label>
+                        <input type="text" placeholder="اضف العنوان" id="n11" />
                     </div>
-                    <div>
-                        <label htmlFor="n9">العنوان 2</label>
-                        <input type="text" placeholder="الفرع الثاني اذا وجد" />
-                    </div>
-                    <div>
-                        <label htmlFor="n10">العنوان 3</label>
-                        <input type="text" placeholder="الفرع الثالث اذا وجد" />
-                    </div>
+                    {address.map((ads, index) => (
+                        <div key={index}>
+                            <label>
+                                <p>العنوان {index + 1}</p>
+                            </label>
+                            <input
+                                type="text"
+                                placeholder="اضف عنوان الفرع"
+                                value={ads}
+                                onChange={(e) => handleChange(e, index)}
+                            />
+                        </div>
+                    ))}
                 </div>
                 <button className={classes.add}>
                     {props.action === "add" ? "اضافه المورد" : "تاكيد البيانات"}

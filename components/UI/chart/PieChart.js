@@ -50,7 +50,20 @@ export function PieChart(props) {
                 </select>
             </div>
             <div className={classes.pieChart}>
-                <Pie data={data} options={options}/>
+                <Pie data={data} options={options} />
+            </div>
+            <div>
+                <ul className="flex justify-center gap-4 flex-wrap text-xl text-slate-50 mt-4">
+                    <li>خضار وفاكهه : 15</li>
+                    <li>خضار وفاكهه : 15</li>
+                    <li>خضار وفاكهه : 15</li>
+                    <li>خضار وفاكهه : 15</li>
+                    <li>خضار وفاكهه : 15</li>
+                    <li>خضار وفاكهه : 15</li>
+                    <li>خضار وفاكهه : 15</li>
+                    <li>خضار وفاكهه : 15</li>
+                    <li>خضار وفاكهه : 15</li>
+                </ul>
             </div>
         </div>
     );

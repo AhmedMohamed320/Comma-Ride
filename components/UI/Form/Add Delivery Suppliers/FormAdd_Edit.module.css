@@ -37,9 +37,17 @@
     background-color: var(--color-dark-6);
 }
 
-button.add {
+.form > div > div label{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+button.add ,.form>div>button{
     background-color: var(--color-red-1);
     padding: 1rem;
+    outline: none;
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--color-light-2);
@@ -48,6 +56,13 @@ button.add {
     margin-top: 1rem;
 }
 
+.form>div>div label button{
+    font-size: 1.4rem;
+    padding: 0.2rem;
+    width: 10rem;
+    background-color: var(--color-dark-1);
+    border-radius: 0.5rem;
+}
 
 .createOrder{
     max-width: none;

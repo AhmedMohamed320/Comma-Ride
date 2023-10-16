@@ -37,9 +37,7 @@ const page = () => {
                 </select>
             </div>
             <div className={classes.statistics}>
-                <div>
-                    <PieChart title="انواع الطلبات" />
-                </div>
+                <PieChart title="انواع الطلبات" />
                 <LineChart title="اعداد الطلبات" />
             </div>
             <div className={classes.orders}>

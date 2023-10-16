@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./page.module.css";
-import DeliveryCard from "@/components/Delivery_men/DeliveryCard";
 import Link from "next/link";
 import Search from "@/components/UI/input/Search";
 const page = () => {
@@ -14,7 +13,9 @@ const page = () => {
                     <div className="sm:flex hidden ">
                         <Search placeholder="ادخل رقم او كود الطيار" />
                     </div>
-                    <Link href="/Delivery_men/Form_Delivery_men/add">اضافه طيار</Link>
+                    <Link href="/Delivery_men/Form_Delivery_men/add">
+                        اضافه طيار
+                    </Link>
                 </div>
                 <div>
                     <select name="" id="">
@@ -32,10 +33,40 @@ const page = () => {
                     </select>
                 </div>
             </div>
-            <div className={classes.allDelivery}>
-                <DeliveryCard />
-                <DeliveryCard />
-                <DeliveryCard />
+            <div className={classes.table}>
+                <table>
+                    <tbody>
+                        <tr className={classes.head}>
+                            <td>الكود</td>
+                            <td>الاسم</td>
+                            <td>الاوردرات</td>
+                            <td>التحصيل</td>
+                            <td>الحاله</td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8 cursor-pointer">
+                                <Link href="/Delivery_men/Profile">
+                                    محمد على
+                                </Link>
+                            </td>
+                            <td>20</td>
+                            <td>200</td>
+                            <td>متاح</td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8 cursor-pointer">
+                                <Link href="/Delivery_men/Profile">
+                                    محمد على
+                                </Link>
+                            </td>
+                            <td>20</td>
+                            <td>200</td>
+                            <td>متاح</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     );

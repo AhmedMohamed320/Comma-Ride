@@ -37,9 +37,11 @@
 }
 
 .pieChart {
-    height: 20rem;
+    height: 17rem;
 }
 
 .chart.pie{
     padding: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
 }

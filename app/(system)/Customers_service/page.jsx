@@ -1,91 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import classes from "./page.module.css";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-
 import { PiPhoneIncomingFill, PiPhoneOutgoingFill } from "react-icons/pi";
+import BarChart from "@/components/UI/chart/BarChart";
 
-import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Filler,
-    Legend,
-} from "chart.js";
-import { Line } from "react-chartjs-2";
-import faker from "faker";
-
-ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Filler,
-    Legend
-);
-
-export const options = {
-    responsive: true,
-    plugins: {
-        legend: {
-            display: false,
-        },
-        title: {
-            display: false,
-            text: "Chart.js Line Chart",
-        },
-    },
-};
-
-const labels = ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10"];
-
-export const data = {
-    labels,
-    datasets: [
-        {
-            label: "بيع",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            borderColor: "#F31D47",
-            backgroundColor: "#F31D47",
-            lineTension: 0.2,
-        },
-        {
-            label: "طلب",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            borderColor: "#1DB46F",
-            backgroundColor: "#1DB46F",
-            lineTension: 0.1,
-        },
-        {
-            label: "استشاره",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            borderColor: "#F1EBDE",
-            backgroundColor: "#F1EBDE",
-            lineTension: 0.1,
-        },
-        {
-            label: "متابعه",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            borderColor: "#F0B60C",
-            backgroundColor: "#F0B60C",
-            lineTension: 0.1,
-        },
-        {
-            label: "تقيم",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            borderColor: "#5A42EF",
-            backgroundColor: "#5A42EF",
-            lineTension: 0.1,
-        },
-    ],
-};
 const page = () => {
     const router = useRouter();
 
@@ -330,7 +249,9 @@ const page = () => {
                             <option value="مورد">مورد</option>
                         </select>
                         <button
-                            onClick={(event)=>{handle_all_action(event, 6)}}
+                            onClick={(event) => {
+                                handle_all_action(event, 6);
+                            }}
                         >
                             تاكيد
                         </button>
@@ -394,9 +315,7 @@ const page = () => {
                         </div>
                     </div>
                     <div className={classes.charts}>
-                        <div className={classes.chart}>
-                            <Line options={options} data={data} />
-                        </div>
+                       <BarChart title="احصائيات المكالمات"/>
                     </div>
                 </div>
             </div>

@@ -50,14 +50,21 @@ const page = () => {
                                     </li>
                                 </ul>
                             </div>
+                            <div>
+                                <ul className="flex flex-col gap-4">
+                                    <li>
+                                        <p>تسعيره خاصه :</p>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            1. حى اول - حي تاني : <span className="underline underline-offset-4">45</span> 
+                                        </span>
+                                        <button>اختار</button>
+                                    </li>
+                                </ul>
+                            </div>
                             <p>
-                                عدد الاوردرات : <span>45</span>
-                            </p>
-                            <p>
-                                ملاحظات : <br />{" "}
-                                <span>-داخل الزقازيق : 15ج.م</span>
-                                <br />
-                                <span>-خارج الزقازيق : 25.م</span>
+                                ملاحظات : <br /> <span>لا يوجد</span>
                             </p>
                         </div>
                     </div>
