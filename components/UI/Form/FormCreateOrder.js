@@ -2,7 +2,12 @@ import React from "react";
 import classes from "./Add Delivery Suppliers/FormAdd_Edit.module.css";
 const FormCreateOrder = (props) => {
     return (
-        <form action="" className={`${classes.form} ${classes.createOrder} ${props.action === "edit" ?`${classes.edit}`:""}`}>
+        <form
+            action=""
+            className={`${classes.form} ${classes.createOrder} ${
+                props.action === "edit" ? `${classes.edit}` : ""
+            }`}
+        >
             <div>
                 <div>
                     <label htmlFor="n1">كود العميل</label>
@@ -97,7 +102,15 @@ const FormCreateOrder = (props) => {
                         <option value="">محمد</option>
                         <option value="">محمد</option>
                         <option value="">محمد</option>
+                        <option value="">التحديد في وقت لاحق</option>
                     </select>
+                </div>
+                <div>
+                    <label> جدوله الطلب </label>
+                    <div className="flex gap-4 w-full">
+                        <input type="date" />
+                        <input type="time" />
+                    </div>
                 </div>
                 <div>
                     <label htmlFor="n10"> ملاحظات </label>

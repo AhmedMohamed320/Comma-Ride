@@ -103,8 +103,14 @@ const OrderCard = (props) => {
                     <p>
                         الطيار : <span>محمد على</span>
                     </p>
+                    <p>
+                        خدمه العملاء : <span> على</span>
+                    </p>
                 </div>
                 <div className={classes.Notes}>
+                    <span>
+                        تم ارسال الطلب الساعه 01:00
+                    </span>
                     <span>لا يوجد تفاصيل اضافيه</span>
                 </div>
             </div>

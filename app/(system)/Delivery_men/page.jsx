@@ -1,8 +1,34 @@
+"use client";
 import React from "react";
 import classes from "./page.module.css";
 import Link from "next/link";
 import Search from "@/components/UI/input/Search";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+import TimeLine from "@/components/Delivery_men/TimeLine";
 const page = () => {
+    const [sliderRef] = useKeenSlider({
+        loop: true,
+        mode: "free-snap",
+        slides: {
+            perView: 8,
+            spacing: 0,
+        },
+        breakpoints: {
+            "(max-width: 65rem)": {
+                slides: {
+                    perView: 6,
+                    spacing: 0,
+                },
+            },
+            "(max-width: 45rem)": {
+                slides: {
+                    perView: 4,
+                    spacing: 0,
+                },
+            },
+        },
+    });
     return (
         <section className={`mainContainer ${classes.section}`}>
             <div className={classes.head}>
@@ -67,6 +93,41 @@ const page = () => {
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div ref={sliderRef} className={`keen-slider ${classes.timeLine}`}>
+                <div className="keen-slider__slide">
+                    <TimeLine time="11:00" />
+                </div>
+                <div className="keen-slider__slide">
+                    <TimeLine time="11:00" />
+                </div>
+                <div className="keen-slider__slide">
+                    <TimeLine time="11:00" />
+                </div>
+                <div className="keen-slider__slide">
+                    <TimeLine time="11:00" />
+                </div>
+                <div className="keen-slider__slide">
+                    <TimeLine time="11:00" />
+                </div>
+                <div className="keen-slider__slide">
+                    <TimeLine time="11:00" />
+                </div>
+                <div className="keen-slider__slide">
+                    <TimeLine time="11:00" />
+                </div>
+                <div className="keen-slider__slide">
+                    <TimeLine time="11:00" />
+                </div>
+                <div className="keen-slider__slide">
+                    <TimeLine time="11:00" />
+                </div>
+                <div className="keen-slider__slide">
+                    <TimeLine time="11:00" />
+                </div>
+                <div className="keen-slider__slide">
+                    <TimeLine time="11:00" />
+                </div>
             </div>
         </section>
     );
