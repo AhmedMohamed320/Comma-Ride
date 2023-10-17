@@ -94,6 +94,9 @@ const page = () => {
                     </tbody>
                 </table>
             </div>
+            <p className="text-2xl pt-4 font-semibold">
+                الطيارين المتاحين 3
+            </p>
             <div ref={sliderRef} className={`keen-slider ${classes.timeLine}`}>
                 <div className="keen-slider__slide">
                     <TimeLine time="11:00" />

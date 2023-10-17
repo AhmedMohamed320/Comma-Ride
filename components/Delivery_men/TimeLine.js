@@ -7,7 +7,6 @@ const TimeLine = (props) => {
                 <div className={classes.time}>{props.time}</div>
                 <div className={classes.line}></div>
                 <div>
-                    <p className="font-semibold">الطيارين المتاحين</p>
                     <div className={classes.person}>
                         <div>
                             <p>خالد على</p>
