@@ -103,6 +103,14 @@
 }
 /* ------------------- */
 
+.map {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--color-dark-7);
+    box-shadow: var(--box-shadow-1);
+    border-radius: 0.5rem;
+}
+
 @media (max-width: 90rem) {
     .section > div.allDelivery {
         grid-template-columns: 1fr 1fr;
