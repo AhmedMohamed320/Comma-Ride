@@ -9,9 +9,9 @@ import TimeLine from "@/components/Delivery_men/TimeLine";
 import Map from "@/components/map/Map";
 const page = () => {
     const [showMap, setShowMap] = useState(false);
-    useEffect(() => {
-        setShowMap(true);
-    }, []);
+    // useEffect(() => {
+    //     setShowMap(true);
+    // }, []);
     const [sliderRef] = useKeenSlider({
         loop: true,
         mode: "free-snap",
