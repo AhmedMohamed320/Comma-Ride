@@ -29,41 +29,7 @@ const Map = () => {
     return (
         <div>
             {showMap && (
-                <MapContainer
-                    style={{
-                        height: "50vh",
-                        width: "100%",
-                    }}
-                    zoom={14}
-                    center={[30.586457, 31.491901]}
-                >
-                    <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    />
-
-                    {locations.map((location, index) => (
-                        <Marker
-                            key={index}
-                            icon={
-                                new L.Icon({
-                                    iconUrl: MarkerIcon.src,
-                                    iconRetinaUrl: MarkerIcon.src,
-                                    iconSize: [25, 41],
-                                    iconAnchor: [12.5, 41],
-                                    popupAnchor: [0, -41],
-                                    shadowUrl: MarkerShadow.src,
-                                    shadowSize: [41, 41],
-                                })
-                            }
-                            position={location.position}
-                        >
-                            <Popup>
-                                <div style={popupStyle}>{location.content}</div>
-                            </Popup>
-                        </Marker>
-                    ))}
-                </MapContainer>
+               <p>test</p>
             )}
         </div>
     );
