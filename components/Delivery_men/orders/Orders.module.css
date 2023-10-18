@@ -73,4 +73,5 @@ display: flex;
     background-color: var(--color-dark-4);
     padding: 0.5rem;
     border-radius: 0.5rem;
+    color: var(--color-light-2);
 }
