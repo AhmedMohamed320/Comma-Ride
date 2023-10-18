@@ -1,21 +1,16 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import classes from "./page.module.css";
 import Link from "next/link";
 import Search from "@/components/UI/input/Search";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import TimeLine from "@/components/Delivery_men/TimeLine";
-import Map from "@/components/map/Map";
-import dynamic from 'next/dynamic'
-
-const DynamicMap = dynamic(() => import('../../../components/map/Map'), {
-  ssr: false
-});
+import dynamic from "next/dynamic";
 
 const page = () => {
-    const [showMap, setShowMap] = useState(true);
-
+    const DynamicMap = dynamic(() => import("../../../components/map/Map"), {
+        ssr: false,
+    });
     const [sliderRef] = useKeenSlider({
         loop: true,
         mode: "free-snap",
@@ -144,11 +139,10 @@ const page = () => {
             <p className="text-2xl pt-4 font-semibold text-center">
                 مواقع الطيارين
             </p>
-            {showMap && (
-                <div className={classes.map}>
-                    <DynamicMap />
-                </div>
-            )}
+
+            <div className={classes.map}>
+                <DynamicMap />
+            </div>
         </section>
     );
 };
