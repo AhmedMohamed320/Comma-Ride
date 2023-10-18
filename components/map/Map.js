@@ -1,4 +1,3 @@
-"use client";
 import L from "leaflet";
 import MarkerIcon from "../../node_modules/leaflet/dist/images/marker-icon.png";
 import MarkerShadow from "../../node_modules/leaflet/dist/images/marker-shadow.png";
