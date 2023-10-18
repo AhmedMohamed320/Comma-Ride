@@ -6,7 +6,7 @@ import Search from "@/components/UI/input/Search";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import TimeLine from "@/components/Delivery_men/TimeLine";
-import Map from "@/components/map/Map";
+// import Map from "@/components/map/Map";
 const page = () => {
     const [showMap, setShowMap] = useState(false);
     // useEffect(() => {
