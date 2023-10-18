@@ -6,12 +6,10 @@ import Search from "@/components/UI/input/Search";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import TimeLine from "@/components/Delivery_men/TimeLine";
-// import Map from "@/components/map/Map";
+import Map from "@/components/map/Map";
 const page = () => {
-    const [showMap, setShowMap] = useState(false);
-    // useEffect(() => {
-    //     setShowMap(true);
-    // }, []);
+    const [showMap, setShowMap] = useState(true);
+
     const [sliderRef] = useKeenSlider({
         loop: true,
         mode: "free-snap",
@@ -140,7 +138,11 @@ const page = () => {
             <p className="text-2xl pt-4 font-semibold text-center">
                 مواقع الطيارين
             </p>
-            
+            {showMap && (
+                <div className={classes.map}>
+                    <Map />
+                </div>
+            )}
         </section>
     );
 };
