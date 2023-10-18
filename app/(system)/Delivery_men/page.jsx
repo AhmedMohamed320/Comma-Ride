@@ -7,6 +7,12 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import TimeLine from "@/components/Delivery_men/TimeLine";
 import Map from "@/components/map/Map";
+import dynamic from 'next/dynamic'
+
+const DynamicMap = dynamic(() => import('../../../components/map/Map'), {
+  ssr: false
+});
+
 const page = () => {
     const [showMap, setShowMap] = useState(true);
 
@@ -140,7 +146,7 @@ const page = () => {
             </p>
             {showMap && (
                 <div className={classes.map}>
-                    <Map />
+                    <DynamicMap />
                 </div>
             )}
         </section>
