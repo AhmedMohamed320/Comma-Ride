@@ -98,6 +98,14 @@ const page = () => {
                     </tbody>
                 </table>
             </div>
+
+            <p className="text-2xl pt-4 font-semibold text-center">
+                مواقع الطيارين
+            </p>
+
+            <div className={classes.map}>
+                <DynamicMap />
+            </div>
             <p className="text-2xl pt-4 font-semibold text-center">
                 الطيارين المتاحين
             </p>
@@ -135,13 +143,6 @@ const page = () => {
                 <div className="keen-slider__slide">
                     <TimeLine time="11:00" />
                 </div>
-            </div>
-            <p className="text-2xl pt-4 font-semibold text-center">
-                مواقع الطيارين
-            </p>
-
-            <div className={classes.map}>
-                <DynamicMap />
             </div>
         </section>
     );
