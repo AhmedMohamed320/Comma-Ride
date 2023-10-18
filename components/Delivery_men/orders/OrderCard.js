@@ -31,7 +31,6 @@ const OrderCard = (props) => {
     // }, []);
     return (
         <div className={classes.order}>
-
             <div className={classes.head}>
                 <p>
                     طلب رقم : <span>1542</span>
@@ -57,7 +56,13 @@ const OrderCard = (props) => {
                     </ul>
                 </div>
                 <div className={classes.pending}>
-                    {props.edit ? <p className="cursor-pointer" onClick={props.fromEdit}>تعديل</p> : <p>جاري التوصيل</p>}
+                    {props.edit ? (
+                        <p className="cursor-pointer" onClick={props.fromEdit}>
+                            تعديل
+                        </p>
+                    ) : (
+                        <p>جاري التوصيل</p>
+                    )}
                 </div>
             </div>
             <div className={classes.info}>
@@ -80,12 +85,30 @@ const OrderCard = (props) => {
                     </div>
                 </div>
                 <div className={classes.address}>
-                    <p>
-                        من : <span>شارع مستشفى حمد السيد </span>
-                    </p>
-                    <p>
-                        الى : <span>شارع مستشفى حمد السيد </span>
-                    </p>
+                    <div>
+                        <p>
+                            من : <span>شارع مستشفى حمد السيد </span>
+                        </p>
+                        <a
+                            href="https://www.google.com/maps/@30.5972455,31.493617,17.67z?authuser=0&entry=ttu"
+                            target="blank"
+                            className={classes.image}
+                        >
+                            <img src="/image/google-maps.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <p>
+                            الى : <span>شارع مستشفى حمد السيد </span>
+                        </p>
+                        <a
+                            className={classes.image}
+                            href="https://www.google.com/maps/place/30%C2%B035'45.1%22N+31%C2%B029'47.8%22E/@30.5958652,31.4972617,19z/data=!3m1!4b1!4m4!3m3!8m2!3d30.595864!4d31.496618?authuser=0&entry=ttu"
+                            target="blank"
+                        >
+                            <img src="/image/google-maps.png" alt="" />
+                        </a>
+                    </div>
                 </div>
 
                 <div className={classes.moreInfo}>
@@ -106,9 +129,7 @@ const OrderCard = (props) => {
                     </p>
                 </div>
                 <div className={classes.Notes}>
-                    <span>
-                        تم ارسال الطلب الساعه 01:00
-                    </span>
+                    <span>تم ارسال الطلب الساعه 01:00</span>
                     <span>لا يوجد تفاصيل اضافيه</span>
                 </div>
             </div>
@@ -125,9 +146,7 @@ const OrderCard = (props) => {
                 </div>
                 <div
                     onClick={() => {
-                        handle_alert(
-                            `لقد استلمت الاوردر الان من المورد`
-                        );
+                        handle_alert(`لقد استلمت الاوردر الان من المورد`);
                     }}
                     className={classes.pending}
                 >

@@ -146,6 +146,26 @@
     background-color: #1db46f;
 }
 
+.address>div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.address>div .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.4rem;
+    background-color: var(--color-dark-6);
+}
+
+.address>div img{
+    width: 2.6rem;
+}
+
 @media (max-width: 30rem) {
     .data > div {
         flex-direction: column;
