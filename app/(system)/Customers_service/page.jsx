@@ -315,7 +315,7 @@ const page = () => {
                         </div>
                     </div>
                     <div className={classes.charts}>
-                       <BarChart title="احصائيات المكالمات"/>
+                        <BarChart title="المكالمات" />
                     </div>
                 </div>
             </div>

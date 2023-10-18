@@ -4,79 +4,73 @@ import {
     Chart as ChartJS,
     CategoryScale,
     LinearScale,
-    BarElement,
+    PointElement,
+    LineElement,
     Title,
     Tooltip,
+    Filler,
     Legend,
 } from "chart.js";
-import { Bar } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import faker from "faker";
 
 ChartJS.register(
     CategoryScale,
     LinearScale,
-    BarElement,
+    PointElement,
+    LineElement,
     Title,
     Tooltip,
+    Filler,
     Legend
 );
 
-export const options = {
-    plugins: {
-        legend: {
-            display: false,
-        },
-        title: {
-            display: false,
-            text: "Chart.js Bar Chart - Stacked",
-        },
-    },
-    responsive: true,
-};
-
-const labels = ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10"];
-
-export const data = {
-    labels,
-    datasets: [
-        {
-            label: "بيع",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            backgroundColor: "#FF4747",
-        },
-        {
-            label: "طلب",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            backgroundColor: "#FF6B6B",
-        },
-        {
-            label: "استشاره",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            backgroundColor: "#FF8F8F",
-        },
-        {
-            label: "متابعه",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            backgroundColor: "#FFB3B3",
-        },
-        {
-            label: "تقيم",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
-            backgroundColor: "#FFD6D6",
-        },
-    ],
-};
 const BarChart = (props) => {
+    const options = {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: false,
+            },
+            title: {
+                display: false,
+                text: "Chart.js Line Chart",
+            },
+        },
+    };
+    const labels = ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10"];
+    const data = {
+        labels,
+        datasets: [
+            {
+                fill: true,
+                label: "بيع",
+                data: labels.map(() =>
+                    faker.datatype.number({ min: 0, max: 50 })
+                ),
+                borderColor: "#D63236",
+                backgroundColor: "#D6323660",
+                lineTension: 0.2,
+            },
+        ],
+    };
     return (
         <div className={classes.chart}>
             <div className={classes.title}>
-                    <p>{props.title}</p>
-                    <select name="" id="">
-                        <option value="">اخر 7 ايام</option>
-                        <option value="">اخر 12 اسبوع</option>
-                    </select>
-                </div>
-            <Bar options={options} data={data} />
+                <p>{props.title}</p>
+                <select name="" id="">
+                    <option value="">تقيم</option>
+                    <option value="">متابعه</option>
+                    <option value="">بيع</option>
+                    <option value="">طلب</option>
+                    <option value="">استشاره</option>
+                </select>
+                <select name="" id="">
+                    <option value="">اخر 7 ايام</option>
+                    <option value="">اخر 12 اسبوع</option>
+                </select>
+            </div>
+            <Line options={options} data={data} />
         </div>
     );
 };

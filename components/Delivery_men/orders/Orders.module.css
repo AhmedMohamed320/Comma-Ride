@@ -32,8 +32,8 @@
     display: none;
 }
 
-.pop.show{
-display: flex;
+.pop.show {
+    display: flex;
 }
 
 .pop > div {
@@ -47,7 +47,6 @@ display: flex;
     max-width: 30rem;
     text-align: center;
 }
-
 
 .pop > div .close {
     position: absolute;
@@ -68,10 +67,12 @@ display: flex;
     font-size: 1.8rem;
 }
 
-.pop input{
+.pop input {
     font-size: 1.5rem;
     background-color: var(--color-dark-4);
     padding: 0.5rem;
     border-radius: 0.5rem;
     color: var(--color-light-2);
+    outline: none;
+    border: none;
 }
