@@ -21,6 +21,18 @@ const Orders = () => {
                     </div>
                     <div>
                         <p className="mb-4 w-4/5 m-auto">{alertData}</p>
+                        {alertData == "تمت عمليه التسليم للعميل" && (
+                            <div className="flex flex-col gap-4 p-4">
+                                <input
+                                    type="number"
+                                    placeholder="المبلغ المحصل من العميل"
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="المبلغ الباقي للعميل"
+                                />
+                            </div>
+                        )}
                         <button
                             onClick={() => {
                                 setShowAlert(false);
@@ -40,7 +52,6 @@ const Orders = () => {
                 <OrderCard
                     alertText={setAlertData}
                     showAlertDiv={setShowAlert}
-                    
                 />
             </div>
         </section>

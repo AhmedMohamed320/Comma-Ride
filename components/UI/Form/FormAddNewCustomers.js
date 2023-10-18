@@ -44,13 +44,10 @@ const FormAddNewCustomers = (props) => {
 
     return (
         <>
-        {
-            console.log(specialPricing)
-        }
             <form action="" className={classes.form}>
                 <div>
                     <div>
-                        <label htmlFor="n1">اسم العميل</label>
+                        <label htmlFor="n1">الاسم</label>
                         <input
                             type="text"
                             id="n1"
@@ -140,6 +137,15 @@ const FormAddNewCustomers = (props) => {
                         />
                     </div>
                     <div>
+                        <label htmlFor="n13">وصلنا عن طريق </label>
+                        <select name="" id="n13">
+                            <option value="">اعلانات</option>
+                            <option value="">سوشيل ميديا</option>
+                            <option value="">ترشيح من صديق</option>
+                            <option value="">اخرى</option>
+                        </select>
+                    </div>
+                    <div>
                         <label htmlFor="n12">
                             تسعيره خاصه
                             <button
@@ -157,31 +163,45 @@ const FormAddNewCustomers = (props) => {
                     </div>
                     {specialPricing.map((data, index) => (
                         <div key={index}>
-                            <div className="flex w-full gap-4"> 
+                            <div className="flex w-full gap-4">
                                 <input
                                     type="text"
                                     placeholder="من"
                                     value={data.from}
                                     id="from"
-                                    onChange={(e) => handleChangeSpecialPricing(e, index)}
+                                    onChange={(e) =>
+                                        handleChangeSpecialPricing(e, index)
+                                    }
                                 />
                                 <input
                                     type="text"
                                     placeholder="الى"
                                     value={data.to}
                                     id="to"
-                                    onChange={(e) => handleChangeSpecialPricing(e, index)}
+                                    onChange={(e) =>
+                                        handleChangeSpecialPricing(e, index)
+                                    }
                                 />
                                 <input
                                     type="number"
                                     placeholder="السعر"
                                     value={data.price}
                                     id="price"
-                                    onChange={(e) => handleChangeSpecialPricing(e, index)}
+                                    onChange={(e) =>
+                                        handleChangeSpecialPricing(e, index)
+                                    }
                                 />
                             </div>
                         </div>
                     ))}
+                    <div>
+                        <label htmlFor="n14">المحفظه </label>
+                        <input
+                            type="number"
+                            id="n14"
+                            placeholder="ادخل قيمه محفظه العميل"
+                        />
+                    </div>
                     <div>
                         <label htmlFor="n9">ملاحظات</label>
                         <textarea name="" id="n9"></textarea>

@@ -16,7 +16,9 @@ const page = () => {
                 </div>
                 <div>
                     <select name="" id="">
-                        <option value="">فلتر حسب المكان</option>
+                        <option value="">فلتر حسب قيمه المحفظه</option>
+                        <option value="تنازلي">تنازلي</option>
+                        <option value="">تصاعدي</option>
                     </select>
                     <select name="" id="">
                         <option value="">فلتر حسب الاوردرات</option>
@@ -33,58 +35,64 @@ const page = () => {
                             <tr className={classes.head}>
                                 <td>الكود</td>
                                 <td>الاسم </td>
-                                <td>المنطقه</td>
+                                <td>المحغظه</td>
                                 <td>اوردرات الاسبوع</td>
+                                <td>تعديل</td>
                             </tr>
                             <tr>
                                 <td>124</td>
+                                <td>خالد السيد</td>
+                                <td>0</td>
+                                <td>5</td>
                                 <td>
-                                    <Link href="/Customers/Profile">
-                                        خالد السيد
+                                    <Link href="/Customers/Form_Customer/edit">
+                                        تعديل
                                     </Link>
                                 </td>
-                                <td>حي اول</td>
-                                <td>5</td>
                             </tr>
                             <tr>
                                 <td>124</td>
+                                <td>خالد السيد</td>
+                                <td>0</td>
+                                <td>5</td>
                                 <td>
-                                    <Link href="/Customers/Profile">
-                                        خالد السيد
+                                    <Link href="/Customers/Form_Customer/edit">
+                                        تعديل
                                     </Link>
                                 </td>
-                                <td>حي اول</td>
-                                <td>5</td>
                             </tr>
                             <tr>
                                 <td>124</td>
+                                <td>خالد السيد</td>
+                                <td>0</td>
+                                <td>5</td>
                                 <td>
-                                    <Link href="/Customers/Profile">
-                                        خالد السيد
+                                    <Link href="/Customers/Form_Customer/edit">
+                                        تعديل
                                     </Link>
                                 </td>
-                                <td>حي اول</td>
-                                <td>5</td>
                             </tr>
                             <tr>
                                 <td>124</td>
+                                <td>خالد السيد</td>
+                                <td>0</td>
+                                <td>5</td>
                                 <td>
-                                    <Link href="/Customers/Profile">
-                                        خالد السيد
+                                    <Link href="/Customers/Form_Customer/edit">
+                                        تعديل
                                     </Link>
                                 </td>
-                                <td>حي اول</td>
-                                <td>5</td>
                             </tr>
                             <tr>
                                 <td>124</td>
+                                <td>خالد السيد</td>
+                                <td>0</td>
+                                <td>5</td>
                                 <td>
-                                    <Link href="/Customers/Profile">
-                                        خالد السيد
+                                    <Link href="/Customers/Form_Customer/edit">
+                                        تعديل
                                     </Link>
                                 </td>
-                                <td>حي اول</td>
-                                <td>5</td>
                             </tr>
                         </tbody>
                     </table>

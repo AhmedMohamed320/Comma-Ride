@@ -22,17 +22,15 @@ const page = () => {
                     <div className={classes.search}>
                         <Search placeholder="ادخل رقم او كود العميل" />
                         <div className={classes.customer}>
-                            <p>
-                                الاسم : <span>عمر محمد محمد</span>
-                            </p>
                             <div>
                                 <p>
-                                    الكود : <span>45</span>
+                                    الاسم : <span>عمر محمد محمد</span> <span>(45)</span>
                                 </p>
                                 <button onClick={sendCustomerCode}>
                                     تاكيد
                                 </button>
                             </div>
+
                             <div>
                                 <ul className="flex flex-col gap-4">
                                     <li>
@@ -51,13 +49,21 @@ const page = () => {
                                 </ul>
                             </div>
                             <div>
+                                <p>
+                                    المحفظه : <span>45 ج.م</span>
+                                </p>
+                            </div>
+                            <div>
                                 <ul className="flex flex-col gap-4">
                                     <li>
                                         <p>تسعيره خاصه :</p>
                                     </li>
                                     <li>
                                         <span>
-                                            1. حى اول - حي تاني : <span className="underline underline-offset-4">45</span> 
+                                            1. حى اول - حي تاني :{" "}
+                                            <span className="underline underline-offset-4">
+                                                45
+                                            </span>
                                         </span>
                                         <button>اختار</button>
                                     </li>

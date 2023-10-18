@@ -96,6 +96,21 @@ const FormCreateOrder = (props) => {
                     />
                 </div>
                 <div>
+                    <label htmlFor="n15">التكلفه النهائيه</label>
+                    <div className="flex gap-4 w-full">
+                    <input
+                        type="number"
+                        id="n15"
+                        placeholder="المبلغ المخصومه من محفظه العميل"
+                    />
+                    <input
+                        type="number"
+                        
+                        placeholder=" المبلغ الواجب اخذه من العميل"
+                    />
+                    </div>
+                </div>
+                <div>
                     <label htmlFor="n9">المندوب المسؤول </label>
                     <select name="" id="n9">
                         <option value="">محمد</option>
@@ -121,7 +136,7 @@ const FormCreateOrder = (props) => {
                 {props.action === "edit" ? (
                     <p>تاكيد تعديل البيانات</p>
                 ) : (
-                    <p>ارسال الطلب للطيار</p>
+                    <p>تاكيد بيانات الطلب </p>
                 )}
             </button>
         </form>

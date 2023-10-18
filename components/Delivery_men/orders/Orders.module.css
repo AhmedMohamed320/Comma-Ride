@@ -67,3 +67,10 @@ display: flex;
     box-shadow: var(--box-shadow-1);
     font-size: 1.8rem;
 }
+
+.pop input{
+    font-size: 1.5rem;
+    background-color: var(--color-dark-4);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}

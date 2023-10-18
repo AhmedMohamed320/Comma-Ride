@@ -1,5 +1,3 @@
-"use client";
-import { useEffect, useState } from "react";
 import classes from "./OrderCard.module.css";
 import { usePathname } from "next/navigation";
 
@@ -128,7 +126,7 @@ const OrderCard = (props) => {
                 <div
                     onClick={() => {
                         handle_alert(
-                            `${location} لقد استلمت الاوردر الان من المورد`
+                            `لقد استلمت الاوردر الان من المورد`
                         );
                     }}
                     className={classes.pending}

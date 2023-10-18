@@ -59,7 +59,7 @@
 }
 .table tr {
     display: grid;
-    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-columns: 1fr repeat(3, 2fr) 1fr;
     padding: 1rem 0;
     font-size: 1.5rem;
     color: var(--color-light-2);
