@@ -1,3 +1,4 @@
+"use client";
 import L from "leaflet";
 import MarkerIcon from "../../node_modules/leaflet/dist/images/marker-icon.png";
 import MarkerShadow from "../../node_modules/leaflet/dist/images/marker-shadow.png";
@@ -10,7 +11,7 @@ const Map = () => {
             position: [30.586466, 31.491874],
             content: "مندوب 1 تم التحديث الساعه 01:00",
         },
-        { position: [30.587749, 31.486327], content: "مندوب 22" },
+        { position: [30.587749, 31.486327], content: "مندوب 2" },
         { position: [30.594408, 31.49579], content: "مندوب 3" },
         { position: [30.590446, 31.505912], content: "مندوب 4" },
     ];
@@ -23,7 +24,7 @@ const Map = () => {
         <div>
             <MapContainer
                 style={{
-                    height: "60vh",
+                    height: "50vh",
                     width: "100%",
                 }}
                 zoom={14}

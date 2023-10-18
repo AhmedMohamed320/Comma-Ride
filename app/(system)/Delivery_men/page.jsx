@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./page.module.css";
 import Link from "next/link";
 import Search from "@/components/UI/input/Search";
@@ -8,6 +8,10 @@ import "keen-slider/keen-slider.min.css";
 import TimeLine from "@/components/Delivery_men/TimeLine";
 import Map from "@/components/map/Map";
 const page = () => {
+    const [showMap, setShowMap] = useState(false);
+    useEffect(() => {
+        setShowMap(true);
+    }, []);
     const [sliderRef] = useKeenSlider({
         loop: true,
         mode: "free-snap",
@@ -96,7 +100,7 @@ const page = () => {
                 </table>
             </div>
             <p className="text-2xl pt-4 font-semibold text-center">
-                الطيارين المتاحين 
+                الطيارين المتاحين
             </p>
             <div ref={sliderRef} className={`keen-slider ${classes.timeLine}`}>
                 <div className="keen-slider__slide">
@@ -136,9 +140,11 @@ const page = () => {
             <p className="text-2xl pt-4 font-semibold text-center">
                 مواقع الطيارين
             </p>
-            <div className={classes.map}>
-                <Map/>
-            </div>
+            {showMap && (
+                <div className={classes.map}>
+                    <Map />
+                </div>
+            )}
         </section>
     );
 };
