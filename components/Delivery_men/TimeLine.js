@@ -10,15 +10,15 @@ const TimeLine = (props) => {
                     <div className={classes.person}>
                         <div>
                             <p>خالد على</p>
-                            <p className={classes.unavailable}>خارج</p>
+                            <span className={classes.unavailable}></span>
                         </div>
                         <div>
                             <p>خالد على</p>
-                            <p className={classes.available}>داخل الشركه  </p>
+                            <span className={classes.available}> </span>
                         </div>
                         <div>
                             <p>خالد على</p>
-                            <p className={classes.unavailable}>خارج</p>
+                            <span className={classes.unavailable}></span>
                         </div>
                     </div>
                 </div>

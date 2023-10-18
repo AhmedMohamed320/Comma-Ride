@@ -42,21 +42,19 @@
     background-color: var(--color-dark-6);
     padding: 0.5rem;
     border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.person > div .available {
-    background-color: rgba(38, 148, 53, 0.637);
-    border-radius: 0.5rem;
+.person > div .available,.person > div .unavailable {
+    background-color: rgba(38, 148, 53, 0.877);
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
 }
 
 .person > div .unavailable {
-    background-color: #d6323598;
-    border-radius: 0.5rem;
+    background-color: #d63235d2;
 }
-
-/* .section>div:nth-of-type(3){
-    border: 1px solid var(--color-dark-6);
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-    padding: 0 1rem;
-} */
