@@ -140,11 +140,7 @@ const page = () => {
             <p className="text-2xl pt-4 font-semibold text-center">
                 مواقع الطيارين
             </p>
-            {showMap && (
-                <div className={classes.map}>
-                    <Map />
-                </div>
-            )}
+            
         </section>
     );
 };
