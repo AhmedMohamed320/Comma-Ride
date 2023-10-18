@@ -1,9 +1,9 @@
 "use client";
-import L from "leaflet";
-import MarkerIcon from "../../node_modules/leaflet/dist/images/marker-icon.png";
-import MarkerShadow from "../../node_modules/leaflet/dist/images/marker-shadow.png";
-import "leaflet/dist/leaflet.css";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+// import L from "leaflet";
+// import MarkerIcon from "../../node_modules/leaflet/dist/images/marker-icon.png";
+// import MarkerShadow from "../../node_modules/leaflet/dist/images/marker-shadow.png";
+// import "leaflet/dist/leaflet.css";
+// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { useEffect, useState } from "react";
 
 const Map = () => {
