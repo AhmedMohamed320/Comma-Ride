@@ -38,7 +38,7 @@ const BarChart = (props) => {
             },
         },
     };
-    const labels = ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10"];
+    const labels = ["11:00", "12:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00"];
     const data = {
         labels,
         datasets: [
@@ -46,7 +46,7 @@ const BarChart = (props) => {
                 fill: true,
                 label: "بيع",
                 data: labels.map(() =>
-                    faker.datatype.number({ min: 0, max: 50 })
+                    faker.datatype.number({ min: 0, max: 10 })
                 ),
                 borderColor: "#D63236",
                 backgroundColor: "#D6323660",
@@ -64,10 +64,6 @@ const BarChart = (props) => {
                     <option value="">بيع</option>
                     <option value="">طلب</option>
                     <option value="">استشاره</option>
-                </select>
-                <select name="" id="">
-                    <option value="">اخر 7 ايام</option>
-                    <option value="">اخر 12 اسبوع</option>
                 </select>
             </div>
             <Line options={options} data={data} />

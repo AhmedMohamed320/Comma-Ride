@@ -10,21 +10,20 @@
 }
 
 .title {
+    min-width: 23rem;
     position: absolute;
     background-color: var(--color-dark-4);
     top: -2.5rem;
     right: 50%;
     transform: translate(50%, 50%);
     padding: 0 1rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-light-2);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    width: 70%;
-    max-width: 28rem;
 }
 
 .title select {
@@ -40,7 +39,7 @@
     height: 17rem;
 }
 
-.chart.pie{
+.chart.pie {
     padding: 2rem;
     flex-direction: column;
     justify-content: space-around;

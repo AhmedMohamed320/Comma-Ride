@@ -23,21 +23,10 @@
 }
 
 .filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem 0;
-}
-
-.statistics {
-    background-color: var(--color-dark-4);
-    padding: 2rem 1rem 1rem;
-    border-radius: 1rem;
-    box-shadow: var(--box-shadow-1);
+    margin: 2rem 0 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    margin-bottom: 1rem;
 }
 
 /* -------------------- */
@@ -58,7 +47,7 @@
     display: flex;
 }
 
-.pop > div {
+.pop>div {
     background-color: var(--color-light-2);
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -68,16 +57,16 @@
     max-width: 55rem;
 }
 
-.pop > div .close {
+.pop>div .close {
     padding: 0.5rem;
     font-size: 2.5rem;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: space-between ;
+    justify-content: space-between;
 }
 
-.pop > div button {
+.pop>div button {
     width: 100%;
     background-color: var(--color-red-1);
     padding: 0.5rem;
@@ -86,16 +75,22 @@
     box-shadow: var(--box-shadow-1);
     font-size: 1.8rem;
 }
+
 /* ---------------- */
 
-@media (max-width: 55rem) {
-    .statistics {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+.orders {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
+/* ---------------- */
+
 @media (max-width: 45rem) {
+    .orders {
+        grid-template-columns: 1fr;
+    }
+
     .filter {
         display: grid;
         grid-template-columns: 1fr 1fr;

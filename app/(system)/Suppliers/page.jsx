@@ -6,7 +6,7 @@ import Search from "@/components/UI/input/Search";
 
 const page = () => {
     return (
-        <section className="p-4 mainContainer">
+        <section>
             <div className={classes.headPage}>
                 <div>
                     <p className="text-4xl font-semibold">
@@ -72,14 +72,6 @@ const page = () => {
                         </tr>
                     </tbody>
                 </table>
-            </div>
-            <div className={classes.charts}>
-                <div className={classes.chart}>
-                    <LineCart title="نمو الموردين" />
-                </div>
-                <div className={classes.chart}>
-                    <LineCart title="نشاط الموردين" />
-                </div>
             </div>
         </section>
     );

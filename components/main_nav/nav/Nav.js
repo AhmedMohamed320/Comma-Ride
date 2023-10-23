@@ -28,49 +28,10 @@ const Nav = (props) => {
 
     return (
         <section className={navClass}>
-            <div className="mainContainer">
+            <div className="mainContainer w-full">
                 <Link href="/" className={classes.logo}>
-                    <img src="/image/dots_logo.png" alt="dots logo" />
+                    <img src="/image/ride_logo_1.png" alt="dots logo" />
                 </Link>
-
-                <div
-                    className={`hidden md:block font-semibold ${classes.list}`}
-                >
-                    {pathname != "/" && (
-                        <ul className="flex items-center gap-10 text-2xl md">
-                            <li>
-                                <Link href="/">
-                                    <p>الرئيسيه</p>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/Delivery_men">
-                                    <p>الطيارين</p>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/Suppliers">
-                                    <p>الموردين</p>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/Customers">
-                                    <p>العملاء</p>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/Orders">
-                                    <p>الطلبات</p>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/Customers_service">
-                                    <p>خدمه العملاء</p>
-                                </Link>
-                            </li>
-                        </ul>
-                    )}
-                </div>
                 <div className={`md:flex hidden gap-4 ${classes.btn}`}>
                     <Link
                         href="/User_Profile"
@@ -80,12 +41,6 @@ const Nav = (props) => {
                             {pathname == "/" && <span>اهلا </span>}
                             احمد محمد
                         </p>
-                    </Link>
-                    <Link
-                        href="/sign_in"
-                        className="flex  items-center gap-3 text-2xl"
-                    >
-                        <p> تسجيل الخروج</p>
                     </Link>
                 </div>
                 <div className={`md:hidden`}>

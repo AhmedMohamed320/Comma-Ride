@@ -90,9 +90,9 @@ const page = () => {
         setShowPhoneType_2(false);
     }
     return (
-        <section className={`mainContainer p-4 ${classes.section}`}>
+        <section className={classes.section}>
             <div>
-                <p className="text-4xl py-4 font-semibold">خدمه العملاء</p>
+                <p className="text-4xl pb-4 font-semibold">خدمه العملاء </p>
             </div>
             <div className={classes.action}>
                 <div
@@ -260,55 +260,56 @@ const page = () => {
             )}
             <div className={classes.call_statistics}>
                 <div className=" flex items-center gap-4">
-                    <p className="text-3xl">احصائيات يوم </p>
+                    <p className="text-3xl">مكالمات يوم </p>
                     <input type="date" />
+                    <span className="text-2xl">45 مكالمه</span>
                 </div>
                 <div>
                     <div className={classes.part1}>
-                        <div className={classes.totalInformation}>
-                            <div>
-                                <div>
-                                    <p>50 مكالمه</p>
-                                </div>
-                            </div>
-                        </div>
                         <div className={classes.table}>
                             <table>
                                 <tbody>
-                                    <tr>
+                                    <tr className="font-semibold">
                                         <td>الرقم</td>
-                                        <td>نوع المكالمه</td>
-                                        <td>توقيت المكالمه</td>
+                                        <td>النوع</td>
+                                        <td>التوقيت </td>
+                                        <td>خدمه العملاء</td>
+                                        <td>ملاحظه</td>
                                     </tr>
                                     <tr>
                                         <td>1</td>
                                         <td>طلب</td>
                                         <td>05:45</td>
+                                        <td>محمد</td>
+                                        <td>لا يوجود ملاحظات</td>
                                     </tr>
                                     <tr>
                                         <td>1</td>
                                         <td>طلب</td>
                                         <td>05:45</td>
+                                        <td>محمد</td>
+                                        <td>لا يوجود ملاحظات</td>
                                     </tr>
                                     <tr>
                                         <td>1</td>
                                         <td>طلب</td>
                                         <td>05:45</td>
+                                        <td>محمد</td>
+                                        <td>لا يوجود ملاحظات</td>
                                     </tr>
                                     <tr>
                                         <td>1</td>
                                         <td>طلب</td>
                                         <td>05:45</td>
+                                        <td>محمد</td>
+                                        <td>لا يوجود ملاحظات</td>
                                     </tr>
                                     <tr>
                                         <td>1</td>
                                         <td>طلب</td>
                                         <td>05:45</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>طلب</td>
-                                        <td>05:45</td>
+                                        <td>محمد</td>
+                                        <td>لا يوجود ملاحظات</td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -21,8 +21,12 @@ const Aside = (props) => {
                     <MdOutlineClose />
                 </div>
                 <div className={classes.head}>
-                    <Link href="/" className={classes.logo} onClick={props.onHideAside}>
-                        <img src="/image/dots_logo_2.png" alt="dots logo" />
+                    <Link
+                        href="/"
+                        className={classes.logo}
+                        onClick={props.onHideAside}
+                    >
+                        <img src="/image/ride_logo_2.png" alt="dots logo" />
                     </Link>
                 </div>
                 <ul className="flex gap-8 flex-col">
@@ -73,7 +77,11 @@ const Aside = (props) => {
                             العملاء
                         </Link>
                     </li>
-                    <li className={pathname == "/Customers_service" && classes.active}>
+                    <li
+                        className={
+                            pathname == "/Customers_service" && classes.active
+                        }
+                    >
                         <span className={classes.border}></span>
                         <Link
                             href={{

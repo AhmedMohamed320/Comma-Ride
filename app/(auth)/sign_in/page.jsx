@@ -68,7 +68,7 @@ const Login = () => {
                     <div>
                         <Link href="/">
                             <img
-                                src="/image/dots_logo_2.png"
+                                src="/image/ride_logo_1.png"
                                 alt="/dots logo"
                             />
                         </Link>

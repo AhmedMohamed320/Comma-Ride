@@ -11,10 +11,10 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.action > div,
-.phoneType_1 > div,
-.phoneType_2 > div,
-.phoneType_2 > a {
+.action>div,
+.phoneType_1>div,
+.phoneType_2>div,
+.phoneType_2>a {
     padding: 1rem;
     background-color: var(--color-red-1);
     color: var(--color-light-2);
@@ -25,10 +25,10 @@
     cursor: pointer;
 }
 
-.action > div,
-.phoneType_1 > div,
-.phoneType_2 > div,
-.phoneType_2 > a {
+.action>div,
+.phoneType_1>div,
+.phoneType_2>div,
+.phoneType_2>a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,13 +43,14 @@
     border-radius: 0.5rem;
 }
 
-.phoneType_1 > div,
-.phoneType_2 > a,
-.phoneType_2 > div {
+.phoneType_1>div,
+.phoneType_2>a,
+.phoneType_2>div {
     background-color: var(--color-dark-1);
 }
 
-.phoneType_1 > div button ,.phoneType_2 > div button {
+.phoneType_1>div button,
+.phoneType_2>div button {
     background-color: var(--color-red-1);
     font-weight: 500;
     font-size: 1.4rem;
@@ -67,13 +68,13 @@
     font-weight: 500;
 }
 
-.groupSelect{
+.groupSelect {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.groupSelect select{
+.groupSelect select {
     width: 100%;
 }
 
@@ -89,12 +90,12 @@
     margin-top: 2rem;
 }
 
-.call_statistics > div:nth-of-type(1) {
+.call_statistics>div:nth-of-type(1) {
     background-color: var(--color-dark-1);
     padding: 1rem;
 }
 
-.call_statistics > div:nth-of-type(1) input {
+.call_statistics>div:nth-of-type(1) input {
     background-color: var(--color-dark-4);
     outline: none;
     border: none;
@@ -103,15 +104,16 @@
     border-radius: 0.5rem;
     font-size: 1.5rem;
 }
-.call_statistics > div:nth-of-type(2) {
+
+.call_statistics>div:nth-of-type(2) {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    padding: 1.5rem;
+    padding: 2rem 1rem;
 }
 
 .table,
-.totalInformation > div:nth-of-type(1) {
+.totalInformation>div:nth-of-type(1) {
     width: 100%;
     padding: 1rem;
     border-radius: 1rem;
@@ -121,6 +123,7 @@
 .table table {
     width: 100%;
 }
+
 .table tbody {
     width: 100%;
     overflow: hidden;
@@ -132,24 +135,26 @@
 
 .table tbody tr {
     display: grid;
-    grid-template-columns: 1fr repeat(2, 2fr);
+    grid-template-columns: 1fr repeat(3, 2fr) 3fr;
     text-align: center;
+    padding: 1rem 0;
 }
 
-.totalInformation > div:nth-of-type(1) {
+.totalInformation>div:nth-of-type(1) {
     display: grid;
     grid-template-columns: 1fr;
     /* gap: 1rem; */
     margin-bottom: 2rem;
 }
 
-.totalInformation > div:nth-of-type(1) > div {
+.totalInformation>div:nth-of-type(1)>div {
     padding: 0.5rem;
     background-color: var(--color-red-1);
     border-radius: 0.5rem;
     color: var(--color-light-2);
     text-align: center;
 }
+
 /* --------------- */
 .table {
     position: relative;
@@ -176,13 +181,14 @@
 
 /* ---------- */
 
-@media (max-width: 45rem) {
-    .call_statistics > div:nth-of-type(2) {
+@media (max-width: 65rem) {
+    .call_statistics>div:nth-of-type(2) {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .phoneType_1 > div ,.phoneType_2 > div {
+    .phoneType_1>div,
+    .phoneType_2>div {
         flex-direction: column;
     }
 }

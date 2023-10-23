@@ -2,19 +2,16 @@
 import classes from "./page.module.css";
 import OrderCard from "@/components/Delivery_men/orders/OrderCard";
 import Search from "@/components/UI/input/Search";
-import { PieChart } from "@/components/UI/chart/PieChart";
-import LineChart from "@/components/UI/chart/LineChart";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import FormCreateOrder from "@/components/UI/Form/FormCreateOrder";
-
 
 const page = () => {
     const [formEdit, setShowFormEdit] = useState(false);
     const alertClass2 = `${classes.pop}  ${formEdit ? `${classes.show}` : ""}`;
 
     return (
-        <section className="mainContainer p-4">
+        <section>
             {formEdit && (
                 <div className={alertClass2}>
                     <div>
@@ -34,7 +31,7 @@ const page = () => {
             )}
             <div className="flex items-center justify-between">
                 <div className={classes.head}>
-                    <p className="text-4xl py-4 font-semibold">طلبات يوم</p>
+                    <p className="text-4xl pb-4 font-semibold">طلبات يوم</p>
                     <input type="date" />
                     <p className="text-2xl">الاجمالي : 1</p>
                 </div>
@@ -60,11 +57,9 @@ const page = () => {
                     <option value="">جاري التوصيل</option>
                 </select>
             </div>
-            <div className={classes.statistics}>
-                <PieChart title="انواع الطلبات" />
-                <LineChart title="اعداد الطلبات" />
-            </div>
             <div className={classes.orders}>
+                <OrderCard edit={true} fromEdit={setShowFormEdit} />
+                <OrderCard edit={true} fromEdit={setShowFormEdit} />
                 <OrderCard edit={true} fromEdit={setShowFormEdit} />
             </div>
         </section>

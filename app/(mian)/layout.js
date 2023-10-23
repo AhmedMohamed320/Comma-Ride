@@ -1,9 +1,10 @@
-import "./globals.css";
+import Sidebar from "@/components/main_nav/sidebar/Sidebar";
+import "../globals.css";
 import localFont from "next/font/local";
 import MainNav from "@/components/main_nav/MainNav";
 
 const myFont = localFont({
-    src: "../fonts/font.otf",
+    src: "../../fonts/font.otf",
     display: "swap",
 });
 
@@ -16,8 +17,9 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" className={myFont.className}>
             <body>
-                <MainNav/>
-                {children}</body>
+                <MainNav />
+                {children}
+            </body>
         </html>
     );
 }

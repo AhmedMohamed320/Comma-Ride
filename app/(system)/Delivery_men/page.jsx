@@ -34,7 +34,7 @@ const page = () => {
         },
     });
     return (
-        <section className={`mainContainer ${classes.section}`}>
+        <section className={classes.section}>
             <div className={classes.head}>
                 <div>
                     <p className="text-4xl font-semibold ">

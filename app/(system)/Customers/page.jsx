@@ -6,7 +6,7 @@ import Search from "@/components/UI/input/Search";
 
 const page = () => {
     return (
-        <section className=" p-4 mainContainer">
+        <section>
             <div className={classes.headPage}>
                 <div>
                     <p className="text-4xl font-semibold">
@@ -25,6 +25,11 @@ const page = () => {
                         <option value="">تصاعدي</option>
                         <option value="">تنازلي</option>
                     </select>
+                    <select name="" id="">
+                        <option value="">فلتر حسب تاريخ الانضمام</option>
+                        <option value="تنازلي">تنازلي</option>
+                        <option value="">تصاعدي</option>
+                    </select>
                 </div>
             </div>
             <div className={classes.part2}>
@@ -37,73 +42,24 @@ const page = () => {
                                 <td>الاسم </td>
                                 <td>المحغظه</td>
                                 <td>اوردرات الاسبوع</td>
-                                <td>تعديل</td>
+                                <td>تعديل او حذف</td>
                             </tr>
                             <tr>
                                 <td>124</td>
-                                <td>خالد السيد</td>
-                                <td>0</td>
-                                <td>5</td>
-                                <td>
-                                    <Link href="/Customers/Form_Customer/edit">
-                                        تعديل
-                                    </Link>
+                                <td className="underline underline-offset-8">
+                                    <Link href="">خالد السيد</Link>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>124</td>
-                                <td>خالد السيد</td>
                                 <td>0</td>
                                 <td>5</td>
-                                <td>
+                                <td className="flex gap-4">
                                     <Link href="/Customers/Form_Customer/edit">
                                         تعديل
                                     </Link>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>124</td>
-                                <td>خالد السيد</td>
-                                <td>0</td>
-                                <td>5</td>
-                                <td>
-                                    <Link href="/Customers/Form_Customer/edit">
-                                        تعديل
-                                    </Link>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>124</td>
-                                <td>خالد السيد</td>
-                                <td>0</td>
-                                <td>5</td>
-                                <td>
-                                    <Link href="/Customers/Form_Customer/edit">
-                                        تعديل
-                                    </Link>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>124</td>
-                                <td>خالد السيد</td>
-                                <td>0</td>
-                                <td>5</td>
-                                <td>
-                                    <Link href="/Customers/Form_Customer/edit">
-                                        تعديل
-                                    </Link>
+                                    <button>حذف</button>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                <div className={classes.charts}>
-                    <div className={classes.chart}>
-                        <LineCart title="نمو العملاء" />
-                    </div>
-                    <div className={classes.chart}>
-                        <LineCart title="نشاط العملاء" />
-                    </div>
                 </div>
             </div>
         </section>
