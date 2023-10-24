@@ -57,6 +57,17 @@
     right: 1rem;
     box-shadow: var(--box-shadow-1);
 } */
+/* -------------- */
+.branchLogo ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.branchLogo ul li img{
+    width: 85%;
+    margin: auto;
+}
 
 /* -------------- */
 

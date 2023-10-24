@@ -24,7 +24,11 @@ export default function Home() {
                 <div className={classes.dashboard}>
                     <div className={` w-fit ${classes.nav}`}>
                         <ul>
-                            <li className={content == "main" && classes.active}>
+                            <li
+                                className={
+                                    content == "main" ? classes.active : ""
+                                }
+                            >
                                 <Link
                                     href={{
                                         pathname: "/",
@@ -35,7 +39,7 @@ export default function Home() {
                             </li>
                             <li
                                 className={
-                                    content == "orders" && classes.active
+                                    content == "orders" ? classes.active : ""
                                 }
                             >
                                 <Link
@@ -51,7 +55,7 @@ export default function Home() {
                             </li>
                             <li
                                 className={
-                                    content == "customers" && classes.active
+                                    content == "customers" ? classes.active : ""
                                 }
                             >
                                 <Link
@@ -67,7 +71,7 @@ export default function Home() {
                             </li>
                             <li
                                 className={
-                                    content == "suppliers" && classes.active
+                                    content == "suppliers" ? classes.active : ""
                                 }
                             >
                                 <Link
@@ -108,7 +112,6 @@ export default function Home() {
                                     </li> */}
                         </ul>
                     </div>
-                    
 
                     <main className="py-4">
                         {content == "main" && <Main />}

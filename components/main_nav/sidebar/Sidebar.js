@@ -79,6 +79,19 @@ const Sidebar = () => {
                         </li>
                     </ul>
                 </div>
+                <div className={classes.branchLogo}>
+                    <ul>
+                        <li>
+                            <img src="/image/dots.png" alt="dots logo" />
+                        </li>
+                        <li>
+                            <img src="/image/firnas.png" alt="firnas logo" />
+                        </li>
+                        <li>
+                            <img src="/image/cube.png" alt="cube logo" />
+                        </li>
+                    </ul>
+                </div>
                 <div className={classes.userInfo}>
                     <p className="text-center font-semibold">احمد محمد </p>
                     <Link
