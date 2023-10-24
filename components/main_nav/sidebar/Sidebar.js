@@ -7,6 +7,8 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import { FaPeopleGroup, FaShop } from "react-icons/fa6";
 import { BiLogOut } from "react-icons/bi";
 import { MdDeliveryDining } from "react-icons/md";
+import { HiMiniHome } from "react-icons/hi2";
+
 import Link from "next/link";
 
 const Sidebar = () => {
@@ -24,6 +26,15 @@ const Sidebar = () => {
                         <img src="/image/ride_logo_4.png" title="comma ride" />
                     </Link>
                     <ul>
+                    <li
+                            className={
+                                pathname == "/" ? classes.active : ""
+                            }
+                        >
+                            <Link href="/">
+                                <HiMiniHome title="الرئيسيه" />
+                            </Link>
+                        </li>
                         <li
                             className={
                                 pathname == "/Orders" ? classes.active : ""
