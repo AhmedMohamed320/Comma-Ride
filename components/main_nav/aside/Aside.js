@@ -105,30 +105,6 @@ const Aside = (props) => {
                             الطلبات
                         </Link>
                     </li>
-                    <li className={pathname == "/Doctory" && classes.active}>
-                        <span className={classes.border}></span>
-                        <Link
-                            href={{
-                                pathname: "/",
-                            }}
-                            onClick={props.onHideAside}
-                        >
-                            <BiSolidReport />
-                            التقارير
-                        </Link>
-                    </li>
-                    <li className={pathname == "/Doctory" && classes.active}>
-                        <span className={classes.border}></span>
-                        <Link
-                            href={{
-                                pathname: "/",
-                            }}
-                            onClick={props.onHideAside}
-                        >
-                            <AiOutlineBarChart />
-                            احصائيات
-                        </Link>
-                    </li>
                 </ul>
                 <span className={classes.hr}></span>
                 <div className="flex items-center  px-10  gap-4 cursor-pointer font-semibold">
