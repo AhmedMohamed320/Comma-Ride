@@ -114,10 +114,10 @@ const Aside = (props) => {
                 <div className={classes.branchLogo}>
                     <ul>
                         <li>
-                            <img src="/image/dots-2.png" alt="dots logo" />
+                            <img src="/image/firnas-2.png" alt="firnas logo" />
                         </li>
                         <li>
-                            <img src="/image/firnas-2.png" alt="firnas logo" />
+                            <img src="/image/dots-2.png" alt="dots logo" />
                         </li>
                         <li>
                             <img src="/image/cube-2.png" alt="cube logo" />

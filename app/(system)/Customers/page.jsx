@@ -12,6 +12,7 @@ const page = () => {
                     <p className="text-4xl font-semibold">
                         العملاء <span className="text-2xl">950</span>
                     </p>
+                    <Search placeholder="ادخل رقم او كود العميل" />
                     <Link href="/Customers/Form_Customer/add">اضافه عميل</Link>
                 </div>
                 <div>
@@ -33,8 +34,10 @@ const page = () => {
                 </div>
             </div>
             <div className={classes.part2}>
+                <div>
+                    
+                </div>
                 <div className={classes.table}>
-                    <Search placeholder="ادخل رقم او كود العميل" />
                     <table>
                         <tbody>
                             <tr className={classes.head}>
@@ -47,7 +50,7 @@ const page = () => {
                             <tr>
                                 <td>124</td>
                                 <td className="underline underline-offset-8">
-                                    <Link href="">خالد السيد</Link>
+                                    <Link href="/Customers/Profile">خالد السيد</Link>
                                 </td>
                                 <td>0</td>
                                 <td>5</td>

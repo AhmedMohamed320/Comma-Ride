@@ -259,13 +259,95 @@ const page = () => {
                 </div>
             )}
             <div className={classes.call_statistics}>
-                <div className=" flex items-center gap-4">
-                    <p className="text-3xl">مكالمات يوم </p>
-                    <input type="date" />
-                    <span className="text-2xl">45 مكالمه</span>
+                <div className=" flex items-center justify-between">
+                    <div className=" flex items-center gap-4">
+                        <p className="text-3xl">مكالمات يوم </p>
+                        <input type="date" />
+                        <span className="text-2xl">مجدول : 25</span>
+                        <span className="text-2xl">الاجمالى : 45</span>
+                    </div>
+                    <div>
+                        <button>جدوله مكالمه</button>
+                    </div>
                 </div>
-                <div>
-                    <div className={classes.part1}>
+                <div className={classes.part2}>
+                    <div>
+                        <div className={classes.table}>
+                            <table>
+                                <tbody>
+                                    <tr className="font-semibold">
+                                        <td>الكود</td>
+                                        <td>الاسم</td>
+                                        <td>الارقام </td>
+                                        <td>ملاحظه</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>احمد محمد</td>
+                                        <td>
+                                            <p>01280626320</p>
+                                        </td>
+                                        <td>لا يوجد</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>احمد محمد</td>
+                                        <td>
+                                            <p>01280626320</p>
+                                        </td>
+                                        <td>لا يوجد</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>احمد محمد</td>
+                                        <td>
+                                            <p>01280626320</p>
+                                            <p>01254584854</p>
+                                        </td>
+                                        <td>لا يوجد</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className={classes.table}>
+                            <table>
+                                <tbody>
+                                    <tr className="font-semibold">
+                                        <td>الكود</td>
+                                        <td>الاسم</td>
+                                        <td>الارقام </td>
+                                        <td>ملاحظه</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>احمد محمد</td>
+                                        <td>
+                                            <p>01280626320</p>
+                                        </td>
+                                        <td>لا يوجد</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>احمد محمد</td>
+                                        <td>
+                                            <p>01280626320</p>
+                                        </td>
+                                        <td>لا يوجد</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>احمد محمد</td>
+                                        <td>
+                                            <p>01280626320</p>
+                                            <p>01254584854</p>
+                                        </td>
+                                        <td>لا يوجد</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
                         <div className={classes.table}>
                             <table>
                                 <tbody>
@@ -273,7 +355,7 @@ const page = () => {
                                         <td>الرقم</td>
                                         <td>النوع</td>
                                         <td>التوقيت </td>
-                                        <td>خدمه العملاء</td>
+                                        <td>الموظف</td>
                                         <td>ملاحظه</td>
                                     </tr>
                                     <tr>
@@ -314,9 +396,9 @@ const page = () => {
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                    <div className={classes.charts}>
-                        <BarChart title="المكالمات" />
+                        <div className={classes.charts}>
+                            <BarChart title="احصائيات المكالمات" />
+                        </div>
                     </div>
                 </div>
             </div>
