@@ -33,37 +33,35 @@ const page = () => {
                     </select>
                 </div>
             </div>
-            <div className={classes.part2}>
-                <div>
-                    
-                </div>
-                <div className={classes.table}>
-                    <table>
-                        <tbody>
-                            <tr className={classes.head}>
-                                <td>الكود</td>
-                                <td>الاسم </td>
-                                <td>المحغظه</td>
-                                <td>اوردرات الاسبوع</td>
-                                <td>تعديل او حذف</td>
-                            </tr>
-                            <tr>
-                                <td>124</td>
-                                <td className="underline underline-offset-8">
-                                    <Link href="/Customers/Profile">خالد السيد</Link>
-                                </td>
-                                <td>0</td>
-                                <td>5</td>
-                                <td className="flex gap-4">
-                                    <Link href="/Customers/Form_Customer/edit">
-                                        تعديل
-                                    </Link>
-                                    <button>حذف</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+
+            <div className={classes.table}>
+                <table>
+                    <tbody>
+                        <tr className={classes.head}>
+                            <td>الكود</td>
+                            <td>الاسم </td>
+                            <td>المحغظه</td>
+                            <td>اوردرات الاسبوع</td>
+                            <td>تعديل او حذف</td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8">
+                                <Link href="/Customers/Profile">
+                                    خالد السيد
+                                </Link>
+                            </td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td className="flex gap-4">
+                                <Link href="/Customers/Form_Customer/edit">
+                                    تعديل
+                                </Link>
+                                <button>حذف</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     );
