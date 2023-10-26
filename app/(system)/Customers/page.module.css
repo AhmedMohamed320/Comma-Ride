@@ -7,6 +7,7 @@
 .headPage>div:nth-of-type(1) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .headPage>div:nth-of-type(1) a,
@@ -29,7 +30,6 @@
 }
 
 .headPage>div:nth-of-type(2) {
-    margin: 1rem 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -38,6 +38,7 @@
 /* ---------------- */
 
 .table {
+    margin-top: 1rem;
     box-shadow: var(--box-shadow-1);
     background-color: var(--color-dark-4);
     border-radius: 1rem;

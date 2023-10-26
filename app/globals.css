@@ -85,10 +85,6 @@ label {
 
 
 @media (max-width: 65rem) {
-    .main {
-        padding: 1rem;
-    }
-
     html {
         font-size: 50%;
     }
@@ -96,6 +92,7 @@ label {
 
 @media (max-width: 768px) {
     .main {
+        padding: 1rem;
         min-height: 90vh;
         width: 100%;
         border-top-right-radius: 0;

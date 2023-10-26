@@ -9,9 +9,7 @@ const page = () => {
         <section>
             <div className={classes.headPage}>
                 <div>
-                    <p className="text-4xl font-semibold">
-                        العملاء <span className="text-2xl">950</span>
-                    </p>
+                    <p className="text-4xl font-semibold">العملاء</p>
                     <Search placeholder="ادخل رقم او كود العميل" />
                     <Link href="/Customers/Form_Customer/add">اضافه عميل</Link>
                 </div>

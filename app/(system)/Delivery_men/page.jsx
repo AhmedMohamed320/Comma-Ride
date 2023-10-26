@@ -40,7 +40,7 @@ const page = () => {
                     <p className="text-4xl font-semibold ">
                         الطيارين <span className="text-2xl">3</span>
                     </p>
-                    <div className="sm:flex hidden ">
+                    <div >
                         <Search placeholder="ادخل رقم او كود الطيار" />
                     </div>
                 </div>

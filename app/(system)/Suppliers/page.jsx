@@ -12,7 +12,7 @@ const page = () => {
                     <p className="text-4xl font-semibold">
                         الموردين <span className="text-2xl">2</span>
                     </p>
-                    <div className="sm:flex hidden ">
+                    <div >
                         <Search placeholder="ادخل رقم او كود المورد" />
                     </div>
                 </div>
