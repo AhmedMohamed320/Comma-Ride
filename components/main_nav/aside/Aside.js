@@ -79,13 +79,13 @@ const Aside = (props) => {
                     </li>
                     <li
                         className={
-                            pathname == "/Customers_service" && classes.active
+                            pathname == "/Customer_service" && classes.active
                         }
                     >
                         <span className={classes.border}></span>
                         <Link
                             href={{
-                                pathname: "/Customers_service",
+                                pathname: "/Customer_service",
                             }}
                             onClick={props.onHideAside}
                         >
