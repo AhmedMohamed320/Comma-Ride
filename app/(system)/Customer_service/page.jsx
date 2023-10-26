@@ -331,7 +331,6 @@ const page = () => {
                     <div className=" flex items-center gap-4">
                         <p className="text-3xl">مكالمات يوم </p>
                         <input type="date" />
-                        <span className="text-2xl">مجدول : 25</span>
                         <span className="text-2xl">الاجمالى : 45</span>
                     </div>
                     <div>
