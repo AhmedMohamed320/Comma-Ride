@@ -25,19 +25,18 @@ const Sidebar = () => {
                     >
                         <img src="/image/ride_logo_4.png" title="comma ride" />
                     </Link>
+
                     <ul>
-                    <li
-                            className={
-                                pathname == "/" ? classes.active : ""
-                            }
-                        >
+                        <li className={pathname == "/" ? classes.active : ""}>
                             <Link href="/">
                                 <HiMiniHome title="الرئيسيه" />
                             </Link>
                         </li>
                         <li
                             className={
-                                pathname == "/Orders" ? classes.active : ""
+                                pathname.includes("/Orders")
+                                    ? classes.active
+                                    : ""
                             }
                         >
                             <Link href="/Orders">
@@ -46,7 +45,9 @@ const Sidebar = () => {
                         </li>
                         <li
                             className={
-                                pathname == "/Customers" ? classes.active : ""
+                                pathname.includes("/Customers")
+                                    ? classes.active
+                                    : ""
                             }
                         >
                             <Link
@@ -59,7 +60,9 @@ const Sidebar = () => {
                         </li>
                         <li
                             className={
-                                pathname == "/Suppliers" ? classes.active : ""
+                                pathname.includes("/Suppliers")
+                                    ? classes.active
+                                    : ""
                             }
                         >
                             <Link href="/Suppliers">
@@ -68,7 +71,7 @@ const Sidebar = () => {
                         </li>
                         <li
                             className={
-                                pathname == "/Delivery_men"
+                                pathname.includes("/Delivery_men")
                                     ? classes.active
                                     : ""
                             }
@@ -79,30 +82,18 @@ const Sidebar = () => {
                         </li>
                         <li
                             className={
-                                pathname == "/Customers_service"
+                                pathname.includes("/Customer_service")
                                     ? classes.active
                                     : ""
                             }
                         >
-                            <Link href="/Customers_service">
+                            <Link href="/Customer_service">
                                 <RiCustomerService2Fill title="خدمه العملاء" />
                             </Link>
                         </li>
                     </ul>
                 </div>
-                <div className={classes.branchLogo}>
-                    <ul>
-                        <li>
-                            <img src="/image/dots.png" alt="dots logo" />
-                        </li>
-                        <li>
-                            <img src="/image/firnas.png" alt="firnas logo" />
-                        </li>
-                        <li>
-                            <img src="/image/cube.png" alt="cube logo" />
-                        </li>
-                    </ul>
-                </div>
+
                 <div className={classes.userInfo}>
                     <p className="text-center font-semibold">احمد محمد </p>
                     <Link
@@ -111,6 +102,22 @@ const Sidebar = () => {
                     >
                         <BiLogOut title="تسجيل الخروج" />
                     </Link>
+                    <div className={classes.branchLogo}>
+                        <ul>
+                            <li>
+                                <img
+                                    src="/image/firnas-2.png"
+                                    alt="firnas logo"
+                                />
+                            </li>
+                            <li>
+                                <img src="/image/dots-2.png" alt="dots logo" />
+                            </li>
+                            <li>
+                                <img src="/image/cube-2.png" alt="cube logo" />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </aside>
         </>

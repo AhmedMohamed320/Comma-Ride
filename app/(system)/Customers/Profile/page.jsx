@@ -27,19 +27,19 @@ const page = () => {
 
                         <div className={classes.statistics}>
                             <p>
-                                عدد الاوردرات اليومي : <span>10</span>
+                                عدد اوردرات اليوم : <span>10</span>
                             </p>
                             <p>
                                 المتوسط اليومي : <span>10</span>
                             </p>
                             <p>
-                                عدد الاوردرات الاسبوعي : <span>10</span>
+                                عدد اوردرات الاسبوع : <span>10</span>
                             </p>
                             <p>
                                 المتوسط الاسبوعي : <span>10</span>
                             </p>
                             <p>
-                                عدد الاوردرات الشهري : <span>10</span>
+                                عدد اوردرات الشهر : <span>10</span>
                             </p>
                             <p>
                                 المتوسط الشهري : <span>10</span>
@@ -58,47 +58,38 @@ const page = () => {
                             <table>
                                 <tbody>
                                     <tr className={classes.head}>
-                                        <td>رقم</td>
-                                        <td>الطلبيه</td>
-                                        <td>القيمه</td>
+                                        <td>الرقم</td>
                                         <td>توقيت الطلب</td>
                                         <td>توقيت الاستلام</td>
+                                        <td>التقيم</td>
+                                        <td>ملاحظات</td>
                                     </tr>
                                     <tr>
                                         <td className="underline underline-offset-4 cursor-pointer">
                                             124
                                         </td>
-                                        <td>2 كيلو تفاح و 2 كيلو منجا</td>
-                                        <td>180 ج.م</td>
                                         <td>01:00 </td>
                                         <td>01:20</td>
+                                        <td>5</td>
+                                        <td>لا يوجد</td>
                                     </tr>
                                     <tr>
                                         <td className="underline underline-offset-4 cursor-pointer">
                                             124
                                         </td>
-                                        <td>2 كيلو تفاح و 2 كيلو منجا</td>
-                                        <td>180 ج.م</td>
                                         <td>01:00 </td>
                                         <td>01:20</td>
+                                        <td>5</td>
+                                        <td>لا يوجد</td>
                                     </tr>
                                     <tr>
                                         <td className="underline underline-offset-4 cursor-pointer">
                                             124
                                         </td>
-                                        <td>2 كيلو تفاح و 2 كيلو منجا</td>
-                                        <td>180 ج.م</td>
                                         <td>01:00 </td>
                                         <td>01:20</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="underline underline-offset-4 cursor-pointer">
-                                            124
-                                        </td>
-                                        <td>2 كيلو تفاح و 2 كيلو منجا</td>
-                                        <td>180 ج.م</td>
-                                        <td>01:00 </td>
-                                        <td>01:20</td>
+                                        <td>5</td>
+                                        <td>لا يوجد</td>
                                     </tr>
                                 </tbody>
                             </table>

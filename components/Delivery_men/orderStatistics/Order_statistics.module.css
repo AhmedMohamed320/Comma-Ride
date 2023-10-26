@@ -1,17 +1,13 @@
-.section {
-    padding: 1rem;
-}
-
 .head {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem 1rem 2rem;
+    padding: 1rem 0.5rem ;
     font-size: 1.6rem;
 }
 
 .head select {
-    background-color: var(--color-dark-4);
+    background-color: var(--color-dark-5);
     outline: none;
     border: none;
     color: var(--color-light-2);
@@ -19,24 +15,30 @@
     border-radius: 0.5rem;
 }
 
+.weeks{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
 .weeks > .week, .month {
-    background-color: var(--color-dark-3);
-    border-radius: 1rem;
+    background-color: var(--color-light-2);
+    border-radius: 0.5rem;
     font-size: 1.6rem;
     overflow: hidden;
-    margin-bottom: 5rem;
+    border: 1px solid var(--color-dark-3);
 }
 
 .weeks > .week .head,
 .month .head {
     background-color: var(--color-dark-4);
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--color-light-2);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1.5rem;
 }
 
 .month .head{
@@ -52,30 +54,29 @@
 
 .week > div, .month>div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     padding: 1rem;
 }
 
 .week > div p ,.month > div p  {
-    text-align: center;
     font-weight: 600;
 }
 
 .week > div p span,.month > div p span  {
     font-weight: 500;
-    text-decoration: underline;
 }
 
-@media (max-width: 45rem) {
-    .week > div, .month > div {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 75rem) {
+    .weeks{
+        grid-template-columns: 1fr 1fr;
     }
 
 }
 
 @media (max-width: 30rem) {
-    .week > div,.month > div  {
-        grid-template-columns: repeat(1, 1fr);
+    .weeks{
+        grid-template-columns: 1fr;
     }
+
 }

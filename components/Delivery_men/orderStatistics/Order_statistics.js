@@ -28,8 +28,7 @@ const Order_statistics = () => {
                         </p>
 
                         <p>
-                            متوسط التقيمات : <span> 4/5 </span> وعددهم{" "}
-                            <span> 60 </span>
+                            متوسط التقيمات : <span> 4/5 </span>
                         </p>
                         <p>
                             الراتب الاسبوعي : <span>500 ج.م</span>
@@ -55,8 +54,7 @@ const Order_statistics = () => {
                         </p>
 
                         <p>
-                            متوسط التقيمات : <span> 4/5 </span> وعددهم{" "}
-                            <span> 60 </span>
+                            متوسط التقيمات : <span> 4/5 </span>
                         </p>
                         <p>
                             الراتب الاسبوعي : <span>500 ج.م</span>
@@ -66,6 +64,32 @@ const Order_statistics = () => {
                         </p>
                     </div>
                 </div>
+                <div className={classes.week}>
+                    <p className={classes.head}>
+                        الاسبوع الثالث <span>1/10 : 7/10</span>
+                    </p>
+                    <div>
+                        <p>
+                            متوسط الاوردارت اليومي : <span>5</span>
+                        </p>
+                        <p>
+                            متوسط الاوردارت الاسبوعي : <span>25</span>
+                        </p>
+                        <p>
+                            اجمالي الاوردارت المكتمله : <span>60</span>
+                        </p>
+
+                        <p>
+                            متوسط التقيمات : <span> 4/5 </span>
+                        </p>
+                        <p>
+                            الراتب الاسبوعي : <span>500 ج.م</span>
+                        </p>
+                        <p>
+                            الخصم : <span>0 ج.م</span>
+                        </p>
+                    </div>
+                </div>{" "}
                 <div className={classes.week}>
                     <p className={classes.head}>
                         الاسبوع الرابع <span>1/10 : 7/10</span>
@@ -82,35 +106,7 @@ const Order_statistics = () => {
                         </p>
 
                         <p>
-                            متوسط التقيمات : <span> 4/5 </span> وعددهم{" "}
-                            <span> 60 </span>
-                        </p>
-                        <p>
-                            الراتب الاسبوعي : <span>500 ج.م</span>
-                        </p>
-                        <p>
-                            الخصم : <span>0 ج.م</span>
-                        </p>
-                    </div>
-                </div>
-                <div className={classes.week}>
-                    <p className={classes.head}>
-                        الاسبوع الخامس <span>1/10 : 7/10</span>
-                    </p>
-                    <div>
-                        <p>
-                            متوسط الاوردارت اليومي : <span>5</span>
-                        </p>
-                        <p>
-                            متوسط الاوردارت الاسبوعي : <span>25</span>
-                        </p>
-                        <p>
-                            اجمالي الاوردارت المكتمله : <span>60</span>
-                        </p>
-
-                        <p>
-                            متوسط التقيمات : <span> 4/5 </span> وعددهم{" "}
-                            <span> 60 </span>
+                            متوسط التقيمات : <span> 4/5 </span>
                         </p>
                         <p>
                             الراتب الاسبوعي : <span>500 ج.م</span>
@@ -134,8 +130,7 @@ const Order_statistics = () => {
                     </p>
 
                     <p>
-                        متوسط التقيمات : <span> 4/5 </span> وعددهم{" "}
-                        <span> 60 </span>
+                        متوسط التقيمات : <span> 4/5 </span> 
                     </p>
                     <p>
                         الراتب الشهري : <span>2500 ج.م</span>

@@ -85,16 +85,20 @@ export default function Home() {
                                     الموردين
                                 </Link>
                             </li>
-                            <li>
+                            <li
+                                className={
+                                    content == "management" ? classes.active : ""
+                                }
+                            >
                                 <Link
                                     href={{
                                         pathname: "/",
                                         query: {
-                                            content: "finances",
+                                            content: "management",
                                         },
                                     }}
                                 >
-                                    الشؤون المالية
+                                    الاداره
                                 </Link>
                             </li>
                             {/* <li>

@@ -13,7 +13,7 @@ const page = () => {
     const content = router.get("content") || "personal_information";
     return (
         <section className={`mainContainer ${classes.section}`}>
-            <p className="text-center text-3xl py-4 font-semibold"> الطيار <span className="text-2xl">محمد على</span></p>
+            <p className="text-center text-4xl pb-4 font-semibold"> الطيار <span className="text-2xl">محمد على</span></p>
             <div className={classes.nav}>
                 <ul>
                     <li>

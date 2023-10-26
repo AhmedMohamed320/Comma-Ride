@@ -14,13 +14,10 @@
     justify-content: space-between;
 }
 
-.head > div:nth-of-type(1) a {
-    padding: 0.5rem 2rem;
-    outline: none;
-    background-color: var(--color-red-1);
-    font-size: 1.5rem;
-    color: var(--color-light-2);
-    border-radius: 0.5rem;
+.head > div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
 }
 
 .head select {
@@ -29,10 +26,6 @@
     font-size: 1.4rem;
     color: var(--color-light-2);
     border-radius: 0.5rem;
-}
-
-.head select:nth-of-type(1) {
-    margin-left: 1rem;
 }
 
 /* ------------------- */

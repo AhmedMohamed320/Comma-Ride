@@ -4,9 +4,12 @@ import classes from "./page.module.css";
 import { useRouter } from "next/navigation";
 import { PiPhoneIncomingFill, PiPhoneOutgoingFill } from "react-icons/pi";
 import BarChart from "@/components/UI/chart/BarChart";
+import { IoMdClose } from "react-icons/io";
+import Search from "@/components/UI/input/Search";
 
 const page = () => {
     const router = useRouter();
+    const [showFormSchedule, setShowFormSchedule] = useState(false);
 
     const [showPhoneType_1, setShowPhoneType_1] = useState(false);
     const [showPhoneType_2, setShowPhoneType_2] = useState(false);
@@ -89,8 +92,73 @@ const page = () => {
         setShowPhoneType_1(false);
         setShowPhoneType_2(false);
     }
+    const alertClass = `${classes.pop}  ${
+        showFormSchedule ? `${classes.show}` : ""
+    }`;
     return (
         <section className={classes.section}>
+            <div className={alertClass}>
+                <div>
+                    <div className={classes.close}>
+                        <IoMdClose
+                            onClick={() => {
+                                setShowFormSchedule(false);
+                            }}
+                        />
+                    </div>
+                    <div>
+                        <p className="mb-4 w-4/5 m-auto text-3xl font-semibold text-center">
+                            جدوله مكالمه
+                        </p>
+                        <div className={classes.form}>
+                            <div>
+                                <Search placeholder="ابحث عن العميل" />
+                            </div>
+                            <div>
+                                <label htmlFor="">الاسم</label>
+                                <input
+                                    type="number"
+                                    placeholder="ادخل اسم العميل"
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor="">رقم العميل</label>
+                                <input
+                                    type="number"
+                                    placeholder="ادخل رقم العميل"
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor="">التاريخ</label>
+                                <input type="date" className="w-full"/>
+                            </div>
+                            <div>
+                                <label htmlFor="">الحاله</label>
+                                <select name="" id="" className="w-full">
+                                    <option value="">حدد الحاله</option>
+                                    <option value="">مغلق</option>
+                                    <option value="">لم نصل</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label htmlFor="">ملاحظه</label>
+                                <textarea
+                                    name=""
+                                    id=""
+                                    placeholder="ادخل اي ملاحظه"
+                                ></textarea>
+                            </div>
+                            <button
+                                onClick={() => {
+                                    setShowFormSchedule(false);
+                                }}
+                            >
+                                تاكيد
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div>
                 <p className="text-4xl pb-4 font-semibold">خدمه العملاء </p>
             </div>
@@ -267,7 +335,13 @@ const page = () => {
                         <span className="text-2xl">الاجمالى : 45</span>
                     </div>
                     <div>
-                        <button>جدوله مكالمه</button>
+                        <button
+                            onClick={() => {
+                                setShowFormSchedule(true);
+                            }}
+                        >
+                            جدوله مكالمه
+                        </button>
                     </div>
                 </div>
                 <div className={classes.part2}>

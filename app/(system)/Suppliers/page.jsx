@@ -15,7 +15,6 @@ const page = () => {
                     <div className="sm:flex hidden ">
                         <Search placeholder="ادخل رقم او كود المورد" />
                     </div>
-                    <Link href="/Suppliers/Form_Supplier/add">اضافه مورد</Link>
                 </div>
                 <div>
                     <select name="" id="">

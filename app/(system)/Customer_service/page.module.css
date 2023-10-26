@@ -60,7 +60,7 @@
     outline: none;
 }
 
-.call_statistics button{
+.call_statistics button {
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
@@ -93,7 +93,7 @@
     color: var(--color-light-2);
     border-radius: 1rem;
     overflow: hidden;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .call_statistics>div:nth-of-type(1) {
@@ -129,7 +129,6 @@
     background-color: var(--color-dark-4);
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
 .table tbody tr {
@@ -137,6 +136,11 @@
     grid-template-columns: 1fr repeat(3, 2fr) 3fr;
     text-align: center;
     align-items: center;
+    padding: 1rem;
+}
+
+.table tbody tr:not(:last-of-type) {
+    border-bottom: 1px solid var(--color-light-3);
 }
 
 .totalInformation>div:nth-of-type(1) {
@@ -173,7 +177,7 @@
     position: relative;
     border: 1px solid var(--color-dark-6);
     border-radius: 1rem;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 0;
 }
 
 .table::after {
@@ -188,16 +192,16 @@
     font-weight: 600;
 }
 
-.part2>div:nth-of-type(1) .table:nth-of-type(1):after{
-    content:"متابعه العملاء الجدد";
+.part2>div:nth-of-type(1) .table:nth-of-type(1):after {
+    content: "متابعه العملاء الجدد";
 }
 
-.part2>div:nth-of-type(1) .table:nth-of-type(2):after{
-    content:"مكالمات مجدوله";
+.part2>div:nth-of-type(1) .table:nth-of-type(2):after {
+    content: "مكالمات مجدوله";
 }
 
-.part2>div:nth-of-type(2) .table:nth-of-type(1):after{
-    content:"بيانات جميع المكالمات";
+.part2>div:nth-of-type(2) .table:nth-of-type(1):after {
+    content: "بيانات جميع المكالمات";
 }
 
 .part2>div:nth-of-type(1) .table tbody tr {
@@ -218,6 +222,86 @@
         flex-direction: column;
     }
 }
+
+/* -------------------- */
+.pop {
+    position: fixed;
+    background-color: #2e232380;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10002;
+    display: none;
+}
+
+.pop.show {
+    display: flex;
+}
+
+.pop>div {
+    background-color: var(--color-light-2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-dark-3);
+    font-size: 1.5rem;
+    position: relative;
+    width: 90%;
+    max-width: 35rem;
+}
+
+.pop>div .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.pop>div button {
+    width: 100%;
+    background-color: var(--color-red-1);
+    padding: 0.5rem;
+    color: var(--color-light-2);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow-1);
+    font-size: 1.8rem;
+}
+
+.form {
+    border: 1px solid var(--color-light-3);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form>div>input,
+.form>div>textarea,
+.form>div>select {
+    font-size: 1.5rem;
+    background-color: var(--color-dark-6);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--color-light-2);
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+}
+
+
+/* -------------------- */
+
 
 @media (max-width: 40rem) {
     .part2>div:nth-of-type(1) {

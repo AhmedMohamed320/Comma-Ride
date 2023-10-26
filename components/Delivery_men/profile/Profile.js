@@ -109,13 +109,16 @@ const Profile = () => {
                         عدد الاوردات : <span> 150</span>
                     </p>
                     <p>
+                        العهده : <span> 1000 ج.م</span>
+                    </p>
+                    <p>
                         يعمل بثابت : <span>2500 ج.م</span>
                     </p>
                     <p>
                         يعمل بنسبه : <span> 50%</span>
                     </p>
                     <p>
-                        العهده : <span> 1000 ج.م</span>
+                        قيمه خصم الشهر : <span>0</span>
                     </p>
                     <div className="flex items-center">
                         <p>التقيم : </p>
@@ -144,10 +147,10 @@ const Profile = () => {
             </div>
             <div className={classes.charts}>
                 <div className={classes.chart}>
-                    <LineCart title="الاوردات المنجزه"/>
+                    <LineCart title="الاوردات المنجزه" />
                 </div>
                 <div className={classes.chart}>
-                    <LineCart title="التحصيل و التكلفه"/>
+                    <LineCart title="التحصيل و التكلفه" />
                 </div>
             </div>
         </section>

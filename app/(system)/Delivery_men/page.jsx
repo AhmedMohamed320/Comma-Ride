@@ -43,13 +43,20 @@ const page = () => {
                     <div className="sm:flex hidden ">
                         <Search placeholder="ادخل رقم او كود الطيار" />
                     </div>
-                    <Link href="/Delivery_men/Form_Delivery_men/add">
-                        اضافه طيار
-                    </Link>
                 </div>
                 <div>
                     <select name="" id="">
                         <option value="">فلتر حسب عدد الاوردرات </option>
+                        <option value="">تصاعديا</option>
+                        <option value="">تنازليا</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">فلتر حسب قيمه التحصيل </option>
+                        <option value="">تصاعديا</option>
+                        <option value="">تنازليا</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">فلتر حسب قيمه التحصيل </option>
                         <option value="">تصاعديا</option>
                         <option value="">تنازليا</option>
                     </select>
