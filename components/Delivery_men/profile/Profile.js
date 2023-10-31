@@ -1,78 +1,8 @@
 import React from "react";
 import classes from "./Profile.module.css";
-import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Filler,
-    Legend,
-} from "chart.js";
-import { Line } from "react-chartjs-2";
-import faker from "faker";
 import Link from "next/link";
 import LineCart from "@/components/UI/chart/LineChart";
 
-ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Filler,
-    Legend
-);
-
-export const options = {
-    responsive: true,
-    plugins: {
-        legend: {
-            display: false,
-        },
-        title: {
-            display: false,
-            text: "Chart.js Line Chart",
-        },
-    },
-};
-
-const labels = ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10"];
-
-export const data = {
-    labels,
-    datasets: [
-        {
-            fill: true,
-            label: "عدد الاوردرات ",
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 30 })),
-            pointBackgroundColor: "#D63236",
-            borderColor: "#D63236",
-            backgroundColor: "#D6323660",
-            lineTension: 0.3,
-        },
-    ],
-};
-
-export const data2 = {
-    labels,
-    datasets: [
-        {
-            fill: true,
-            label: " التكلفه ",
-            data: labels.map(() =>
-                faker.datatype.number({ min: -50, max: 100 })
-            ),
-            pointBackgroundColor: "#D63236",
-            borderColor: "#D63236",
-            backgroundColor: "#D6323660",
-            lineTension: 0.3,
-        },
-    ],
-};
 const Profile = () => {
     return (
         <section className={classes.section}>
