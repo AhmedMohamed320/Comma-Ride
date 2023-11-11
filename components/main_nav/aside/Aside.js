@@ -30,18 +30,6 @@ const Aside = (props) => {
                     </Link>
                 </div>
                 <ul className="flex gap-8 flex-col">
-                    <li className={pathname == "/info" && classes.active}>
-                        <span className={classes.border}></span>
-                        <Link
-                            href={{
-                                pathname: "/User_Profile",
-                            }}
-                            onClick={props.onHideAside}
-                        >
-                            <BsPersonFill />
-                            حسابي
-                        </Link>
-                    </li>
                     <li
                         className={
                             pathname.includes("/Delivery_men") && classes.active
