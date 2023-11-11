@@ -102,7 +102,7 @@ const Aside = (props) => {
                             onClick={props.onHideAside}
                         >
                             <BsClipboard2DataFill />
-                            الادراه الماليه
+                            الماليات
                         </Link>
                     </li>
                 </ul>

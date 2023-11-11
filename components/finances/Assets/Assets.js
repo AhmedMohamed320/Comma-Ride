@@ -20,6 +20,31 @@ const Assets = () => {
                     اضافه اصل
                 </button>
             </div>
+            {showForm && (
+                <>
+                    <p className="text-2xl font-semibold">
+                        {editForm ? "تعديل بيانات الاصل" : "اضافه أصل"}
+                    </p>
+                    <div className={classes.formAdd}>
+                        <div>
+                            <label htmlFor="">الأصل</label>
+                            <input
+                                type="text"
+                                placeholder="ادخل تفاصيل الاصل "
+                            />
+                        </div>
+                        <div>
+                            <label htmlFor="">القيمه</label>
+                            <input type="text" placeholder="ادخل القيمه " />
+                        </div>
+                        <div>
+                            <label htmlFor="">الفاتوره</label>
+                            <input type="file" />
+                        </div>
+                        <button>تاكيد</button>
+                    </div>
+                </>
+            )}
             <div className={classes.part2}>
                 <table className={classes.table}>
                     <tbody>
@@ -243,31 +268,6 @@ const Assets = () => {
                     </tbody>
                 </table>
             </div>
-            {showForm && (
-                <>
-                    <p className="text-2xl font-semibold">
-                        {editForm ? "تعديل بيانات الاصل" : "اضافه أصل"}
-                    </p>
-                    <div className={classes.formAdd}>
-                        <div>
-                            <label htmlFor="">الأصل</label>
-                            <input
-                                type="text"
-                                placeholder="ادخل تفاصيل الاصل "
-                            />
-                        </div>
-                        <div>
-                            <label htmlFor="">القيمه</label>
-                            <input type="text" placeholder="ادخل القيمه " />
-                        </div>
-                        <div>
-                            <label htmlFor="">الفاتوره</label>
-                            <input type="file" />
-                        </div>
-                        <button>تاكيد</button>
-                    </div>
-                </>
-            )}
         </section>
     );
 };

@@ -100,7 +100,7 @@ const Sidebar = () => {
                             }
                         >
                             <Link href="/Finances">
-                                <BsClipboard2DataFill title="الادراه الماليه" />
+                                <BsClipboard2DataFill title="الماليات" />
                             </Link>
                         </li>
                     </ul>
