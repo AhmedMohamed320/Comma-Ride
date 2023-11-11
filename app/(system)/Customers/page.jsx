@@ -58,6 +58,86 @@ const page = () => {
                                 <button>حذف</button>
                             </td>
                         </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8">
+                                <Link href="/Customers/Profile">
+                                    خالد السيد
+                                </Link>
+                            </td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td className="flex gap-4">
+                                <Link href="/Customers/Form_Customer/edit">
+                                    تعديل
+                                </Link>
+                                <button>حذف</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8">
+                                <Link href="/Customers/Profile">
+                                    خالد السيد
+                                </Link>
+                            </td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td className="flex gap-4">
+                                <Link href="/Customers/Form_Customer/edit">
+                                    تعديل
+                                </Link>
+                                <button>حذف</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8">
+                                <Link href="/Customers/Profile">
+                                    خالد السيد
+                                </Link>
+                            </td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td className="flex gap-4">
+                                <Link href="/Customers/Form_Customer/edit">
+                                    تعديل
+                                </Link>
+                                <button>حذف</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8">
+                                <Link href="/Customers/Profile">
+                                    خالد السيد
+                                </Link>
+                            </td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td className="flex gap-4">
+                                <Link href="/Customers/Form_Customer/edit">
+                                    تعديل
+                                </Link>
+                                <button>حذف</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8">
+                                <Link href="/Customers/Profile">
+                                    خالد السيد
+                                </Link>
+                            </td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td className="flex gap-4">
+                                <Link href="/Customers/Form_Customer/edit">
+                                    تعديل
+                                </Link>
+                                <button>حذف</button>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

@@ -37,6 +37,18 @@ export const LineChart = (props) => {
                 text: "Chart.js Line Chart",
             },
         },
+        scales: {
+            x: {
+                grid: {
+                    display: false,
+                },
+            },
+            y: {
+                grid: {
+                    display: false,
+                },
+            },
+        },
     };
     const labels = ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10"];
     const data = {

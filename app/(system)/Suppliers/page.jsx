@@ -12,7 +12,7 @@ const page = () => {
                     <p className="text-4xl font-semibold">
                         الموردين <span className="text-2xl">2</span>
                     </p>
-                    <div >
+                    <div>
                         <Search placeholder="ادخل رقم او كود المورد" />
                     </div>
                 </div>
@@ -45,29 +45,124 @@ const page = () => {
                             <td>الكود</td>
                             <td>اسم المورد</td>
                             <td>الفئه</td>
-                            <td>نوع التعاقد</td>
+
                             <td>الاوردرات اليوم</td>
                             <td>التقيم</td>
+                            <td>تغير</td>
                         </tr>
                         <tr>
                             <td>124</td>
                             <td className="underline underline-offset-8 cursor-pointer">
-                                <Link href="/Suppliers/Profile">الصعيدي</Link>
+                                <div>
+                                    <Link href="/Suppliers/Profile">
+                                        الصعيدي
+                                    </Link>
+                                </div>
                             </td>
                             <td>خضار وفاكهة</td>
-                            <td>20 </td>
                             <td>20</td>
                             <td>5</td>
+                            <td>
+                                <Link href="/Suppliers/Form_Supplier/edit">
+                                    تعديل
+                                </Link>
+                                <button>تغير</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>124</td>
                             <td className="underline underline-offset-8 cursor-pointer">
-                                الصعيدي
+                                <div>
+                                    <Link href="/Suppliers/Profile">
+                                        الصعيدي
+                                    </Link>
+                                </div>
                             </td>
                             <td>خضار وفاكهة</td>
-                            <td>20 </td>
                             <td>20</td>
                             <td>5</td>
+                            <td>
+                                <Link href="/Suppliers/Form_Supplier/edit">
+                                    تعديل
+                                </Link>
+                                <button>تغير</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8 cursor-pointer">
+                                <div>
+                                    <Link href="/Suppliers/Profile">
+                                        الصعيدي
+                                    </Link>
+                                </div>
+                            </td>
+                            <td>خضار وفاكهة</td>
+                            <td>20</td>
+                            <td>5</td>
+                            <td>
+                                <Link href="/Suppliers/Form_Supplier/edit">
+                                    تعديل
+                                </Link>
+                                <button>تغير</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8 cursor-pointer">
+                                <div>
+                                    <Link href="/Suppliers/Profile">
+                                        الصعيدي
+                                    </Link>
+                                </div>
+                            </td>
+                            <td>خضار وفاكهة</td>
+                            <td>20</td>
+                            <td>5</td>
+                            <td>
+                                <Link href="/Suppliers/Form_Supplier/edit">
+                                    تعديل
+                                </Link>
+                                <button>تغير</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8 cursor-pointer">
+                                <div>
+                                    <Link href="/Suppliers/Profile">
+                                        الصعيدي
+                                    </Link>
+                                </div>
+                            </td>
+                            <td>خضار وفاكهة</td>
+                            <td>20</td>
+                            <td>5</td>
+                            <td>
+                                <Link href="/Suppliers/Form_Supplier/edit">
+                                    تعديل
+                                </Link>
+                                <button>تغير</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td className="underline underline-offset-8 cursor-pointer">
+                                <div>
+                                    <Link href="/Suppliers/Profile">
+                                        الصعيدي
+                                    </Link>
+                                </div>
+                            </td>
+                            <td>خضار وفاكهة</td>
+                            <td>20</td>
+                            <td>5</td>
+                            <td>
+                                <Link href="/Suppliers/Form_Supplier/edit">
+                                    تعديل
+                                </Link>
+                                <button>تغير</button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

@@ -53,7 +53,7 @@ export function PieChart(props) {
                 <Pie data={data} options={options} />
             </div>
             <div>
-                <ul className="flex justify-center gap-4 flex-wrap text-xl text-slate-50 mt-4">
+                <ul className="flex justify-center gap-4 flex-wrap text-xl mt-4">
                     <li>خضار وفاكهه : 15</li>
                     <li>خضار وفاكهه : 15</li>
                     <li>خضار وفاكهه : 15</li>

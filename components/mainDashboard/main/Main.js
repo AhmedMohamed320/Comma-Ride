@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "../MainDashboard.module.css";
-import { GiPayMoney, GiReceiveMoney } from "react-icons/gi";
+import { GiPayMoney, GiReceiveMoney, GiTakeMyMoney } from "react-icons/gi";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
-import { BiSolidWallet } from "react-icons/bi";
+import { BiCoinStack, BiSolidWallet, BiWallet } from "react-icons/bi";
 import LineChart from "@/components/UI/chart/LineChart";
 import { BsFileEarmarkArrowDownFill } from "react-icons/bs";
 
@@ -41,7 +41,7 @@ const Main = () => {
                 <div>
                     <div>
                         <div className={classes.icon}>
-                            <FaMoneyBillTransfer />
+                            <BiCoinStack />
                         </div>
                         <p className={classes.changeColor}>+500 ج.م اليوم</p>
                     </div>
@@ -49,13 +49,28 @@ const Main = () => {
                         91500 <span className="text-4xl">ج.م</span>
                     </p>
                     <p className={`text-center ${classes.changeColor}`}>
-                        المحصله الاجماليه
+                        الخزنه
                     </p>
                 </div>
                 <div>
                     <div>
                         <div className={classes.icon}>
-                            <GiPayMoney />
+                            <FaMoneyBillTransfer />
+                        </div>
+                        <p className={classes.changeColor}>+60 ج.م اليوم</p>
+                    </div>
+                    <p className="text-6xl py-4 text-center">
+                        <span className="text-4xl">+</span>
+                        900 <span className="text-4xl">ج.م</span>
+                    </p>
+                    <p className={`text-center ${classes.changeColor}`}>
+                        ميزان الشهر
+                    </p>
+                </div>
+                <div>
+                    <div>
+                        <div className={classes.icon}>
+                            <GiTakeMyMoney />
                         </div>
                         <p className={classes.changeColor}>+500 ج.م اليوم</p>
                     </div>
@@ -63,27 +78,13 @@ const Main = () => {
                         500 <span className="text-4xl">ج.م</span>
                     </p>
                     <p className={`text-center ${classes.changeColor}`}>
-                        اجمالى المصاريف
+                        العهده
                     </p>
                 </div>
                 <div>
                     <div>
                         <div className={classes.icon}>
-                            <GiReceiveMoney />
-                        </div>
-                        <p className={classes.changeColor}>+100 ج.م اليوم</p>
-                    </div>
-                    <p className="text-6xl py-4 text-center">
-                        900 <span className="text-4xl">ج.م</span>
-                    </p>
-                    <p className={`text-center ${classes.changeColor}`}>
-                        اجمالي الدخل
-                    </p>
-                </div>
-                <div>
-                    <div>
-                        <div className={classes.icon}>
-                            <BiSolidWallet />
+                            <BiWallet />
                         </div>
                         <p className={classes.changeColor}>+10 ج.م اليوم</p>
                     </div>
@@ -95,14 +96,173 @@ const Main = () => {
                     </p>
                 </div>
             </div>
-            <div className={classes.statistics}>
-                <LineChart title="الدخل" />
-                <LineChart title="المصاريف" />
-            </div>
-            <div>
-                <ul>
-                    <li></li>
-                </ul>
+            <div className={classes.part22}>
+                <div>
+                    <div className={classes.title}>
+                        <p>الخارج</p>
+                        <select name="" id="">
+                            <option value="">اخر 7 ايام</option>
+                            <option value="">اخر 12 اسبوع</option>
+                        </select>
+                    </div>
+                    <div className={classes.Income}>
+                        <table className={classes.table}>
+                            <tbody>
+                                <tr className={classes.head}>
+                                    <td>التوقيت</td>
+                                    <td>الوصف</td>
+                                    <td>القيمه</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">11:30</p>
+                                    </td>
+                                    <td>
+                                        <p>ايجار</p>
+                                    </td>
+                                    <td>
+                                        <p>-3000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>مرتب</p>
+                                    </td>
+                                    <td>
+                                        <p>-2000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>مرتب</p>
+                                    </td>
+                                    <td>
+                                        <p>-2000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>اعلانات</p>
+                                    </td>
+                                    <td>
+                                        <p>-200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>مرتب</p>
+                                    </td>
+                                    <td>
+                                        <p>-2000</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div className={classes.chart}>
+                            <LineChart />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className={classes.title}>
+                        <p>الداخل</p>
+                        <select name="" id="">
+                            <option value="">اخر 7 ايام</option>
+                            <option value="">اخر 12 اسبوع</option>
+                        </select>
+                    </div>
+                    <div className={classes.outside}>
+                        <table className={classes.table}>
+                            <tbody>
+                                <tr className={classes.head}>
+                                    <td>التوقيت</td>
+                                    <td>الوصف</td>
+                                    <td>القيمه</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>تحصيل</p>
+                                    </td>
+                                    <td>
+                                        <p>+200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>تحصيل</p>
+                                    </td>
+                                    <td>
+                                        <p>+200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>تحصيل</p>
+                                    </td>
+                                    <td>
+                                        <p>+200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>تحصيل</p>
+                                    </td>
+                                    <td>
+                                        <p>+200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>تحصيل</p>
+                                    </td>
+                                    <td>
+                                        <p>+200</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div className={classes.chart}>
+                            <LineChart />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

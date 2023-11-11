@@ -33,13 +33,13 @@
 
 .static>div {
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     font-size: 1.4rem;
-    box-shadow: var(--box-shadow-1);
-    background-color: var(--color-dark-5);
-    color: var(--color-light-2);
+    border: 1px solid var(--color-dark-3);
+    color: var(--color-dark-6);
     display: flex;
     flex-direction: column;
+    background-color: var(--color-light-2);
 }
 
 .static>div .icon {
@@ -50,8 +50,8 @@
     justify-content: center;
     font-size: 2.5rem;
     border-radius: 0.5rem;
-    background-color: var(--color-light-2);
-    color: var(--color-dark-4);
+    background-color: var(--color-dark-5);
+    color: var(--color-light-2);
 }
 
 .static>div>div:nth-of-type(1) {
@@ -64,14 +64,112 @@
 }
 
 .statistics {
-    background-color: var(--color-dark-4);
-    padding: 2rem 1rem 1rem;
+    padding: 2rem 0;
     border-radius: 1rem;
-    box-shadow: var(--box-shadow-1);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+.part22 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.part22>div {
+    border: 1px solid var(--color-dark-3);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.table {
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+    width: 100%;
+    color: var(--color-dark-6);
+}
+
+.table tbody {
+    border: 1px solid var(--color-dark-7);
+
+}
+
+.table tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.table tr:not(:last-of-type) {
+    border-bottom: 1px solid var(--color-dark-7);
+}
+
+.table tr td {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.table .head {
+    background-color: var(--color-dark-6);
+    color: var(--color-light-2);
+}
+
+/* --------------------- */
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-dark-4);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.title select {
+    background-color: var(--color-dark-6);
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-light-2);
+}
+
+/* --------------------- */
+
+.Income,
+.outside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* --------------------- */
+@media (max-width:55rem) {
+
+    .Income,
+    .outside {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media (max-width:45rem) {
+    .title {
+        justify-content: center;
+    }
+
+    .Income,
+    .outside {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 55rem) {

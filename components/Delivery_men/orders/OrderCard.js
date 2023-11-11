@@ -1,34 +1,6 @@
 import classes from "./OrderCard.module.css";
-import { usePathname } from "next/navigation";
 
 const OrderCard = (props) => {
-    const pathname = usePathname();
-
-    function handle_alert(Text) {
-        if (pathname != "/Orders") {
-            props.alertText(Text);
-            props.showAlertDiv(true);
-        }
-    }
-
-    // const [location, setLocation] = useState(null);
-
-    // useEffect(() => {
-    //     if (navigator.geolocation) {
-    //         navigator.geolocation.getCurrentPosition(
-    //             (position) => {
-    //                 const latitude = position.coords.latitude;
-    //                 const longitude = position.coords.longitude;
-    //                 setLocation([latitude, longitude]);
-    //             },
-    //             (error) => {
-    //                 console.error("Error getting user location:", error);
-    //             }
-    //         );
-    //     } else {
-    //         console.error("Geolocation is not supported by this browser.");
-    //     }
-    // }, []);
     return (
         <div className={classes.order}>
             <div className={classes.head}>
@@ -56,13 +28,7 @@ const OrderCard = (props) => {
                     </ul>
                 </div>
                 <div className={classes.pending}>
-                    {props.edit ? (
-                        <p className="cursor-pointer" onClick={props.fromEdit}>
-                            تعديل
-                        </p>
-                    ) : (
-                        <p>جاري التوصيل</p>
-                    )}
+                    <p>جاري التوصيل</p>
                 </div>
             </div>
             <div className={classes.info}>
@@ -133,65 +99,40 @@ const OrderCard = (props) => {
                     <span>لا يوجد تفاصيل اضافيه</span>
                 </div>
             </div>
-            <div className={classes.stateOrder}>
-                <div
-                    onClick={() => {
-                        handle_alert(
-                            `انت الان جاهز للتحرك لمكان استلام الاوردر`
-                        );
-                    }}
-                    className={classes.completed}
-                >
-                    <p>جاهز</p>
+            <div className={`flex flex-col gap-4 p-4 ${classes.stateUp}`}>
+                <div className={classes.stateOrder}>
+                    <div className={classes.completed}>
+                        <p>جاهز</p>
+                    </div>
+                    <div className={classes.pending}>
+                        <p>تم الاستلام</p>
+                    </div>
+                    <div className={classes.pending}>
+                        <p>وصلت</p>
+                    </div>
+                    <div className={classes.pending}>
+                        <p>تم التسليم</p>
+                    </div>
+                    <div className={classes.pending}>
+                        <p>عدت</p>
+                    </div>
                 </div>
-                <div
-                    onClick={() => {
-                        handle_alert(`لقد استلمت الاوردر الان من المورد`);
-                    }}
-                    className={classes.pending}
-                >
-                    <p>تم الاستلام</p>
-                </div>
-                <div
-                    onClick={() => {
-                        handle_alert("وصلت مكان تسليم الاوردر");
-                    }}
-                    className={classes.pending}
-                >
-                    <p>وصلت</p>
-                </div>
-                <div
-                    onClick={() => {
-                        handle_alert("تمت عمليه التسليم للعميل");
-                    }}
-                    className={classes.pending}
-                >
-                    <p>تم التسليم</p>
-                </div>
-                <div
-                    onClick={() => {
-                        handle_alert("عدت لمقر الشركه");
-                    }}
-                    className={classes.pending}
-                >
-                    <p>عدت</p>
-                </div>
-            </div>
-            <div className={classes.stateOrderTime}>
-                <div className={classes.ready}>
-                    <p>01:00</p>
-                </div>
-                <div className={classes.ready_for_pickup}>
-                    <p>--:--</p>
-                </div>
-                <div className={classes.arrived}>
-                    <p>--:--</p>
-                </div>
-                <div className={classes.completed}>
-                    <p>--:--</p>
-                </div>
-                <div className={classes.back}>
-                    <p>--:--</p>
+                <div className={classes.stateOrderTime}>
+                    <div className={classes.ready}>
+                        <p>01:00</p>
+                    </div>
+                    <div className={classes.ready_for_pickup}>
+                        <p>--:--</p>
+                    </div>
+                    <div className={classes.arrived}>
+                        <p>--:--</p>
+                    </div>
+                    <div className={classes.completed}>
+                        <p>--:--</p>
+                    </div>
+                    <div className={classes.back}>
+                        <p>--:--</p>
+                    </div>
                 </div>
             </div>
         </div>

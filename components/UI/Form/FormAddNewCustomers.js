@@ -146,6 +146,18 @@ const FormAddNewCustomers = (props) => {
                         </select>
                     </div>
                     <div>
+                        <label htmlFor="n8">المصدر </label>
+                        <input type="text" id="n8" placeholder="ادخل المصدر" />
+                    </div>
+                    <div>
+                        <label htmlFor="n8">مزود الخدمه </label>
+                        <input
+                            type="text"
+                            id="n8"
+                            placeholder="ادخل مزود الخدمه"
+                        />
+                    </div>
+                    <div>
                         <label htmlFor="n12">
                             تسعيره خاصه
                             <button

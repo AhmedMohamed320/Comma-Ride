@@ -10,7 +10,8 @@ const page = () => {
             <main className={classes.main}>
                 <div className={classes.head}>
                     <p>
-                        الاسم : <span>خالد السيد</span>{" "}
+                        الاسم : <span>خالد السيد</span>
+                        <span> #142 </span>
                     </p>
                     <Link href="/Customers/Form_Customer/edit">تعديل</Link>
                 </div>
@@ -47,6 +48,16 @@ const page = () => {
                         </div>
 
                         <div className={classes.Notes}>
+                            <p>
+                                المصدر : <span>
+                                    ....
+                                </span>
+                            </p>
+                            <p>
+                                مزود الخدمه : <span>
+                                    ....
+                                </span>
+                            </p>
                             <span>لا يوجد تفاصيل اضافيه</span>
                         </div>
                     </div>
@@ -96,7 +107,6 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div className={classes.part2}>{/* map */}</div>
             </main>
         </section>
     );
