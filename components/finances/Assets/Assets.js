@@ -32,7 +32,25 @@ const Assets = () => {
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</td>
+                            <td className="flex flex-col text-center">
+                                <p>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</p>
+                                <div className="flex gap-4">
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الايصال
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الاصل
+                                    </a>
+                                </div>
+                            </td>
                             <td>10000</td>
                             <td>1/10/2022</td>
                             <td className={classes.action}>
@@ -49,7 +67,25 @@ const Assets = () => {
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</td>
+                            <td className="flex flex-col text-center">
+                                <p>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</p>
+                                <div className="flex gap-4">
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الايصال
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الاصل
+                                    </a>
+                                </div>
+                            </td>
                             <td>10000</td>
                             <td>1/10/2022</td>
                             <td className={classes.action}>
@@ -57,6 +93,7 @@ const Assets = () => {
                                     className="cursor-pointer"
                                     onClick={() => {
                                         setShowForm(!showForm);
+
                                         setEditForm(!editForm);
                                     }}
                                 />
@@ -65,7 +102,25 @@ const Assets = () => {
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</td>
+                            <td className="flex flex-col text-center">
+                                <p>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</p>
+                                <div className="flex gap-4">
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الايصال
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الاصل
+                                    </a>
+                                </div>
+                            </td>
                             <td>10000</td>
                             <td>1/10/2022</td>
                             <td className={classes.action}>
@@ -73,6 +128,7 @@ const Assets = () => {
                                     className="cursor-pointer"
                                     onClick={() => {
                                         setShowForm(!showForm);
+
                                         setEditForm(!editForm);
                                     }}
                                 />
@@ -81,7 +137,25 @@ const Assets = () => {
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</td>
+                            <td className="flex flex-col text-center">
+                                <p>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</p>
+                                <div className="flex gap-4">
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الايصال
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الاصل
+                                    </a>
+                                </div>
+                            </td>
                             <td>10000</td>
                             <td>1/10/2022</td>
                             <td className={classes.action}>
@@ -89,6 +163,7 @@ const Assets = () => {
                                     className="cursor-pointer"
                                     onClick={() => {
                                         setShowForm(!showForm);
+
                                         setEditForm(!editForm);
                                     }}
                                 />
@@ -97,7 +172,25 @@ const Assets = () => {
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</td>
+                            <td className="flex flex-col text-center">
+                                <p>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</p>
+                                <div className="flex gap-4">
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الايصال
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الاصل
+                                    </a>
+                                </div>
+                            </td>
                             <td>10000</td>
                             <td>1/10/2022</td>
                             <td className={classes.action}>
@@ -105,6 +198,7 @@ const Assets = () => {
                                     className="cursor-pointer"
                                     onClick={() => {
                                         setShowForm(!showForm);
+
                                         setEditForm(!editForm);
                                     }}
                                 />
@@ -113,7 +207,25 @@ const Assets = () => {
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</td>
+                            <td className="flex flex-col text-center">
+                                <p>جهاز كومبيوتر (شاشه كيسه كيبورد ماوس)</p>
+                                <div className="flex gap-4">
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الايصال
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        href=""
+                                        className="text-xl underline"
+                                    >
+                                        صوره الاصل
+                                    </a>
+                                </div>
+                            </td>
                             <td>10000</td>
                             <td>1/10/2022</td>
                             <td className={classes.action}>
@@ -121,6 +233,7 @@ const Assets = () => {
                                     className="cursor-pointer"
                                     onClick={() => {
                                         setShowForm(!showForm);
+
                                         setEditForm(!editForm);
                                     }}
                                 />
@@ -149,7 +262,7 @@ const Assets = () => {
                         </div>
                         <div>
                             <label htmlFor="">الفاتوره</label>
-                            <input type="file"  />
+                            <input type="file" />
                         </div>
                         <button>تاكيد</button>
                     </div>
