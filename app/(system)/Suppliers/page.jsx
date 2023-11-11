@@ -66,7 +66,7 @@ const page = () => {
                                 <Link href="/Suppliers/Form_Supplier/edit">
                                     تعديل
                                 </Link>
-                                <button>تغير</button>
+                                <button>حذف</button>
                             </td>
                         </tr>
                         <tr>
@@ -85,7 +85,7 @@ const page = () => {
                                 <Link href="/Suppliers/Form_Supplier/edit">
                                     تعديل
                                 </Link>
-                                <button>تغير</button>
+                                <button>حذف</button>
                             </td>
                         </tr>
                         <tr>
@@ -104,7 +104,7 @@ const page = () => {
                                 <Link href="/Suppliers/Form_Supplier/edit">
                                     تعديل
                                 </Link>
-                                <button>تغير</button>
+                                <button>حذف</button>
                             </td>
                         </tr>
                         <tr>
@@ -123,7 +123,7 @@ const page = () => {
                                 <Link href="/Suppliers/Form_Supplier/edit">
                                     تعديل
                                 </Link>
-                                <button>تغير</button>
+                                <button>حذف</button>
                             </td>
                         </tr>
                         <tr>
@@ -142,7 +142,7 @@ const page = () => {
                                 <Link href="/Suppliers/Form_Supplier/edit">
                                     تعديل
                                 </Link>
-                                <button>تغير</button>
+                                <button>حذف</button>
                             </td>
                         </tr>
                         <tr>
@@ -161,7 +161,7 @@ const page = () => {
                                 <Link href="/Suppliers/Form_Supplier/edit">
                                     تعديل
                                 </Link>
-                                <button>تغير</button>
+                                <button>حذف</button>
                             </td>
                         </tr>
                     </tbody>
