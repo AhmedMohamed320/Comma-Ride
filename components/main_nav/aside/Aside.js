@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import classes from "./Aside.module.css";
-import { MdDeliveryDining, MdOutlineClose } from "react-icons/md";
+import { MdDeliveryDining, MdManageHistory, MdOutlineClose } from "react-icons/md";
 import { AiFillShopping, AiOutlineBarChart } from "react-icons/ai";
 import { BsPersonFill } from "react-icons/bs";
 import { FaPeopleGroup } from "react-icons/fa6";
@@ -91,6 +91,18 @@ const Aside = (props) => {
                         >
                             <RiCustomerService2Fill />
                             خدمه العملاء
+                        </Link>
+                    </li>
+                    <li className={pathname == "/Finances" && classes.active}>
+                        <span className={classes.border}></span>
+                        <Link
+                            href={{
+                                pathname: "/Finances",
+                            }}
+                            onClick={props.onHideAside}
+                        >
+                            <MdManageHistory />
+                            الادراه الماليه
                         </Link>
                     </li>
                     <li className={pathname == "/Orders" && classes.active}>
