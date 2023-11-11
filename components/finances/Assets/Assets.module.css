@@ -57,6 +57,7 @@
     align-items: flex-end;
     font-size: 1.5rem;
     gap: 1rem;
+    margin-bottom: 5rem;
 }
 
 .formAdd>div {
@@ -91,4 +92,17 @@
     font-size: 1.4rem;
     color: var(--color-light-2);
     border-radius: 0.5rem;
+}
+
+@media (max-width:50rem) {
+    .formAdd {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width:30rem) {
+    .formAdd {
+        grid-template-columns: 1fr;
+    }
 }

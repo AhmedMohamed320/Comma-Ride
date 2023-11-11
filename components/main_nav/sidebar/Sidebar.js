@@ -6,10 +6,11 @@ import { LuBoxes } from "react-icons/lu";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { FaPeopleGroup, FaShop } from "react-icons/fa6";
 import { BiLogOut } from "react-icons/bi";
-import { MdDeliveryDining, MdManageHistory } from "react-icons/md";
+import { MdDeliveryDining } from "react-icons/md";
 import { HiMiniHome } from "react-icons/hi2";
 
 import Link from "next/link";
+import { BsClipboard2DataFill } from "react-icons/bs";
 
 const Sidebar = () => {
     const pathname = usePathname();
@@ -99,7 +100,7 @@ const Sidebar = () => {
                             }
                         >
                             <Link href="/Finances">
-                                <MdManageHistory title="الادراه الماليه" />
+                                <BsClipboard2DataFill title="الادراه الماليه" />
                             </Link>
                         </li>
                     </ul>
