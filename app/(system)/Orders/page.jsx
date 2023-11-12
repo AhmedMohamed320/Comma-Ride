@@ -5,6 +5,8 @@ import Search from "@/components/UI/input/Search";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import FormCreateOrder from "@/components/UI/Form/FormCreateOrder";
+import { PieChart } from "@/components/UI/chart/PieChart";
+import LineChart from "@/components/UI/chart/LineChart";
 
 const page = () => {
     const [formEdit, setShowFormEdit] = useState(false);
@@ -60,7 +62,10 @@ const page = () => {
             <div className={classes.orders}>
                 <OrderCard edit={true} fromEdit={setShowFormEdit} />
                 <OrderCard edit={true} fromEdit={setShowFormEdit} />
-                <OrderCard edit={true} fromEdit={setShowFormEdit} />
+            </div>
+            <div className="statisticsCharts mt-4">
+                <PieChart title="انواع الطلبات" />
+                <LineChart title="اعداد الطلبات" />
             </div>
         </section>
     );

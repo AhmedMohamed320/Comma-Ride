@@ -1,5 +1,5 @@
 "use client";
-import LineCart from "@/components/UI/chart/LineChart";
+import LineCart, { LineChart } from "@/components/UI/chart/LineChart";
 import classes from "./page.module.css";
 import Link from "next/link";
 import Search from "@/components/UI/input/Search";
@@ -140,6 +140,11 @@ const page = () => {
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <div className="statisticsCharts mt-4">
+                <LineChart title="نمو العملاء" />
+                <LineChart title="نشاط العملاء" />
             </div>
         </section>
     );

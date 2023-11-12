@@ -82,6 +82,25 @@ label {
 
 /* ----------------------- */
 
+.statisticsCharts {
+    padding: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    border: 1px solid var(--color-dark-7);
+}
+
+@media (max-width: 55rem) {
+    .statisticsCharts {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* ----------------------- */
+
+
 
 
 @media (max-width: 65rem) {

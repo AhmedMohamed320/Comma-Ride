@@ -45,34 +45,6 @@
     border-right: 0.4rem solid var(--color-red-1);
 }
 
-/* .aside .sidebar a .numOrders {
-    width: 3rem;
-    height: 3rem;
-    background-color: #59a656;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-light-1);
-    font-size: 1.5rem;
-    position: absolute;
-    right: 1rem;
-    box-shadow: var(--box-shadow-1);
-} */
-/* -------------- */
-.branchLogo {
-    width: 100%;
-}
-
-.branchLogo ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.branchLogo ul li img {
-    width: 2rem;
-}
 
 /* -------------- */
 

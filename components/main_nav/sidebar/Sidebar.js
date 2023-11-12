@@ -114,22 +114,6 @@ const Sidebar = () => {
                     >
                         <BiLogOut title="تسجيل الخروج" />
                     </Link>
-                    <div className={classes.branchLogo}>
-                        <ul>
-                            <li>
-                                <img
-                                    src="/image/firnas-2.png"
-                                    alt="firnas logo"
-                                />
-                            </li>
-                            <li>
-                                <img src="/image/dots-2.png" alt="dots logo" />
-                            </li>
-                            <li>
-                                <img src="/image/cube-2.png" alt="cube logo" />
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </aside>
         </>

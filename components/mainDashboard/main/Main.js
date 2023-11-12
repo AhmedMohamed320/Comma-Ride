@@ -10,7 +10,7 @@ const Main = () => {
     return (
         <div className="flex flex-col gap-4">
             <div className={classes.MainHead}>
-                <div className="flex justify-between items-center pt-4">
+                <div className="flex justify-between items-center">
                     <div className={classes.part1}>
                         <p>
                             اهلا بك <span>محمد</span>
